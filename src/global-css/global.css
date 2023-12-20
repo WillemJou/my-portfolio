@@ -1,0 +1,14 @@
+:root {
+  /* Gradients */
+  /* Background Images */
+  /* Dark Theme*/
+  --top-dark-background__img: url(http://localhost:4321/assets/backgrounds/bg-subtle-1-dark-1440w.jpg);
+  /* Light Theme*/
+  --top-light-background__img: url(http://localhost:4321/assets/backgrounds/bg-subtle-1-light-1440w.jpg);
+}
+
+body {
+  background: var(--top-dark-background__img);
+  background-repeat: round;
+  height: 100vh;
+}
