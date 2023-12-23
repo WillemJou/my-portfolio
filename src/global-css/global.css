@@ -1,14 +1,26 @@
 :root {
   /* Gradients */
   /* Background Images */
-  /* Dark Theme*/
-  --top-dark-background__img: url(http://localhost:4321/assets/backgrounds/bg-subtle-1-dark-1440w.jpg);
-  /* Light Theme*/
-  --top-light-background__img: url(http://localhost:4321/assets/backgrounds/bg-subtle-1-light-1440w.jpg);
+  /* Dark Theme Variables*/
+  --top-dark-background__img: url(https://images.pexels.com/photos/7130475/pexels-photo-7130475.jpeg);
+  /* Light Theme variables  */
+  --top-light-background__img: url(https://images.pexels.com/photos/7130555/pexels-photo-7130555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+}
+
+/* Light Theme Pack*/
+[data-theme='light'] {
+  background: var(--top-light-background__img);
+  background-image: contain;
+}
+
+/* Dark Theme Pack*/
+[data-theme='dark'] {
+  background: var(--top-dark-background__img);
+  background-image: contain;
+  color: #ffff;
 }
 
 body {
-  background: var(--top-dark-background__img);
   background-repeat: round;
   height: 100vh;
 }

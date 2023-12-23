@@ -1,17 +1,34 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, createContext, PropsWithChildren } from 'react'
 
-export function Theme() {
+interface ThemeContextType {
+  defaultTheme: boolean
+  getTheme: string | undefined
+  theme: string | undefined
+  setTheme: (newTheme: 'light' | 'dark') => void
+  clickHandler: () => void
+}
+
+export const ThemeContext = createContext<ThemeContextType>({
+  defaultTheme: false,
+  getTheme: 'light',
+  theme: 'light',
+  setTheme: (_newTheme: 'light' | 'dark') => null,
+  clickHandler: () => {},
+})
+
+type Props = PropsWithChildren<{}>
+
+export const ThemeProvider = ({ children }: Props) => {
   const defaultTheme = window.matchMedia(
     '(prefers-color-scheme: light)'
   ).matches
 
-  const [theme, setTheme] = useState(
-    JSON.parse(localStorage.getItem('theme') || '[]')
-  )
+  const getTheme = JSON.parse(localStorage.getItem('theme') || '')
+
+  const [theme, setTheme] = useState(getTheme)
 
   const clickHandler = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light'
-
     setTheme(newTheme)
   }
 
@@ -20,11 +37,12 @@ export function Theme() {
       'theme',
       JSON.stringify(defaultTheme ? 'light' : 'dark')
     )
-  }, [])
+  }, [theme])
+
   return (
-    <>
-      {' '}
-      <button onClick={() => clickHandler()}>Dark Mode</button>
-    </>
+    <ThemeContext.Provider
+      value={{ defaultTheme, getTheme, theme, setTheme, clickHandler }}>
+      {children}
+    </ThemeContext.Provider>
   )
 }
