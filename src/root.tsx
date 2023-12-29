@@ -1,7 +1,7 @@
+import { Outlet } from 'react-router-dom'
 import { useContext } from 'react'
-import { ThemeContext } from './features/theme'
-import { CallToAction } from './layouts/calltoAction'
-import { Header } from './layouts/header'
+import { ThemeContext } from './globals/theme'
+import { CallToAction } from './components/calltoAction'
 import { Footer } from './layouts/footer'
 import { Nav } from './layouts/nav'
 
@@ -9,10 +9,12 @@ export function Root() {
   const { theme } = useContext(ThemeContext)
   return (
     <>
-      <div data-theme={theme}>
+      <div className='stack background' data-theme={theme}>
         <Nav />
-        <Header />
-        <CallToAction />
+        <main className='stack gap-48'>
+          <Outlet />
+          <CallToAction />
+        </main>
         <Footer />
       </div>
     </>

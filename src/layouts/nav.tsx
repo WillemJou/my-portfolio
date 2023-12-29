@@ -1,8 +1,14 @@
+import { NameNavLink } from '../components/nameNavLink'
+import { NavItems } from '../components/navItems'
+import { Socials } from '../components/socials'
 import { ThemeBtn } from '../components/themeBtn'
 
 export function Nav() {
   return (
-    <nav>
+    <nav className='nav-layout gap-4'>
+      <NameNavLink />
+      <NavItems />
+      <Socials />
       <ThemeBtn />
     </nav>
   )

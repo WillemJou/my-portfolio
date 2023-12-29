@@ -1,22 +1,29 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import { ThemeProvider } from './features/theme'
+import { ThemeProvider } from './globals/theme'
 import { Root } from './root'
 import { Home } from './pages/home'
 import { Works } from './pages/works'
+import { Project } from './pages/p1'
 import { About } from './pages/about'
-import './global-css/global.css'
-import './global-css/reset.css'
+import './css/global.css'
+import './css/reset.css'
+import './css/layouts.css'
+import './css/components.css'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Root />,
     children: [
-      { path: 'home', element: <Home /> },
-      { path: 'works', element: <Works /> },
-      { path: 'about', element: <About /> },
+      { index: true, element: <Home /> },
+      {
+        path: '/works',
+        element: <Works />,
+      },
+      { path: '/about', element: <About /> },
+      { path: '/works/projet/:id', element: <Project /> },
     ],
   },
 ])

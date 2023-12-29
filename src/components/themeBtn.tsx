@@ -1,5 +1,6 @@
 import { useContext } from 'react'
-import { ThemeContext } from '../features/theme'
+import { ThemeContext } from '../globals/theme'
+
 export function ThemeBtn() {
   const theme = useContext(ThemeContext)
   return (
