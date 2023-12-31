@@ -1,0 +1,54 @@
+[
+  {
+    "id": "c67ab8a7",
+    "title": "Kasa",
+    "subtitle": "An AirBnB-like Integration",
+    "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
+    "pictures": [
+      "../src/assets/projects/Kasa/home.png",
+      "../src/assets/projects/Kasa/flat.png",
+      "../src/assets/projects/Kasa/responsive.png"
+    ],
+    "description": "An AirBnB-like Integration",
+    "tags": [
+      "Logic Component",
+      "Hooks",
+      "Routing"
+    ]
+  },
+  {
+    "id": "c67ab8b9",
+    "title": "ArgentBank",
+    "subtitle": "Utilisez une API pour un compte utilisateur bancaire avec React",
+    "cover": "../src/assets/projects/argentbank/pic.jpeg",
+    "pictures": [
+      "../src/assets/projects/argentbank/home.png",
+      "../src/assets/projects/argentbank/DB.png",
+      "../src/assets/projects/argentbank/dashboard.png",
+      "../src/assets/projects/argentbank/signIn.png"
+    ],
+    "description": "Utilisez une API pour un compte utilisateur bancaire avec React",
+    "tags": [
+      "State Managment",
+      "API",
+      "DataBase"
+    ]
+  },
+  {
+    "id": "c67abc4f",
+    "title": "Project-Search-Engine",
+    "subtitle": "Développez un algorithme de recherche en JavaScript",
+    "cover": "../src/assets/projects/piedsdansplats/general.png",
+    "pictures": [
+      "../src/assets/projects/piedsdansplats/general.png",
+      "../src/assets/projects/piedsdansplats/filters.png",
+      "../src/assets/projects/piedsdansplats/tags.png"
+    ],
+    "description": "Développez un algorithme de recherche en JavaScript",
+    "tags": [
+      "Algorithm",
+      "Pure JavaScript",
+      "Functionnal Programming"
+    ]
+  }
+]

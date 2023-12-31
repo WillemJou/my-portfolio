@@ -1,6 +1,6 @@
-import data from '../assets/data.json'
+import data from '../../public/data.json'
 
 export const useFindProject = (id: string | undefined) => {
-  const projects = data.find((project) => project.id === id)
-  return { projects }
+  const project = data.find((project) => project.id === id)
+  return { project }
 }
