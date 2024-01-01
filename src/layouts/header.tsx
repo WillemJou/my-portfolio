@@ -5,7 +5,7 @@ export function Header() {
     <>
       <header className='hero'>
         <div className='stack start gap-2'>
-          <h1 className='big-title'>Hello, my name is Willem</h1>
+          <h1 className='title big-title'>Hello, my name is Willem</h1>
           <p className='tagline'>
             I am a developer who is currently based in Paris 🧑🏻‍💻
           </p>

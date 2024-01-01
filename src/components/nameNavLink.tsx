@@ -5,7 +5,7 @@ export function NameNavLink() {
     <>
       <div className='simple-row-layout'>
         <Link to='/about' className='lg-font-size'>
-          Willem JOURET
+          Willem Jouret
         </Link>
       </div>
     </>

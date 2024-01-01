@@ -2,8 +2,8 @@ import { useState, useEffect, createContext, PropsWithChildren } from 'react'
 
 interface ThemeContextType {
   defaultTheme: boolean
-  getTheme: string | undefined
-  theme: string | undefined
+  getTheme: string
+  theme: string
   setTheme: (newTheme: 'light' | 'dark') => void
   clickHandler: () => void
 }

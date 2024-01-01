@@ -5,9 +5,9 @@
     "subtitle": "An AirBnB-like Integration",
     "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
     "pictures": [
-      "../src/assets/projects/Kasa/home.png",
-      "../src/assets/projects/Kasa/flat.png",
-      "../src/assets/projects/Kasa/responsive.png"
+      "../../src/assets/projects/Kasa/home.png",
+      "../../src/assets/projects/Kasa/flat.png",
+      "../../src/assets/projects/Kasa/responsive.png"
     ],
     "description": "An AirBnB-like Integration",
     "tags": [
@@ -19,15 +19,15 @@
   {
     "id": "c67ab8b9",
     "title": "ArgentBank",
-    "subtitle": "Utilisez une API pour un compte utilisateur bancaire avec React",
+    "subtitle": "Use an API for a bank user account with React",
     "cover": "../src/assets/projects/argentbank/pic.jpeg",
     "pictures": [
-      "../src/assets/projects/argentbank/home.png",
-      "../src/assets/projects/argentbank/DB.png",
-      "../src/assets/projects/argentbank/dashboard.png",
-      "../src/assets/projects/argentbank/signIn.png"
+      "../../src/assets/projects/argentbank/home.png",
+      "../../src/assets/projects/argentbank/DB.png",
+      "../../src/assets/projects/argentbank/dashboard.png",
+      "../../src/assets/projects/argentbank/signIn.png"
     ],
-    "description": "Utilisez une API pour un compte utilisateur bancaire avec React",
+    "description": "Use an API for a bank user account with React",
     "tags": [
       "State Managment",
       "API",
@@ -37,14 +37,14 @@
   {
     "id": "c67abc4f",
     "title": "Project-Search-Engine",
-    "subtitle": "Développez un algorithme de recherche en JavaScript",
+    "subtitle": "Develop a search algorithm in JavaScript",
     "cover": "../src/assets/projects/piedsdansplats/general.png",
     "pictures": [
-      "../src/assets/projects/piedsdansplats/general.png",
-      "../src/assets/projects/piedsdansplats/filters.png",
-      "../src/assets/projects/piedsdansplats/tags.png"
+      "../../src/assets/projects/piedsdansplats/general.png",
+      "../../src/assets/projects/piedsdansplats/filters.png",
+      "../../src/assets/projects/piedsdansplats/tags.png"
     ],
-    "description": "Développez un algorithme de recherche en JavaScript",
+    "description": "Develop a search algorithm in JavaScript",
     "tags": [
       "Algorithm",
       "Pure JavaScript",

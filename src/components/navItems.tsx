@@ -1,15 +1,21 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 export function NavItems() {
   return (
-    <ul className='simple-row-layout gap-2'>
+    <ul className='nav-items gap-2'>
       <li>
-        <Link to='/'>Home</Link>
+        <NavLink className='link' to='/'>
+          Home
+        </NavLink>
       </li>
       <li>
-        <Link to='/works'>Works</Link>
+        <NavLink className='link' to='/works'>
+          Works
+        </NavLink>
       </li>
       <li>
-        <Link to='/about'>About Me</Link>
+        <NavLink className='link' to='/about'>
+          About Me
+        </NavLink>
       </li>
     </ul>
   )
