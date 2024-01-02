@@ -1,4 +1,4 @@
-import { Gallery } from '../layouts/gallery'
+import { Gallery } from '../components/gallery'
 
 export function Works() {
   return (

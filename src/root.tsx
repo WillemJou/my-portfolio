@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom'
 import { useContext } from 'react'
 import { ThemeContext } from './globals/theme'
-import { CallToAction } from './components/calltoAction'
+import { CallToAction } from './layouts/calltoAction'
 import { Footer } from './layouts/footer'
 import { Nav } from './layouts/nav'
 

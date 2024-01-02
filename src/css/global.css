@@ -85,9 +85,10 @@
   );
   --gradient-stroke: linear-gradient(180deg, var(--gray-900), var(--gray-700));
 
+  /* Dark Theme Variables
+  Colors         */
+  --bg-dark: #090b11;
   /* Background Images */
-
-  /* Dark Theme Variables*/
   --top-dark-background__img: url(https://images.pexels.com/photos/7130475/pexels-photo-7130475.jpeg);
 
   /* Light Theme variables  */
@@ -108,15 +109,21 @@
 /* Light Theme Pack*/
 [data-theme='light'] {
   background: var(--top-light-background__img);
+  transition: transform var(--theme-transition), color var(--theme-transition);
   background-image: contain;
 }
 
 /* Dark Theme Pack*/
 [data-theme='dark'] {
   background: var(--top-dark-background__img);
+  transition: transform var(--theme-transition), color var(--theme-transition);
   background-image: contain;
   color: #ffff;
   fill: #ffff;
+}
+
+[data-theme='dark'] ul {
+  background: var(--bg-dark);
 }
 
 body {

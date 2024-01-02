@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Gallery } from './gallery'
+import { Gallery } from '../components/gallery'
 
 export function SelectedWorksContainer() {
   return (

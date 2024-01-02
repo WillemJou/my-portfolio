@@ -1,4 +1,4 @@
-import { BoxSkills } from '../components/boxSkills'
+import { BoxSkills } from '../layouts/boxSkills'
 import { Header } from '../layouts/header'
 import { SelectedWorksContainer } from '../layouts/selectedWorks'
 

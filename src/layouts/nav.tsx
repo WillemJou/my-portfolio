@@ -6,9 +6,11 @@ import { ThemeBtn } from '../components/themeBtn'
 export function Nav() {
   return (
     <nav className='nav-layout gap-4'>
-      <NameNavLink />
+      <div className='simple-flex gap-4'>
+        <NameNavLink />
+        <Socials />
+      </div>
       <NavItems />
-      <Socials />
       <ThemeBtn />
     </nav>
   )
