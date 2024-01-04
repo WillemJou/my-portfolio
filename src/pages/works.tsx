@@ -1,6 +1,10 @@
+import { useEffect } from 'react'
 import { Gallery } from '../components/gallery'
 
 export function Works() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <>
       <div className='header stack gap-4 start'>

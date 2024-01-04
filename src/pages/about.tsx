@@ -1,6 +1,10 @@
+import { useEffect } from 'react'
 import face from '../assets/portraits/face.jpg'
 
 export function About() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <section className='about wrapper'>
       <div className='header stack gap-4'>
