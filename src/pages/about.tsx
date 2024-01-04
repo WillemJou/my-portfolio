@@ -1,10 +1,9 @@
 import face from '../assets/portraits/face.jpg'
 
 export function About() {
-  const aboutPhoto = face
   return (
     <section className='about wrapper'>
-      <div className='hero stack gap-4'>
+      <div className='header stack gap-4'>
         <div className='stack gap-2'>
           <h1 className='title big-title'>About</h1>
           <p className='tagline'>
@@ -14,7 +13,7 @@ export function About() {
         </div>
         <img
           className='img-about'
-          src={aboutPhoto}
+          src={face}
           alt='tête de Willem quand il était breton'
         />
       </div>

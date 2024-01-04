@@ -1,31 +1,4 @@
 :root {
-  /* Global variables */
-
-  /* Colors */
-  --gray-0: #090b11;
-  --gray-50: #141925;
-  --gray-100: #283044;
-  --gray-200: #3d4663;
-  --gray-300: #505d84;
-  --gray-400: #6474a2;
-  --gray-500: #8490b5;
-  --gray-600: #a3acc8;
-  --gray-700: #c3cadb;
-  --gray-800: #e3e6ee;
-  --gray-900: #f3f4f7;
-  --gray-999-basis: 0, 0%, 100%;
-  --gray-999_40: hsla(var(--gray-999-basis), 0.4);
-  --gray-999: #ffffff;
-
-  --accent-light: #c561f6;
-  --accent-regular: #7611a6;
-  --accent-dark: #1c0056;
-  --accent-overlay: hsla(280, 89%, 67%, 0.33);
-  --accent-subtle-overlay: var(--accent-overlay);
-  --accent-text-over: var(--gray-999);
-
-  --link-color: var(--accent-regular);
-
   /* Icon Sizes */
   --icon-size: 1.6em;
 
@@ -61,6 +34,36 @@
 
   /* Transitions */
   --theme-transition: 0.2s ease-in-out;
+}
+
+/* Light Mode */
+[data-theme='light'] {
+  /* Light Theme variables  */
+
+  /* Colors */
+  --gray-0: #11131f;
+  --gray-50: #3a5bc7;
+  --gray-100: #3e63dd;
+  --gray-200: #3d4663;
+  --gray-300: #abbdf9;
+  --gray-400: #c1d0ff;
+  --gray-500: #d2deff;
+  --gray-600: #e1e9ff;
+  --gray-700: #edf2fe;
+  --gray-800: #f7f9ff;
+  --gray-900: #fdfdfe;
+  --gray-999-basis: 0, 0%, 100%;
+  --gray-999_40: hsla(var(--gray-999-basis), 0.4);
+  --gray-999: #ffffff;
+
+  --accent-light: #c561f6;
+  --accent-regular: #3e63dd;
+  --accent-dark: #1c0056;
+  --accent-overlay: hsla(226.15, 86.67%, 82.35%, 1);
+  --accent-subtle-overlay: var(--accent-overlay);
+  --accent-text-over: var(--gray-999);
+
+  --link-color: var(--accent-regular);
 
   /* Gradients */
   --gradient-stop-1: var(--accent-light);
@@ -85,57 +88,25 @@
   );
   --gradient-stroke: linear-gradient(180deg, var(--gray-900), var(--gray-700));
 
-  /* Dark Theme Variables
-  Colors         */
-  --bg-dark: #090b11;
-  /* Background Images */
-  --top-dark-background__img: url(https://images.pexels.com/photos/7130475/pexels-photo-7130475.jpeg);
-
-  /* Light Theme variables  */
   --top-light-background__img: url(https://images.pexels.com/photos/7130555/pexels-photo-7130555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  /* Shadows */
+  --shadow-sm: 0px 6px 3px rgba(9, 11, 17, 0.01),
+    0px 4px 2px rgba(9, 11, 17, 0.01), 0px 2px 2px rgba(9, 11, 17, 0.02),
+    0px 0px 1px rgba(9, 11, 17, 0.03);
+  --shadow-md: 0px 28px 11px rgba(9, 11, 17, 0.01),
+    0px 16px 10px rgba(9, 11, 17, 0.03), 0px 7px 7px rgba(9, 11, 17, 0.05),
+    0px 2px 4px rgba(9, 11, 17, 0.06);
+  --shadow-lg: 0px 62px 25px rgba(9, 11, 17, 0.01),
+    0px 35px 21px rgba(9, 11, 17, 0.05), 0px 16px 16px rgba(9, 11, 17, 0.1),
+    0px 4px 9px rgba(9, 11, 17, 0.12);
+
+  /* Light Mode */
+  /* Background Images */
+  --background__img: url(../assets/backgrounds/background-light.png);
 }
 
-/* Shadows */
---shadow-sm: 0px 6px 3px rgba(9, 11, 17, 0.01),
-  0px 4px 2px rgba(9, 11, 17, 0.01), 0px 2px 2px rgba(9, 11, 17, 0.02),
-  0px 0px 1px rgba(9, 11, 17, 0.03);
---shadow-md: 0px 28px 11px rgba(9, 11, 17, 0.01),
-  0px 16px 10px rgba(9, 11, 17, 0.03), 0px 7px 7px rgba(9, 11, 17, 0.05),
-  0px 2px 4px rgba(9, 11, 17, 0.06);
---shadow-lg: 0px 62px 25px rgba(9, 11, 17, 0.01),
-  0px 35px 21px rgba(9, 11, 17, 0.05), 0px 16px 16px rgba(9, 11, 17, 0.1),
-  0px 4px 9px rgba(9, 11, 17, 0.12);
-
-/* Light Theme Pack*/
-[data-theme='light'] {
-  background: var(--top-light-background__img);
-  transition: transform var(--theme-transition), color var(--theme-transition);
-  background-image: contain;
-}
-
-/* Dark Theme Pack*/
 [data-theme='dark'] {
-  background: var(--top-dark-background__img);
-  transition: transform var(--theme-transition), color var(--theme-transition);
-  background-image: contain;
-  color: #ffff;
-  fill: #ffff;
-}
-
-[data-theme='dark'] ul {
-  background: var(--bg-dark);
-}
-
-body {
-  background-color: var(--gray-999);
-  color: var(--gray-200);
-  font-family: var(--font-body);
-  line-height: 1.5;
-  height: 100%;
-}
-
-:root.theme-dark {
-  --gray-0: #ffffff;
+  --gray-0: rgba(255, 255, 255, 0.95);
   --gray-50: #f3f4f7;
   --gray-100: #e3e6ee;
   --gray-200: #c3cadb;
@@ -151,7 +122,7 @@ body {
 
   --accent-light: #1c0056;
   --accent-regular: #7611a6;
-  --accent-dark: #c561f6;
+  --accent-dark: #d6e1ff;
   --accent-overlay: hsla(280, 89%, 67%, 0.33);
   --accent-subtle-overlay: hsla(281, 81%, 36%, 0.33);
   --accent-text-over: var(--gray-0);
@@ -182,4 +153,15 @@ body {
     0px 35px 21px rgba(255, 255, 255, 0.05),
     0px 16px 16px rgba(255, 255, 255, 0.1),
     0px 4px 9px rgba(255, 255, 255, 0.12);
+
+  /* Dark Mode */
+  /* Background Images */
+  --background__img: url(../assets/backgrounds/background-dark.png);
+}
+
+.background {
+  color: var(--gray-200);
+  font-family: var(--font-body);
+  line-height: 1.5;
+  height: 100%;
 }
