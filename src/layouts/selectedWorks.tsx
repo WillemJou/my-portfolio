@@ -9,7 +9,7 @@ export function SelectedWorksContainer() {
           <h3 className='title sub-title-2'>Selected Works</h3>
           <p>Take a look below at some of my featured work from my training</p>
         </div>
-        <Link className='link view-all-link simple-flex' to='/works'>
+        <Link className='view-all-link simple-flex' to='/works'>
           View All
           <svg
             xmlns='http://www.w3.org/2000/svg'

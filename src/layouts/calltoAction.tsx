@@ -5,7 +5,7 @@ export function CallToAction() {
   return (
     <aside className='aside-layout'>
       <h3 className='title sub-title-3'>Interested in working together ?</h3>
-      <Link to={`mailto:${email}`} className='link send-link simple-flex'>
+      <Link to={`mailto:${email}`} className='send-link simple-flex'>
         Send me a message
         <svg
           xmlns='http://www.w3.org/2000/svg'

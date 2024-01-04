@@ -42,19 +42,12 @@
 
   /* Colors */
   --gray-0: #11131f;
-  --gray-50: #3a5bc7;
-  --gray-100: #3e63dd;
   --gray-200: #3d4663;
-  --gray-300: #abbdf9;
-  --gray-400: #c1d0ff;
-  --gray-500: #d2deff;
-  --gray-600: #e1e9ff;
   --gray-700: #edf2fe;
   --gray-800: #f7f9ff;
   --gray-900: #fdfdfe;
-  --gray-999-basis: 0, 0%, 100%;
-  --gray-999_40: hsla(var(--gray-999-basis), 0.4);
   --gray-999: #ffffff;
+  --gray-999-basis: 0, 0%, 100%;
 
   --accent-light: #c561f6;
   --accent-regular: #3e63dd;
@@ -82,7 +75,7 @@
   );
   --gradient-accent-orange: linear-gradient(
     150deg,
-    #ca7879,
+    #3e63dd,
     var(--accent-regular),
     var(--accent-dark)
   );
@@ -106,25 +99,32 @@
 }
 
 [data-theme='dark'] {
-  --gray-0: rgba(255, 255, 255, 0.95);
-  --gray-50: #f3f4f7;
-  --gray-100: #e3e6ee;
-  --gray-200: #c3cadb;
-  --gray-300: #a3acc8;
-  --gray-400: #8490b5;
-  --gray-500: #6474a2;
-  --gray-600: #505d84;
-  --gray-700: #3d4663;
-  --gray-800: #283044;
-  --gray-900: #141925;
+  --gray-0: #fdfdfe;
+  --gray-200: #d2deff;
+  --gray-600: #253974;
+  --gray-800: #182449;
+  --gray-900: #141726;
+  --gray-999: #11131f;
   --gray-999-basis: 225, 31%, 5%;
-  --gray-999: #090b11;
+
+  --indigo-1: #fdfdfe;
+  --indigo-2: #f7f9ff;
+  --indigo-3: #edf2fe;
+  --indigo-4: #e1e9ff;
+  --indigo-5: #d2deff;
+  --indigo-6: #c1d0ff;
+  --indigo-7: #abbdf9;
+  --indigo-8: #8da4ef;
+  --indigo-9: #3e63dd;
+  --indigo-10: #3358d4;
+  --indigo-11: #3a5bc7;
+  --indigo-12: #1f2d5c;
 
   --accent-light: #1c0056;
-  --accent-regular: #7611a6;
+  --accent-regular: #3e63dd;
   --accent-dark: #d6e1ff;
-  --accent-overlay: hsla(280, 89%, 67%, 0.33);
-  --accent-subtle-overlay: hsla(281, 81%, 36%, 0.33);
+  --accent-overlay: hsl(226.1, 55.7%, 38%);
+  --accent-subtle-overlay: var(--accent-overlay);
   --accent-text-over: var(--gray-0);
 
   --link-color: var(--accent-dark);
@@ -137,7 +137,7 @@
   );
   --gradient-accent-orange: linear-gradient(
     150deg,
-    #ca7879,
+    #4e1225,
     var(--accent-regular),
     var(--accent-light)
   );
