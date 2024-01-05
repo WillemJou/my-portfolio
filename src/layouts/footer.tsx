@@ -10,14 +10,14 @@ export function Footer() {
     <>
       <footer className='footer'>
         <p>
-          Design by{' '}
+          Template by{' '}
           <Link to='https://astro.build/' className='footer-link'>
             Astro
           </Link>{' '}
           in Portland
         </p>
         <p>
-          Developed by{' '}
+          Developed and stylized by{' '}
           <Link
             to='/about'
             className='footer-link'

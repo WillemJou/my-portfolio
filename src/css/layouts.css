@@ -5,9 +5,22 @@
 
 .header {
   display: flex;
-  padding-inline: 2.5rem;
+  padding-inline: 5rem;
+
   font-size: var(--text-xl);
   gap: 3.5rem;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.content-box {
+  position: absolute;
+  top: 66%;
+  left: 79%;
+  width: max-content;
+  height: max-content;
 }
 
 .background {
@@ -57,13 +70,14 @@
 
 .wrapper {
   margin-inline: auto;
-  padding-inline: 1.5rem;
+  padding-inline: 2rem;
 }
 
 .aside-layout {
   display: flex;
   align-items: center;
   gap: 3rem;
+  background-color: var(--gray-900);
   border-top: 1px solid var(--gray-800);
   border-bottom: 1px solid var(--gray-800);
   box-shadow: var(--shadow-sm);
@@ -94,9 +108,7 @@
 }
 
 .section-header {
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: baseline;
+  position: relative;
   font-size: var(--text-lg);
 }
 

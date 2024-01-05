@@ -28,7 +28,7 @@
 [data-theme='light'] {
   .theme-icon:hover {
     transition: all 0.2s ease-in-out;
-    fill: rgba(0, 0, 0, 0.95);
+    fill: #3e63dd;
   }
 }
 
@@ -50,6 +50,13 @@
 
 .social-icon:hover {
   transform: scale(1.1);
+}
+
+.back-icon {
+  width: 1.4rem;
+  height: 1.4rem;
+  font-weight: 500;
+  fill: var(--gray-200);
 }
 
 .me-link {
@@ -266,7 +273,7 @@
 
 .img-card {
   width: 100%;
-  height: 260px;
+  height: auto;
   border-radius: 1.5rem;
 }
 
@@ -292,7 +299,10 @@
 }
 
 .back-link {
-  display: block;
+  display: flex;
+  align-items: last baseline;
+  gap: 0.2em;
+  color: var(--gray-200);
   align-self: flex-start;
   text-decoration: 1px solid underline transparent;
   text-underline-offset: 0.25em;

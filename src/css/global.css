@@ -107,19 +107,6 @@
   --gray-999: #11131f;
   --gray-999-basis: 225, 31%, 5%;
 
-  --indigo-1: #fdfdfe;
-  --indigo-2: #f7f9ff;
-  --indigo-3: #edf2fe;
-  --indigo-4: #e1e9ff;
-  --indigo-5: #d2deff;
-  --indigo-6: #c1d0ff;
-  --indigo-7: #abbdf9;
-  --indigo-8: #8da4ef;
-  --indigo-9: #3e63dd;
-  --indigo-10: #3358d4;
-  --indigo-11: #3a5bc7;
-  --indigo-12: #1f2d5c;
-
   --accent-light: #1c0056;
   --accent-regular: #3e63dd;
   --accent-dark: #d6e1ff;
@@ -137,7 +124,7 @@
   );
   --gradient-accent-orange: linear-gradient(
     150deg,
-    #4e1225,
+    #e1f5fc,
     var(--accent-regular),
     var(--accent-light)
   );
