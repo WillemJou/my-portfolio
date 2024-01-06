@@ -88,8 +88,9 @@
   font-size: var(--text-lg);
 }
 
-.simple-flex {
+.flex-align {
   display: flex;
+  align-items: baseline;
 }
 
 .simple-row-layout {

@@ -6,7 +6,7 @@ import { ThemeBtn } from '../components/themeBtn'
 export function Nav() {
   return (
     <nav className='nav-layout gap-4'>
-      <div className='simple-flex gap-4'>
+      <div className='flex-align gap-4'>
         <NameNavLink />
         <Socials />
       </div>
