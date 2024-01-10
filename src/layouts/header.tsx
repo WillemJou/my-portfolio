@@ -7,7 +7,7 @@ export function Header() {
         <div className='stack start gap-2 pad-top-1 w-50%'>
           <h1 className='title big-title'>Hello, my name is Willem</h1>
           <p className='tagline'>
-            I am a front end developer who is currently based in Paris 🧑🏻‍💻
+            I am a developer who is currently based in Paris 🧑🏻‍💻
           </p>
         </div>
         <img

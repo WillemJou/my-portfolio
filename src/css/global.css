@@ -145,10 +145,3 @@
   /* Background Images */
   --background__img: url(../assets/backgrounds/background-dark.png);
 }
-
-.background {
-  color: var(--gray-200);
-  font-family: var(--font-body);
-  line-height: 1.5;
-  height: 100%;
-}

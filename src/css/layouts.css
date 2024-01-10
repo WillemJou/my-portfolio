@@ -6,9 +6,17 @@
 .header {
   display: flex;
   padding-inline: 5rem;
-
   font-size: var(--text-xl);
   gap: 3.5rem;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.relative {
+  position: relative;
 }
 
 .no-margin {
@@ -24,6 +32,9 @@
 }
 
 .background {
+  color: var(--gray-200);
+  font-family: var(--font-body);
+  line-height: 1.5;
   min-height: 100%;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -101,11 +112,13 @@
 
 .box {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   border: 1px solid var(--gray-800);
   box-shadow: var(--shadow-sm);
   border-radius: 1.5rem;
   padding: 2.5rem;
+  gap: 5rem;
 }
 
 .section-header {

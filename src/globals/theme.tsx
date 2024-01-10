@@ -23,7 +23,7 @@ export const ThemeProvider = ({ children }: Props) => {
     '(prefers-color-scheme: light)'
   ).matches
 
-  const getTheme = JSON.parse(localStorage.getItem('theme') || '')
+  const getTheme = JSON.parse(localStorage.getItem('theme') || '[]')
 
   const [theme, setTheme] = useState(getTheme)
 

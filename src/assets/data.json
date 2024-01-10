@@ -1,54 +1,146 @@
-[
-  {
-    "id": "c67ab8a7",
-    "title": "Kasa",
-    "subtitle": "An AirBnB-like Integration",
-    "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
-    "pictures": [
-      "../../src/assets/projects/Kasa/home.png",
-      "../../src/assets/projects/Kasa/flat.png",
-      "../../src/assets/projects/Kasa/responsive.png"
-    ],
-    "description": "An AirBnB-like Integration",
-    "tags": [
-      "Logic Component",
-      "Hooks",
-      "Routing"
-    ]
-  },
-  {
-    "id": "c67ab8b9",
-    "title": "ArgentBank",
-    "subtitle": "Use an API for a bank user account with React",
-    "cover": "../src/assets/projects/argentbank/pic.jpeg",
-    "pictures": [
-      "../../src/assets/projects/argentbank/home.png",
-      "../../src/assets/projects/argentbank/DB.png",
-      "../../src/assets/projects/argentbank/dashboard.png",
-      "../../src/assets/projects/argentbank/signIn.png"
-    ],
-    "description": "Use an API for a bank user account with React",
-    "tags": [
-      "State Managment",
-      "API",
-      "DataBase"
-    ]
-  },
-  {
-    "id": "c67abc4f",
-    "title": "Project-Search-Engine",
-    "subtitle": "Develop a search algorithm in JavaScript",
-    "cover": "../src/assets/projects/piedsdansplats/general.png",
-    "pictures": [
-      "../../src/assets/projects/piedsdansplats/general.png",
-      "../../src/assets/projects/piedsdansplats/filters.png",
-      "../../src/assets/projects/piedsdansplats/tags.png"
-    ],
-    "description": "Develop a search algorithm in JavaScript",
-    "tags": [
-      "Algorithm",
-      "Pure JavaScript",
-      "Functionnal Programming"
-    ]
-  }
-]
+{
+  "selectedWorks": [
+    {
+      "id": "c67ab8a7",
+      "title": "Kasa",
+      "subtitle": "An AirBnB-like Integration",
+      "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
+      "pictures": [
+        "../../src/assets/projects/Kasa/flat.png",
+        "../../src/assets/projects/Kasa/home.png",
+        "../../src/assets/projects/Kasa/responsive.png"
+      ],
+      "description": "An AirBnB-like Integration",
+      "tags": [
+        "Logic Component",
+        "Hooks",
+        "Routing"
+      ]
+    },
+    {
+      "id": "c67ab8b9",
+      "title": "ArgentBank",
+      "subtitle": "Use an API for a bank user account with React",
+      "cover": "../src/assets/projects/argentbank/pic.jpeg",
+      "pictures": [
+        "../../src/assets/projects/argentbank/home.png",
+        "../../src/assets/projects/argentbank/DB.png",
+        "../../src/assets/projects/argentbank/dashboard.png",
+        "../../src/assets/projects/argentbank/signIn.png"
+      ],
+      "description": "Use an API for a bank user account with React",
+      "tags": [
+        "State Managment",
+        "API",
+        "DataBase"
+      ]
+    },
+    {
+      "id": "c67abc4f",
+      "title": "Project-Search-Engine",
+      "subtitle": "Develop a search algorithm in JavaScript",
+      "cover": "../src/assets/projects/piedsdansplats/general.png",
+      "pictures": [
+        "../../src/assets/projects/piedsdansplats/general.png",
+        "../../src/assets/projects/piedsdansplats/filters.png",
+        "../../src/assets/projects/piedsdansplats/tags.png"
+      ],
+      "description": "Develop a search algorithm in JavaScript",
+      "tags": [
+        "Algorithm",
+        "Pure JavaScript",
+        "Functionnal Programming"
+      ]
+    }
+  ],
+  "stacks": [
+    {
+      "title": "JavaScript",
+      "topics": [
+        "Functionnal Programming",
+        "Array Method",
+        "Asynchronous",
+        "Class",
+        "TypeScript"
+      ],
+      "frameworks": [
+        ""
+      ],
+      "icon": "../../src/assets/icons/js-icon.svg"
+    },
+    {
+      "title": "React",
+      "topics": [
+        "",
+        "Pattern Components",
+        "State Manager",
+        "Hooks",
+        "Routing",
+        "Testing"
+      ],
+      "frameworks": [
+        "Redux",
+        "React Router",
+        "Jest"
+      ],
+      "icon": "../../src/assets/icons/react-icon.svg"
+    },
+    {
+      "title": "Mobile",
+      "topics": [
+        "",
+        "Functionnal Components",
+        "State Manager",
+        "Hooks",
+        "Routing",
+        "Testing"
+      ],
+      "stack": [
+        "React Native",
+        "Flutter"
+      ],
+      "frameworks": [
+        "React Navigation"
+      ],
+      "icon": "../../src/assets/icons/flutter-icon.svg"
+    }
+  ],
+  "skills": [
+    {
+      "title": "API",
+      "desciption": "Work with API, Create Routes and Methods, write API documentation for developers ",
+      "topics": [
+        "Fetch",
+        "Swagger",
+        "API Service"
+      ]
+    },
+    {
+      "title": "Data Base",
+      "desciption": "Gestion of a DB with MongoDB and MongoDB Compass, working with a DB and serve it into the UI",
+      "topics": [
+        "Mongo DB",
+        "DB Working Services"
+      ]
+    },
+    {
+      "title": "Testing",
+      "desciption": "Use DeveloperTools and debugger, write unit tests, integration tests and end-to-end test using a BDD nomenclature",
+      "topics": [
+        "Jest",
+        "Chrome Debugger",
+        "Istanbul"
+      ]
+    },
+    {
+      "title": "CSS",
+      "desciption": "write CSS in modern front-end applications",
+      "topics": [
+        "BEM",
+        "OOCSS",
+        "Sass",
+        "TailWind"
+      ]
+    }
+  ]
+}
