@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom'
 import { Gallery } from '../components/gallery'
+import { RevealOnScroll } from '../utils/revealOn'
 
 export function SelectedWorksContainer() {
   return (
-    <section className='section stack gap-48'>
+    <section className='section stack gap-20'>
       <header className='section-header stack'>
         <div className='gap-4 stack'>
           <h3 className='title sub-title-2'>Selected Works</h3>
@@ -21,7 +22,9 @@ export function SelectedWorksContainer() {
           </Link>
         </div>
       </header>
-      <Gallery />
+      <RevealOnScroll>
+        <Gallery />
+      </RevealOnScroll>
     </section>
   )
 }

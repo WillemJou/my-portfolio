@@ -266,9 +266,24 @@
   margin-inline: unset;
 }
 
+.tagline,
+.description {
+  transition: all 0.5s ease-in-out;
+  color: var(--gray-200);
+}
+
 .skills {
   min-height: 100vh;
   gap: 3rem;
+}
+
+.stack-element {
+  border-bottom: 1px solid var(--accent-dark);
+  padding-bottom: 2.5rem;
+}
+
+.stack-element:last-child {
+  border-bottom: none;
 }
 
 .card {

@@ -114,11 +114,21 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  border: 1px solid var(--gray-800);
-  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--accent-dark);
+  box-shadow: var(--shadow-md);
   border-radius: 1.5rem;
   padding: 2.5rem;
-  gap: 5rem;
+  gap: 2.5rem;
+}
+
+.reveal {
+  transition: all 1s ease-in-out;
+  opacity: 100;
+}
+
+.unreveal {
+  transition: all 1s ease-in-out;
+  opacity: 0;
 }
 
 .section-header {
@@ -169,4 +179,8 @@
 
 .gap-48 {
   gap: var(--gap-48);
+}
+
+.gap-29 {
+  gap: var(--gap-29);
 }

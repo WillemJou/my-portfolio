@@ -64,7 +64,7 @@
         "TypeScript"
       ],
       "frameworks": [
-        ""
+        "Jest"
       ],
       "icon": "../../src/assets/icons/js-icon.svg"
     },
@@ -73,15 +73,13 @@
       "topics": [
         "",
         "Pattern Components",
-        "State Manager",
+        "State Management",
         "Hooks",
-        "Routing",
-        "Testing"
+        "Routing"
       ],
       "frameworks": [
         "Redux",
-        "React Router",
-        "Jest"
+        "React Router"
       ],
       "icon": "../../src/assets/icons/react-icon.svg"
     },
@@ -95,12 +93,9 @@
         "Routing",
         "Testing"
       ],
-      "stack": [
+      "frameworks": [
         "React Native",
         "Flutter"
-      ],
-      "frameworks": [
-        "React Navigation"
       ],
       "icon": "../../src/assets/icons/flutter-icon.svg"
     }
