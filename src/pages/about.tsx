@@ -27,46 +27,37 @@ export function About() {
           <h2 className='title sub-title-5'>Background</h2>
           <div className='content'>
             <p>
-              makes people happy. Sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Proin nibh nisl condimentum id venenatis a
-              condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut
-              sem nulla pharetra diam sit amet. Diam quis enim lobortis
-              scelerisque fermentum dui faucibus in ornare.
+              I have always had a computer, and when it comes to coding, I
+              started in 2011 with a static HTML/CSS page during computer
+              science classes. Then I continued to be self-taught with an
+              interest in web pages and I created some more successful pages in
+              2018.
             </p>
-            <p>
-              makes people happy. Sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Proin nibh nisl condimentum id venenatis a
-              condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut
-              sem nulla pharetra diam sit amet. Diam quis enim lobortis
-              scelerisque fermentum dui faucibus in ornare.
-            </p>
+            <p></p>
           </div>
         </section>
         <section className='about-section'>
           <h2 className='title sub-title-5'>Education</h2>
           <div className='content'>
             <p>
-              makes people happy. Sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Proin nibh nisl condimentum id venenatis a
-              condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut
-              sem nulla pharetra diam sit amet. Diam quis enim lobortis
-              scelerisque fermentum dui faucibus in ornare.
+              Coming from a literary background, I studied art history at the
+              EAC and at the university, then I worked in the world of catering
+              and maritime. I'm interested in programming for several years now,
+              but it is in 2022 that I invest 100% in web development thanks to
+              the training “ application developer” from OpenClassRooms, where I
+              learn JavaScript then React for 14 months, and I haven't stopped
+              since more !
             </p>
-            <p>
-              makes people happy. Sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Proin nibh nisl condimentum id venenatis a
-              condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut
-              sem nulla pharetra diam sit amet. Diam quis enim lobortis
-              scelerisque fermentum dui faucibus in ornare.
-            </p>
+            <p></p>
           </div>
         </section>
         <section className='about-section'>
           <h2 className='title sub-title-5'>Skills</h2>
           <div className='content'>
             <p>
-              makes people happy. Sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
+              Listening to others, sociable and discreet, I like a job well done
+              and pays attention to details. I am jovial and I like to please to
+              my colleagues by bringing them croissants in the morning!
             </p>
           </div>
         </section>

@@ -17,8 +17,6 @@ export const RevealOnScroll = ({ children }: Props) => {
     scrollObserver.observe(ref.current!)
     return () => {
       if (ref.current) {
-        console.log(isVisible)
-
         scrollObserver.unobserve(ref.current)
       }
     }

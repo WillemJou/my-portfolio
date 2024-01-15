@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { SelectedProjects } from '../utils/dataService'
 import { RevealOnScroll } from '../utils/revealOn'
+import { Carousel } from '../components/carrousel'
 
 export function Project() {
   useEffect(() => {
@@ -43,9 +44,7 @@ export function Project() {
         </header>
         <main className=''>
           <div className='stack gap-10 work-content'>
-            {project?.pictures.map((pic, index) => (
-              <img className='img-card' key={index} src={pic} alt='' />
-            ))}
+            <Carousel />
           </div>
         </main>
       </div>

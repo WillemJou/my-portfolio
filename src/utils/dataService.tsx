@@ -14,6 +14,5 @@ export const SelectedProjects = (id: string | undefined) => {
 
 export const selectedStacks = () => {
   const stacks: StackType = data.stacks
-
   return { stacks }
 }

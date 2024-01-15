@@ -1,3 +1,3 @@
 export function Error() {
-  return <></>
+  return <div>Erroooorrrrrr !!!!! </div>
 }
