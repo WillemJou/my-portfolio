@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { SelectedProjects } from '../utils/dataService'
-import { Error } from '../pages/error'
+import { Error } from '../components/error'
 
 export function Carousel() {
   const { id } = useParams()

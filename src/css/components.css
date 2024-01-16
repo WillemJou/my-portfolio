@@ -477,3 +477,13 @@
   white-space: nowrap;
   border-width: 0;
 }
+
+.error {
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.error-msg {
+  color: var(--gray-0);
+}

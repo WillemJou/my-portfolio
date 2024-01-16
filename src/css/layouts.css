@@ -35,7 +35,7 @@
   color: var(--gray-200);
   font-family: var(--font-body);
   line-height: 1.5;
-  min-height: 100%;
+  min-height: 100vh;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: left top;
@@ -92,7 +92,7 @@
   border-top: 1px solid var(--gray-800);
   border-bottom: 1px solid var(--gray-800);
   box-shadow: var(--shadow-sm);
-  padding: 7.5rem;
+  padding: 6.5rem;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -139,9 +139,6 @@
 
 .card-layout {
   display: flex;
-  /* grid-template-areas:
-    'p1 p2'
-    'p3 p3'; */
   flex-wrap: wrap;
   justify-content: center;
   gap: 7rem;
@@ -160,6 +157,7 @@
   margin-top: auto;
   text-align: center;
   font-size: var(--text-sm);
+  color: var(--accent-dark);
 }
 
 .gap-2 {

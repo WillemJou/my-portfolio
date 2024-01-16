@@ -11,19 +11,30 @@ import './css/global.css'
 import './css/reset.css'
 import './css/layouts.css'
 import './css/components.css'
+import { ErrorPage } from './pages/errorPage'
+import { Error } from './components/error'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Root />,
+    errorElement: <ErrorPage />,
     children: [
-      { index: true, element: <Home /> },
       {
-        path: '/works',
-        element: <Works />,
+        errorElement: <Error />,
+        children: [
+          { index: true, element: <Home /> },
+          {
+            path: '/works',
+            element: <Works />,
+          },
+          { path: '/about', element: <About /> },
+          {
+            path: '/works/projet/:id',
+            element: <Project />,
+          },
+        ],
       },
-      { path: '/about', element: <About /> },
-      { path: '/works/projet/:id', element: <Project /> },
     ],
   },
 ])

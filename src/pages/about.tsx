@@ -52,7 +52,7 @@ export function About() {
           </div>
         </section>
         <section className='about-section'>
-          <h2 className='title sub-title-5'>Skills</h2>
+          <h2 className='title sub-title-5'>Soft Skills</h2>
           <div className='content'>
             <p>
               Listening to others, sociable and discreet, I like a job well done
