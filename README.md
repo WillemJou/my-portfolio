@@ -1,13 +1,10 @@
 # This is my port-folio !
 
-Here is my portfolio, started with vite using the `npm create vite@latest --template react-ts` cli and design with the help of Astro !
+Here is my portfolio, started with Vite using the `npm create vite@latest --template react-ts` cli and design with the help of Astro !
 
-The template:
+The Astro template:
 
 - [Astro Template](https://astro.build/themes/details/portfolio/)
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 ## React + TypeScript + Vite
 

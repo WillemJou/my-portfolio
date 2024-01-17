@@ -30,7 +30,8 @@ export function About() {
               I have always had a computer. I started coding in 2011 with a
               static HTML/CSS page during computer science classes. Then I
               continued to be self-taught with an interest in web pages and I
-              created some more successful pages in 2018. 
+              created some more successful pages in 2018.
+            </p>
             <p></p>
           </div>
         </section>
@@ -39,10 +40,10 @@ export function About() {
           <div className='content'>
             <p>
               Coming from a literary background, I studied art history at the
-              EAC and at the university. I worked in the world of catering
-              and maritime. I'm interested in programming for several years now,
-              but it is in 2022 that I invest 100% in web development thanks to
-              the training “ application developer” from OpenClassRooms, where I
+              EAC and at the university. I worked in the world of catering and
+              maritime. I'm interested in programming for several years now, but
+              it is in 2022 that I invest 100% in web development thanks to the
+              training “ application developer” from OpenClassRooms, where I
               learn JavaScript then React for 14 months, and I haven't stopped
               since more !
             </p>
