@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import face from '../assets/portraits/face.jpg'
+import face from '/face.jpg'
 import { RevealOnScroll } from '../utils/revealOn'
 
 export function About() {
@@ -27,12 +27,10 @@ export function About() {
           <h2 className='title sub-title-5'>Background</h2>
           <div className='content'>
             <p>
-              I have always had a computer, and when it comes to coding, I
-              started in 2011 with a static HTML/CSS page during computer
-              science classes. Then I continued to be self-taught with an
-              interest in web pages and I created some more successful pages in
-              2018.
-            </p>
+              I have always had a computer. I started coding in 2011 with a
+              static HTML/CSS page during computer science classes. Then I
+              continued to be self-taught with an interest in web pages and I
+              created some more successful pages in 2018. 
             <p></p>
           </div>
         </section>
@@ -41,7 +39,7 @@ export function About() {
           <div className='content'>
             <p>
               Coming from a literary background, I studied art history at the
-              EAC and at the university, then I worked in the world of catering
+              EAC and at the university. I worked in the world of catering
               and maritime. I'm interested in programming for several years now,
               but it is in 2022 that I invest 100% in web development thanks to
               the training “ application developer” from OpenClassRooms, where I

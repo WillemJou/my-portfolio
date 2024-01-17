@@ -1,4 +1,4 @@
-import mainPortrait from '../assets/portraits/mainPortrait.jpg'
+import mainPortrait from '/mainPortrait.jpg'
 
 export function Header() {
   return (

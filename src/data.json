@@ -1,0 +1,140 @@
+{
+    "selectedWorks": [
+        {
+            "id": "c67ab8a7",
+            "title": "Kasa",
+            "subtitle": "An AirBnB-like Integration",
+            "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
+            "pictures": [
+                "/my-portfolio/flat.png",
+                "/my-portfolio/homeKasa.png",
+                "/my-portfolio/responsive.png"
+            ],
+            "description": "An AirBnB-like Integration",
+            "tags": [
+                "Logic Component",
+                "Hooks",
+                "Routing"
+            ]
+        },
+        {
+            "id": "cdle1sk3d",
+            "subtitle": "Use an API for a bank user account with React",
+            "cover": "/my-portfolio/pic.jpeg",
+            "pictures": [
+                "/my-portfolio/home.png",
+                "/my-portfolio/DB.png",
+                "/my-portfolio/dashboard.png",
+                "/my-portfolio/signIn.png"
+            ],
+            "description": "Use an API for a bank user account with React",
+            "tags": [
+                "State Managment",
+                "API",
+                "DataBase"
+            ]
+        },
+        {
+            "id": "c67abc4f",
+            "title": "Project-Search-Engine",
+            "subtitle": "Develop a search algorithm in JavaScript",
+            "cover": "/my-portfolio/general.png",
+            "pictures": [
+                "/my-portfolio/general.png",
+                "/my-portfolio/filters.png",
+                "/my-portfolio/tags.png"
+            ],
+            "description": "Develop a search algorithm in JavaScript",
+            "tags": [
+                "Algorithm",
+                "Pure JavaScript",
+                "Functionnal Programming"
+            ]
+        }
+    ],
+    "stacks": [
+        {
+            "title": "JavaScript",
+            "topics": [
+                "Functionnal Programming",
+                "Array Method",
+                "Asynchronous",
+                "Class",
+                "TypeScript"
+            ],
+            "frameworks": [
+                "Jest"
+            ],
+            "icon": "/my-portfolio/js-icon.svg"
+        },
+        {
+            "title": "React",
+            "topics": [
+                "",
+                "Pattern Components",
+                "State Management",
+                "Hooks",
+                "Routing"
+            ],
+            "frameworks": [
+                "Redux",
+                "React Router"
+            ],
+            "icon": "/my-portfolio/react-icon.svg"
+        },
+        {
+            "title": "Mobile",
+            "topics": [
+                "",
+                "Functionnal Components",
+                "State Manager",
+                "Hooks",
+                "Routing",
+                "Testing"
+            ],
+            "frameworks": [
+                "React Native",
+                "Flutter"
+            ],
+            "icon": "/my-portfolio/flutter-icon.svg"
+        }
+    ],
+    "skills": [
+        {
+            "title": "API",
+            "desciption": "Work with API, Create Routes and Methods, write API documentation for developers ",
+            "topics": [
+                "Fetch",
+                "Swagger",
+                "API Service"
+            ]
+        },
+        {
+            "title": "Data Base",
+            "desciption": "Gestion of a DB with MongoDB and MongoDB Compass, working with a DB and serve it into the UI",
+            "topics": [
+                "Mongo DB",
+                "DB Working Services"
+            ]
+        },
+        {
+            "title": "Testing",
+            "desciption": "Use DeveloperTools and debugger, write unit tests, integration tests and end-to-end test using a BDD nomenclature",
+            "topics": [
+                "Jest",
+                "Chrome Debugger",
+                "Istanbul"
+            ]
+        },
+        {
+            "title": "CSS",
+            "desciption": "write CSS in modern front-end applications",
+            "topics": [
+                "BEM",
+                "OOCSS",
+                "Sass",
+                "TailWind"
+            ]
+        }
+    ]
+}

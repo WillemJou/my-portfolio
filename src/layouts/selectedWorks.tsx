@@ -11,7 +11,7 @@ export function SelectedWorksContainer() {
           <p>Take a look below at some of my featured work from my training</p>
         </div>
         <div className='content-box'>
-          <Link className='view-all-link simple-flex' to='/works'>
+          <Link className='view-all-link simple-flex' to='/my-portfolio/works'>
             View All
             <svg
               xmlns='http://www.w3.org/2000/svg'

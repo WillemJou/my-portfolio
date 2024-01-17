@@ -16,7 +16,7 @@ export function ErrorPage() {
           <i className='error-msg'>
             {isRouteErrorResponse(error)
               ? // note that error is type `ErrorResponse`
-                error.data?.message || error.statusText
+                error.data || error.statusText
               : 'Unknown error message'}
           </i>
         </p>

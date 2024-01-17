@@ -6,6 +6,7 @@ import { Error } from '../components/error'
 export function Carousel() {
   const { id } = useParams()
   const { project } = SelectedProjects(id)
+  console.log(project)
 
   if (project) {
     const [currentImg, setCurrentImg] = useState(0)
@@ -59,9 +60,9 @@ export function Carousel() {
                 transform: `translateX(-${currentImg * 100}%)`,
                 MozTransform: `translateX(-${currentImg * 100}%)`,
               }}>
-              {project?.pictures.map((pic, index) => {
-                return <img key={index} src={pic} alt='photos des logements' />
-              })}
+              {project?.pictures.map((pic, index) => (
+                <img key={index} src={pic} alt='photos des projets' />
+              ))}
             </div>
           </div>
         </div>

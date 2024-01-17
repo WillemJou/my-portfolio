@@ -16,7 +16,7 @@ import { Error } from './components/error'
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/my-portfolio',
     element: <Root />,
     errorElement: <ErrorPage />,
     children: [
@@ -25,12 +25,12 @@ const router = createBrowserRouter([
         children: [
           { index: true, element: <Home /> },
           {
-            path: '/works',
+            path: '/my-portfolio/works',
             element: <Works />,
           },
-          { path: '/about', element: <About /> },
+          { path: '/my-portfolio/about', element: <About /> },
           {
-            path: '/works/projet/:id',
+            path: '/my-portfolio/works/projet/:id',
             element: <Project />,
           },
         ],

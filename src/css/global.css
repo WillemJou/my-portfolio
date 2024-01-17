@@ -96,7 +96,7 @@
 
   /* Light Mode */
   /* Background Images */
-  --background__img: url(../assets/backgrounds/background-light.png);
+  --background__img: url(/background-light.png);
 }
 
 [data-theme='dark'] {
@@ -144,5 +144,5 @@
 
   /* Dark Mode */
   /* Background Images */
-  --background__img: url(../assets/backgrounds/background-dark.png);
+  --background__img: url(/background-dark.png);
 }

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import data from '../assets/data.json'
+import data from '../data.json'
 import { Error } from './error'
 export function Gallery() {
   if (data) {
@@ -7,7 +7,9 @@ export function Gallery() {
       <ul className='card-layout'>
         {data.selectedWorks.map((project) => (
           <li key={project.id}>
-            <Link className='card' to={`/works/projet/${project.id}`}>
+            <Link
+              className='card'
+              to={`/my-portfolio/works/projet/${project.id}`}>
               <span className='title title-card'>{project.title}</span>
               <img
                 className='img-card'

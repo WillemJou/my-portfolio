@@ -15,7 +15,7 @@ export function Project() {
     <RevealOnScroll>
       <div className='stack gap-20'>
         <header className='header stack gap-2'>
-          <Link className='back-link' to='/works'>
+          <Link className='back-link' to='/my-portfolio/works'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               className='icon back-icon'
