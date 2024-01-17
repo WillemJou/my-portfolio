@@ -1,4 +1,4 @@
-import mainPortrait from '/mainPortrait.jpg'
+import face from '/face.jpg'
 
 export function Header() {
   return (
@@ -11,7 +11,7 @@ export function Header() {
           </p>
         </div>
         <img
-          src={mainPortrait}
+          src={face}
           alt='portrait de Willem dans une entreprise super sympa #LaBelleFolie ^^'
           className='main-img'
         />

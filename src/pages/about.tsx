@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import face from '/face.jpg'
+import mainPortrait from '/mainPortrait.jpg'
 import { RevealOnScroll } from '../utils/revealOn'
 
 export function About() {
@@ -19,7 +19,7 @@ export function About() {
           </div>
           <img
             className='img-about'
-            src={face}
+            src={mainPortrait}
             alt='tête de Willem quand il était breton'
           />
         </div>
