@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createHashRouter, RouterProvider } from 'react-router-dom'
 import { ThemeProvider } from './globals/theme'
 import { Root } from './root'
 import { Home } from './pages/home'
@@ -14,7 +14,7 @@ import './css/components.css'
 import { ErrorPage } from './pages/errorPage'
 import { Error } from './components/error'
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/my-portfolio',
     element: <Root />,
