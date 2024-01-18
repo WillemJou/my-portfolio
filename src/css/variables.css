@@ -1,8 +1,16 @@
 :root {
-  /* Icon Sizes */
-  --icon-size: 1.6em;
+  /* Sizes */
+  --shape-xxs: 0.3rem;
+  --shape-xs: 1.3rem;
+  --shape-s: 1.7rem;
+  --shape-m: 2rem;
+  --shape-l: 5rem;
+  --shape-xl: 17rem;
+  --shape-xxl: 23rem;
+  --shape-xxxl: 26rem;
 
   /* Text Sizes */
+
   --text-sm: 0.875rem;
   --text-base: 1rem;
   --text-md: 1.125rem;
@@ -13,17 +21,18 @@
   --text-4xl: 3.5rem;
   --text-5xl: 4.5rem;
 
-  /* Gap Sizes */
-  --gap-2: 0.5rem;
-  --gap-4: 1rem;
-  --gap-10: 2.5rem;
-  --gap-20: 5rem;
-  --gap-29: 9rem;
-  --gap-48: 12rem;
-
-  /* Margin and Padding */
-  --margin-6: 3.5rem;
-  --padding-1: 1.5rem;
+  /* Measurment */
+  --measure-1: 0.2rem;
+  --measure-2: 0.5rem;
+  --measure-3: 0.8rem;
+  --measure-4: 1rem;
+  --measure-10: 2.5rem;
+  --measure-12: 3rem;
+  --measure-13: 4rem;
+  --measure-20: 5rem;
+  --measure-24: 7rem;
+  --measure-29: 9rem;
+  --measure-48: 12rem;
 
   /* Fonts */
   @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap');
@@ -82,7 +91,6 @@
   );
   --gradient-stroke: linear-gradient(180deg, var(--gray-900), var(--gray-700));
 
-  --top-light-background__img: url(https://images.pexels.com/photos/7130555/pexels-photo-7130555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
   /* Shadows */
   --shadow-sm: 0px 6px 3px rgba(9, 11, 17, 0.01),
     0px 4px 2px rgba(9, 11, 17, 0.01), 0px 2px 2px rgba(9, 11, 17, 0.02),

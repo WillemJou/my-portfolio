@@ -1,0 +1,42 @@
+@media (min-width: 2444px) {
+  :root {
+    --text-sm: 1.75rem;
+    --text-base: 2rem;
+    --text-md: 2.25rem;
+    --text-lg: 2.5rem;
+    --text-xl: 3.25rem;
+    --text-2xl: 4.25rem;
+    --text-3xl: 5.25rem;
+    --text-4xl: 7rem;
+    --text-5xl: 9rem;
+
+    --shape-xxs: 0.6rem;
+    --shape-xs: 2.6rem;
+    --shape-s: 3.4rem;
+    --shape-m: 4rem;
+    --shape-l: 10rem;
+    --shape-xl: 34rem;
+    --shape-xxl: 46rem;
+    --shape-xxxl: 52rem;
+
+    --measure-1: 0.4rem;
+    --measure-2: 1rem;
+    --measure-3: 1.6rem;
+    --measure-4: 2rem;
+    --measure-10: 5rem;
+    --measure-12: 6rem;
+    --measure-13: 8rem;
+    --measure-20: 10rem;
+    --measure-24: 14rem;
+    --measure-29: 18rem;
+    --measure-48: 24rem;
+  }
+
+  .main-img {
+    width: 60rem;
+  }
+
+  body {
+    font-size: 3rem;
+  }
+}

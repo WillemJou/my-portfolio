@@ -1,13 +1,26 @@
 .stack {
   display: flex;
+  justify-content: center;
   flex-direction: column;
+}
+
+.simple-flex {
+  display: flex;
+  align-items: baseline;
 }
 
 .header {
   display: flex;
-  padding-inline: 5rem;
+  padding-inline: var(--measure-20);
   font-size: var(--text-xl);
-  gap: 3.5rem;
+}
+
+.main-header {
+  display: flex;
+  justify-content: center;
+  padding: 0 var(--measure-24);
+  font-size: var(--text-xl);
+  gap: var(--measure-10);
 }
 
 .flex-between {
@@ -47,7 +60,7 @@
 }
 
 .pad-top-1 {
-  padding-top: 6.5rem;
+  padding-top: var(--measure-24);
 }
 
 .start {
@@ -59,7 +72,7 @@
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   margin-bottom: var(--margin-6);
-  padding: 2.5rem 5rem;
+  padding: var(--measure-10) var(--measure-20);
   font-family: var(--font-brand);
   font-weight: 500;
 }
@@ -67,32 +80,32 @@
 .nav-items {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: var(--measure-4);
   line-height: 1.2;
   position: relative;
   flex-direction: row;
   font-size: var(--text-sm);
   border-radius: 999rem;
   border: 0;
-  padding: 0.8rem 0.5625rem;
+  padding: var(--measure-3) var(--shape-xxs);
   background: var(--gradient-stroke);
   box-shadow: inset 0 0 0 1px var(--accent-overlay);
 }
 
 .wrapper {
   margin-inline: auto;
-  padding-inline: 2rem;
+  padding-inline: var(--measure-24);
 }
 
 .aside-layout {
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: var(--measure-4);
   background-color: var(--gray-900);
   border-top: 1px solid var(--gray-800);
   border-bottom: 1px solid var(--gray-800);
   box-shadow: var(--shadow-sm);
-  padding: 6.5rem;
+  padding: var(--measure-29) var(--measure-24);
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -118,8 +131,8 @@
   box-shadow: var(--shadow-md);
   border-radius: 1.5rem;
   margin: 0 10%;
-  padding: 2.5rem;
-  gap: 2.5rem;
+  padding: var(--measure-10);
+  gap: var(--measure-10);
 }
 
 .reveal {
@@ -141,7 +154,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 7rem;
+  gap: var(--measure-24);
 }
 
 .about-section {
@@ -151,9 +164,9 @@
 .footer {
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 2.5rem 5rem;
+  padding: var(--measure-10) var(--measure-20);
   display: flex;
-  gap: 3rem;
+  gap: var(--measure-12);
   margin-top: auto;
   align-items: center;
   text-align: center;
@@ -162,25 +175,25 @@
 }
 
 .gap-2 {
-  gap: var(--gap-2);
+  gap: var(--measure-2);
 }
 
 .gap-4 {
-  gap: var(--gap-4);
+  gap: var(--measure-4);
 }
 
 .gap-10 {
-  gap: var(--gap-10);
+  gap: var(--measure-10);
 }
 
 .gap-20 {
-  gap: var(--gap-20);
+  gap: var(--measure-20);
 }
 
 .gap-48 {
-  gap: var(--gap-48);
+  gap: var(--measure-48);
 }
 
 .gap-29 {
-  gap: var(--gap-29);
+  gap: var(--measure-29);
 }

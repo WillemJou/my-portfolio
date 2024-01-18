@@ -5,8 +5,7 @@ export function BoxSkills() {
   const { stacks } = selectedStacks()
 
   return (
-    <div className='skills stack'>
-      <h3 className='title sub-title-2'>My Stack</h3>
+    <div id='box' className='skills stack'>
       <RevealOnScroll>
         <section className='box'>
           {stacks.map(
