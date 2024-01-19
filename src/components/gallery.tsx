@@ -6,9 +6,9 @@ export function Gallery() {
     return (
       <ul className='card-layout'>
         {data.selectedWorks.map((project) => (
-          <li key={project.id}>
+          <li className='li-card' key={project.id}>
             <Link
-              className='card'
+              className='relative card'
               to={`/my-portfolio/works/projet/${project.id}`}>
               <span className='title title-card'>{project.title}</span>
               <img

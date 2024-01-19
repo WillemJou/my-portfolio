@@ -4,7 +4,7 @@ import { Socials } from '../components/socials'
 export function Footer() {
   const location = useLocation()
   const scrolltopIfSameUrl = () => {
-    location.pathname === '/about' ? window.scrollTo(0, 0) : null
+    location.pathname === '/my-portfolio/about' ? window.scrollTo(0, 0) : null
   }
   return (
     <>
@@ -19,7 +19,7 @@ export function Footer() {
         <p>
           Developed and stylized by{' '}
           <Link
-            to='/about'
+            to='/my-portfolio/about'
             className='footer-link'
             onClick={scrolltopIfSameUrl}>
             Willem Jouret

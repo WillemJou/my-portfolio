@@ -4,7 +4,7 @@ import { RevealOnScroll } from '../utils/revealOn'
 
 export function SelectedWorksContainer() {
   return (
-    <section className='section stack gap-20'>
+    <section className='relative stack gap-20'>
       <header className='section-header stack'>
         <div className='gap-4 stack'>
           <h3 className='title sub-title-2'>Selected Works</h3>

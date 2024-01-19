@@ -10,8 +10,8 @@ export function Home() {
   }, [])
   return (
     <RevealOnScroll>
+      <Header />
       <div className='stack wrapper gap-29'>
-        <Header />
         <BoxSkills />
         <SelectedWorksContainer />
       </div>
