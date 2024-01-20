@@ -14,7 +14,7 @@ export function Header() {
             {' '}
             {stateLanguage === 'en'
               ? 'Hello, my name is Willem !'
-              : 'Bienvenue, ici Willem !'}
+              : "Bienvenue, ici c'est Willem !"}
           </h1>
           <p className='tagline'>
             {stateLanguage === 'en'

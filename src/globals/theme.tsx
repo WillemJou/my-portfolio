@@ -1,7 +1,8 @@
 import { useState, useEffect, createContext, PropsWithChildren } from 'react'
 
 interface ThemeContextType {
-  defaultTheme: boolean
+  checkDefaultTheme: boolean
+  favoriteTheme: string
   getTheme: string
   theme: string
   setTheme: (newTheme: 'light' | 'dark') => void
@@ -9,7 +10,8 @@ interface ThemeContextType {
 }
 
 export const ThemeContext = createContext<ThemeContextType>({
-  defaultTheme: false,
+  checkDefaultTheme: false,
+  favoriteTheme: 'light',
   getTheme: 'light',
   theme: 'light',
   setTheme: (_newTheme: 'light' | 'dark') => null,
@@ -19,11 +21,18 @@ export const ThemeContext = createContext<ThemeContextType>({
 type Props = PropsWithChildren<{}>
 
 export const ThemeProvider = ({ children }: Props) => {
-  const defaultTheme = window.matchMedia(
+  const checkDefaultTheme = window.matchMedia(
     '(prefers-color-scheme: light)'
   ).matches
 
-  const getTheme = JSON.parse(localStorage.getItem('theme') || '[]')
+  const favoriteTheme = JSON.parse(
+    sessionStorage.getItem('favoriteTheme') || '[]'
+  )
+
+  const getTheme =
+    favoriteTheme !== JSON.parse(localStorage.getItem('systemTheme') || '[]')
+      ? JSON.parse(sessionStorage.getItem('favoriteTheme') || '[]')
+      : JSON.parse(localStorage.getItem('systemTheme') || '[]')
 
   const [theme, setTheme] = useState(getTheme)
 
@@ -34,14 +43,22 @@ export const ThemeProvider = ({ children }: Props) => {
 
   useEffect(() => {
     localStorage.setItem(
-      'theme',
-      JSON.stringify(defaultTheme ? 'light' : 'dark')
+      'systemTheme',
+      JSON.stringify(checkDefaultTheme ? 'light' : 'dark')
     )
+    sessionStorage.setItem('favoriteTheme', JSON.stringify(theme))
   }, [theme])
 
   return (
     <ThemeContext.Provider
-      value={{ defaultTheme, getTheme, theme, setTheme, clickHandler }}>
+      value={{
+        checkDefaultTheme,
+        favoriteTheme,
+        getTheme,
+        theme,
+        setTheme,
+        clickHandler,
+      }}>
       {children}
     </ThemeContext.Provider>
   )

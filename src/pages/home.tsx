@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { BoxSkills } from '../layouts/boxSkills'
+import { BoxStack } from '../layouts/boxStack'
 import { Header } from '../layouts/header'
 import { SelectedWorksContainer } from '../layouts/selectedWorks'
 import { RevealOnScroll } from '../utils/revealOn'
@@ -12,7 +12,7 @@ export function Home() {
     <RevealOnScroll>
       <Header />
       <div className='stack wrapper gap-29'>
-        <BoxSkills />
+        <BoxStack />
         <SelectedWorksContainer />
       </div>
     </RevealOnScroll>
