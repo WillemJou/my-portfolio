@@ -64,13 +64,6 @@
 .stack-link {
   display: flex;
   gap: var(--measure-2);
-  align-items: flex-start;
-  margin-bottom: var(--measure-20);
-}
-
-.stack-link_animated {
-  display: flex;
-  gap: var(--measure-2);
   align-items: flex-end;
   margin-bottom: var(--measure-20);
 }
@@ -226,6 +219,17 @@
   box-shadow: inset 0 0 0 1px var(--accent-overlay);
 }
 
+.theme-language-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--measure-10);
+}
+
+.language-btn {
+  display: flex;
+}
+
 .hero {
   margin-bottom: var(--shape-m);
 }
@@ -295,14 +299,12 @@
 .stack-element:last-child {
   border-bottom: none;
 }
-
-.li-card:hover {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.li-card {
+  transition: all 0.2s ease-in-out;
 }
-
+.li-card:hover {
+  transform: scale(1.1, 1.1);
+}
 .card {
   display: flex;
   overflow: hidden;

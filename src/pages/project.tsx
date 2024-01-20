@@ -3,6 +3,8 @@ import { Link, useParams } from 'react-router-dom'
 import { SelectedProjects } from '../utils/dataService'
 import { RevealOnScroll } from '../utils/revealOn'
 import { Carousel } from '../components/carrousel'
+import { useContext } from 'react'
+import { LanguageContext } from '../globals/languages'
 
 export function Project() {
   useEffect(() => {
@@ -10,6 +12,8 @@ export function Project() {
   }, [])
   const { id } = useParams()
   const { project } = SelectedProjects(id)
+  const languages = useContext(LanguageContext)
+  const stateLanguage = languages.language
 
   return (
     <RevealOnScroll>
@@ -24,7 +28,7 @@ export function Project() {
                 d='M10.53 5.47a.75.75 0 0 1 0 1.06l-4.72 4.72H20a.75.75 0 0 1 0 1.5H5.81l4.72 4.72a.75.75 0 1 1-1.06 1.06l-6-6a.75.75 0 0 1 0-1.06l6-6a.75.75 0 0 1 1.06 0'
                 clipRule='evenodd'></path>
             </svg>
-            Works
+            {stateLanguage === 'en' ? 'Works' : 'Projets'}
           </Link>
           <div className='start stack gap-4'>
             <div className='stack gap-2'>
@@ -38,7 +42,12 @@ export function Project() {
                   </div>
                 ))}
               </div>
-              <p className='description'>{project?.subtitle}</p>
+              <p className='description'>
+                {' '}
+                {stateLanguage === 'en'
+                  ? project?.descriptionEn
+                  : project?.descriptionFr}
+              </p>
             </div>
           </div>
         </header>

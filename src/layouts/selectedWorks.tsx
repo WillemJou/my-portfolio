@@ -1,18 +1,31 @@
 import { Link } from 'react-router-dom'
 import { Gallery } from '../components/gallery'
 import { RevealOnScroll } from '../utils/revealOn'
+import { useContext } from 'react'
+import { LanguageContext } from '../globals/languages'
 
 export function SelectedWorksContainer() {
+  const languages = useContext(LanguageContext)
+  const stateLanguage = languages.language
   return (
     <section className='relative stack gap-20'>
       <header className='section-header stack'>
         <div className='gap-4 stack'>
-          <h3 className='title sub-title-2'>Selected Works</h3>
-          <p>Take a look below at some of my featured work from my training</p>
+          <h3 className='title sub-title-2'>
+            {stateLanguage === 'en'
+              ? ' Selected Works'
+              : 'Projets sélectionnés'}
+          </h3>
+          <p>
+            {' '}
+            {stateLanguage === 'en'
+              ? 'Take a look below at some of my featured work from my training'
+              : 'Voici quelques projets conçus pendant ma formation'}
+          </p>
         </div>
         <div className='content-box'>
           <Link className='view-all-link simple-flex' to='/my-portfolio/works'>
-            View All
+            {stateLanguage === 'en' ? 'View All' : 'Voir tout'}
             <svg
               xmlns='http://www.w3.org/2000/svg'
               className='icon icon_active'

@@ -7,7 +7,7 @@ export function BoxSkills() {
   return (
     <div className='skills stack'>
       <RevealOnScroll>
-        <section className='box'>
+        <section id='box' className='box'>
           {stacks.map(
             (stack: {
               title: string

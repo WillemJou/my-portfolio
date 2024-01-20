@@ -4,11 +4,12 @@ import { ThemeContext } from './globals/theme'
 import { CallToAction } from './layouts/calltoAction'
 import { Footer } from './layouts/footer'
 import { Nav } from './layouts/nav'
+import { RevealOnScroll } from './utils/revealOn'
 
 export function Root() {
   const { theme } = useContext(ThemeContext)
   return (
-    <>
+    <RevealOnScroll>
       <div className='stack background' data-theme={theme}>
         <Nav />
         <main className='stack gap-20'>
@@ -17,6 +18,6 @@ export function Root() {
         </main>
         <Footer />
       </div>
-    </>
+    </RevealOnScroll>
   )
 }

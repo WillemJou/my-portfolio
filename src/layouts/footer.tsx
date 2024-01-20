@@ -1,7 +1,11 @@
 import { Link, useLocation } from 'react-router-dom'
+import { useContext } from 'react'
+import { LanguageContext } from '../globals/languages'
 import { Socials } from '../components/socials'
 
 export function Footer() {
+  const languages = useContext(LanguageContext)
+  const stateLanguage = languages.language
   const location = useLocation()
   const scrolltopIfSameUrl = () => {
     location.pathname === '/my-portfolio/about' ? window.scrollTo(0, 0) : null
@@ -10,21 +14,23 @@ export function Footer() {
     <>
       <footer className='footer'>
         <p>
-          Template by{' '}
+          {stateLanguage === 'en' ? 'Template by' : 'Base de portfolio par'}{' '}
           <Link to='https://astro.build/' className='footer-link'>
-            Astro
+            Astro,
           </Link>{' '}
-          in Portland
+          Portland
         </p>
         <p>
-          Developed and stylized by{' '}
+          {stateLanguage === 'en'
+            ? 'Developed and stylized by'
+            : 'Développement et Design par'}{' '}
           <Link
             to='/my-portfolio/about'
             className='footer-link'
             onClick={scrolltopIfSameUrl}>
-            Willem Jouret
+            Willem Jouret,
           </Link>{' '}
-          in Paris
+          {stateLanguage === 'en' ? 'Paris' : 'Paris '}
         </p>
         <Socials />
       </footer>

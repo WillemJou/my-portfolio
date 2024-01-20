@@ -10,7 +10,8 @@
                 "/my-portfolio/homeKasa.png",
                 "/my-portfolio/responsive.png"
             ],
-            "description": "An AirBnB-like Integration",
+            "descriptionEn": "An AirBnB-like Integration",
+            "descriptionFr": "Une intégration basé sur le concept AirBnB",
             "tags": [
                 "Logic Component",
                 "Hooks",
@@ -28,7 +29,8 @@
                 "/my-portfolio/dashboard.png",
                 "/my-portfolio/signIn.png"
             ],
-            "description": "Use an API for a bank user account with React",
+            "descriptionEn": "Use an API for a bank user account with React",
+            "descriptionFr": "Utiliser une API pour un compte bancaire utilisateurs avec React",
             "tags": [
                 "State Managment",
                 "API",
@@ -45,7 +47,8 @@
                 "/my-portfolio/filters.png",
                 "/my-portfolio/tags.png"
             ],
-            "description": "Develop a search algorithm in JavaScript",
+            "descriptionEn": "Develop a search algorithm in JavaScript",
+            "descriptionFr": "Développer un algorithme de recherche en JavaScript",
             "tags": [
                 "Algorithm",
                 "Pure JavaScript",

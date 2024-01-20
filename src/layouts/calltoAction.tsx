@@ -1,12 +1,22 @@
 import { Link } from 'react-router-dom'
+import { useContext } from 'react'
+import { LanguageContext } from '../globals/languages'
 
 export function CallToAction() {
+  const languages = useContext(LanguageContext)
+  const stateLanguage = languages.language
   const email = 'willem.jouret9@gmail.com'
   return (
     <aside className='aside-layout'>
-      <h3 className='title sub-title-3'>Interested in working together ?</h3>
+      <h3 className='title sub-title-3'>
+        {stateLanguage === 'en'
+          ? 'Interested in working together ?'
+          : 'Gardons contact ! '}
+      </h3>
       <Link to={`mailto:${email}`} className='send-link simple-flex'>
-        Send me a message
+        {stateLanguage === 'en'
+          ? 'Send me a message ?'
+          : 'Envoyez-moi un message'}
         <svg
           xmlns='http://www.w3.org/2000/svg'
           className='icon send-icon'

@@ -13,6 +13,10 @@ html {
   align-items: baseline;
 }
 
+.text {
+  font-size: var(--text-lg);
+}
+
 .header {
   display: flex;
   padding-inline: var(--measure-20);
@@ -74,6 +78,7 @@ html {
 .nav-layout {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
+  position: relative;
   align-items: center;
   margin-bottom: var(--margin-6);
   padding: var(--measure-10) var(--measure-20);

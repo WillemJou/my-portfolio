@@ -1,3 +1,4 @@
+import { LanguageBtn } from '../components/languageBtn'
 import { NameNavLink } from '../components/nameNavLink'
 import { NavItems } from '../components/navItems'
 import { Socials } from '../components/socials'
@@ -11,7 +12,10 @@ export function Nav() {
         <Socials />
       </div>
       <NavItems />
-      <ThemeBtn />
+      <div className='theme-language-container'>
+        <LanguageBtn />
+        <ThemeBtn />
+      </div>
     </nav>
   )
 }
