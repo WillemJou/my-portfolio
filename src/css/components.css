@@ -245,6 +245,9 @@
 
 .language-btn {
   display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: fit-content;
 }
 
 .hero {

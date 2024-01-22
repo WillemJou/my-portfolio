@@ -59,6 +59,7 @@
     "stacks": [
         {
             "title": "JavaScript",
+            "id": 29,
             "topics": [
                 "Functionnal Programming",
                 "Array Method",
@@ -73,6 +74,7 @@
         },
         {
             "title": "React",
+            "id": 11,
             "topics": [
                 "",
                 "Pattern Components",
@@ -88,6 +90,7 @@
         },
         {
             "title": "Mobile",
+            "id": 80,
             "topics": [
                 "",
                 "Functionnal Components",

@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth !important;
 }
 
+.none {
+  display: none;
+}
+
 .stack {
   display: flex;
   justify-content: center;

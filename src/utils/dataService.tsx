@@ -2,6 +2,7 @@ import data from '../data.json'
 
 type StackType = {
   title: string
+  id: number
   topics: string[]
   frameworks: string[]
   icon: string
