@@ -20,13 +20,13 @@ export function About() {
             <p className='tagline'>
               {stateLanguage === 'en'
                 ? 'Thanks for stopping by. Read below to learn more about myself and my background.'
-                : "Merci d'être passé. Un peu de lecture ci-dessous pour en savoir plus sur moi et mon parcours..."}
+                : "Merci d'être passé. Un peu de lecture ci-dessous pour en savoir plus sur moi et mon parcours ?"}
             </p>
           </div>
           <img
             className='img-about'
             src={face}
-            alt='tête de Willem quand il était breton'
+            alt='tête de Willem quand il était breton et amoureux'
           />
         </div>
         <section className='about-section'>
@@ -38,7 +38,7 @@ export function About() {
             <p>
               {stateLanguage === 'en'
                 ? ' I have always had a computer. I started coding in 2011 with astatic HTML/CSS page during computer science classes. Then Icontinued to be self-taught with an interest in web pages and Icreated some more successful pages in 2018.'
-                : " J'ai toujours eu un ordinateur. J'ai commencé à coder en 2011 avec une page HTML/CSS statique lors de cours d'informatique. Puis j'ai continué à être autodidacte avec un intérêt pour les pages web et j'ai créé des pages plus réussies en 2018. "}
+                : " J'ai toujours eu un ordinateur. Je commence à coder en 2011 avec une page HTML/CSS statique lors de cours informatique dans une école de marché de l'art. J'ai continué à être autodidacte avec un intérêt pour les pages web et j'ai créé des pages plus réussies en 2018. "}
             </p>
             <p></p>
           </div>
@@ -62,7 +62,7 @@ export function About() {
             <p>
               {stateLanguage === 'en'
                 ? 'Listening to others, sociable and discreet, I like a job well done and pays attention to details. I am jovial and I like to please to my colleagues by bringing them croissants in the morning! ^^'
-                : "À l'écoute des autres, sociable et discret, j'aime le travail bien fait et fais attention aux détails. Je suis joviale, persévérant et j'aime faire plaisir à mes collègues en leur apportant des croissants le matin ! ^^"}
+                : "À l'écoute des autres, sociable et discret, j'aime le travail bien fait et fais attention aux détails. Je suis joviale, persévérant et j'aime faire plaisir à mes collègues en leur apportant des croissants le matin."}
             </p>
           </div>
         </section>

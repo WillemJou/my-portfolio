@@ -29,8 +29,6 @@ export const ThemeProvider = ({ children }: Props) => {
     sessionStorage.getItem('favoriteTheme') || '[]'
   )
 
-  console.log(favoriteTheme.length)
-
   const [theme, setTheme] = useState(
     favoriteTheme.length == 0 ? defaultTheme : favoriteTheme
   )

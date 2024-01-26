@@ -33,7 +33,7 @@ export function BoxStack() {
               <div className='stack pointer gap-2'>
                 <h3 className='title sub-title-4'>{stack.title}</h3>
                 {isOpen === listIndex ? (
-                  <>
+                  <RevealOnScroll>
                     <p className='stack-list'>
                       {stack.topics.map((topic, index) => (
                         <li key={index}>{topic}</li>
@@ -44,8 +44,21 @@ export function BoxStack() {
                         <li key={index}>{framework}</li>
                       ))}
                     </p>
+                  </RevealOnScroll>
+                ) : (
+                  <>
+                    <p className='none'>
+                      {stack.topics.map((topic, index) => (
+                        <li key={index}>{topic}</li>
+                      ))}
+                    </p>
+                    <p className='none'>
+                      {stack.frameworks.map((framework, index) => (
+                        <li key={index}>{framework}</li>
+                      ))}
+                    </p>
                   </>
-                ) : null}
+                )}
                 <img className='techno-icon' src={stack.icon} />
               </div>
               <svg

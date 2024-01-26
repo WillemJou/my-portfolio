@@ -54,6 +54,8 @@ export function Project() {
         <main className=''>
           <div className='stack gap-10 work-content'>
             <Carousel />
+            <h4 className='sub-title-4'>Critique d'évaluation</h4>
+            <article>"{project?.mention}"</article>
           </div>
         </main>
       </div>

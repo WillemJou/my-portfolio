@@ -246,8 +246,7 @@
 .language-btn {
   display: flex;
   justify-content: flex-end;
-  width: 100%;
-  height: fit-content;
+  padding: 0 var(--measure-2);
 }
 
 .hero {
@@ -255,7 +254,7 @@
 }
 
 .main-img {
-  width: fit-content;
+  width: 25vw;
   height: auto;
   padding: 0;
   aspect-ratio: 3 / 4;

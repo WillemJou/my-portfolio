@@ -6,10 +6,13 @@
             "subtitle": "An AirBnB-like Integration",
             "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
             "pictures": [
-                "/my-portfolio/flat.png",
                 "/my-portfolio/homeKasa.png",
-                "/my-portfolio/responsive.png"
+                "/my-portfolio/card.png",
+                "/my-portfolio/homeFlat.png",
+                "/my-portfolio/footerFlat.png",
+                "/my-portfolio/about.png"
             ],
+            "mention": "l'eleve sait créer des components react et les reemployer, l'etudiant a bien intialisé son projet avec CRA et structuré son app react dans les bonnes procédures, l'etudiant a bien intégré et mis en place la librairie react router. ",
             "descriptionEn": "An AirBnB-like Integration",
             "descriptionFr": "Une intégration basé sur le concept AirBnB",
             "tags": [
@@ -29,6 +32,7 @@
                 "/my-portfolio/dashboard.png",
                 "/my-portfolio/signIn.png"
             ],
+            "mention": "Willem a fait un excellent travail! Avec une posture professionnelle, il été à l'aise à l'oral, ce qui a rendu sa présentation agréable à suivre, il a bien défendu son travail, il a manifesté une très bonne compréhension du projet, et a su fournir des éléments de réponse pertinents face aux questions posées. Très bon travail, bon courage pour la suite de parcours",
             "descriptionEn": "Use an API for a bank user account with React",
             "descriptionFr": "Utiliser une API pour un compte bancaire utilisateurs avec React",
             "tags": [
@@ -47,6 +51,7 @@
                 "/my-portfolio/filters.png",
                 "/my-portfolio/tags.png"
             ],
+            "mention": "Bonne connaissance du code, présentation bien préparée. S'il fallait chercher un axe d'amélioration je dirais de plus détailler certains choix techniques ( mais c'est pour trouver un axe d'amélioration). Willem a su montrer sa connaissance du code et du projet, quelques petites réponses sur JS qui ont étés très bien expliquées !",
             "descriptionEn": "Develop a search algorithm in JavaScript",
             "descriptionFr": "Développer un algorithme de recherche en JavaScript",
             "tags": [
