@@ -44,7 +44,6 @@ export const ThemeProvider = ({ children }: Props) => {
       'systemTheme',
       JSON.stringify(checkDefaultTheme ? 'light' : 'dark')
     )
-    console.log(theme)
   }, [theme])
 
   return (

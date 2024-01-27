@@ -3,6 +3,8 @@ import { Gallery } from '../components/gallery'
 import { RevealOnScroll } from '../utils/revealOn'
 import { useContext } from 'react'
 import { LanguageContext } from '../globals/languages'
+import data from '../data.json'
+import { Error } from '../components/error'
 
 export function SelectedWorksContainer() {
   const languages = useContext(LanguageContext)
@@ -36,7 +38,7 @@ export function SelectedWorksContainer() {
         </div>
       </header>
       <RevealOnScroll>
-        <Gallery />
+        {data ? <Gallery works={data.selectedWorks} /> : <Error />}
       </RevealOnScroll>
     </section>
   )

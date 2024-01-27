@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import { SelectedProjects } from '../utils/dataService'
 import { Error } from '../components/error'
 
-export function Carousel() {
+export function Carousel({ projects, project }) {
   const { id } = useParams()
-  const { project } = SelectedProjects(id)
-  console.log(project)
+  {
+    project
+  }
+  projects(id)
 
   if (project) {
     const [currentImg, setCurrentImg] = useState(0)

@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { SelectedProjects } from '../utils/dataService'
+import { otherProjects, selectedProjects } from '../utils/dataService'
 import { RevealOnScroll } from '../utils/revealOn'
 import { Carousel } from '../components/carrousel'
 import { useContext } from 'react'
@@ -11,7 +11,10 @@ export function Project() {
     window.scrollTo(0, 0)
   }, [])
   const { id } = useParams()
-  const { project } = SelectedProjects(id)
+  const { selectedProject } = selectedProjects(id)
+  const { otherProject } = otherProjects(id)
+  console.log(selectedProject)
+
   const languages = useContext(LanguageContext)
   const stateLanguage = languages.language
 
@@ -32,30 +35,58 @@ export function Project() {
           </Link>
           <div className='start stack gap-4'>
             <div className='stack gap-2'>
-              <h1 className='title big-title'>{project?.title}</h1>
+              <h1 className='title big-title'>
+                {selectedProject?.title || otherProject?.title}
+              </h1>
             </div>
             <div className='details'>
               <div className='tags'>
-                {project?.tags.map((tag, index) => (
+                {selectedProject?.tags.map((tag, index) => (
                   <div key={index} className='pill'>
                     {tag}
                   </div>
-                ))}
+                )) ||
+                  otherProject?.tags.map((tag, index) => (
+                    <div key={index} className='pill'>
+                      {tag}
+                    </div>
+                  ))}
               </div>
               <p className='description'>
                 {' '}
                 {stateLanguage === 'en'
-                  ? project?.descriptionEn
-                  : project?.descriptionFr}
+                  ? selectedProject?.descriptionEn
+                  : selectedProject?.descriptionFr}
+                {stateLanguage === 'en'
+                  ? otherProject?.descriptionEn
+                  : otherProject?.descriptionFr}
               </p>
             </div>
           </div>
         </header>
         <main className=''>
           <div className='stack gap-10 work-content'>
-            <Carousel />
-            <h4 className='sub-title-4'>Critique d'évaluation</h4>
-            <article>"{project?.mention}"</article>
+            {otherProject === undefined ? (
+              <Carousel projects={selectedProjects} project={selectedProject} />
+            ) : (
+              <Carousel projects={otherProjects} project={otherProject} />
+            )}
+            <h4 className='sub-title-4'>
+              {' '}
+              {stateLanguage === 'en'
+                ? 'Evaluation reviews'
+                : "Critique d'évaluation"}
+            </h4>
+            <article>
+              "
+              {stateLanguage === 'en'
+                ? selectedProject?.mentionEn
+                : selectedProject?.mentionFr}
+              {stateLanguage === 'en'
+                ? otherProject?.mentionEn
+                : otherProject?.mentionFr}
+              "
+            </article>
           </div>
         </main>
       </div>

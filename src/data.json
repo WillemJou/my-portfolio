@@ -12,7 +12,8 @@
                 "/my-portfolio/footerFlat.png",
                 "/my-portfolio/about.png"
             ],
-            "mention": "l'eleve sait créer des components react et les reemployer, l'etudiant a bien intialisé son projet avec CRA et structuré son app react dans les bonnes procédures, l'etudiant a bien intégré et mis en place la librairie react router. ",
+            "mentionFr": "L'élève sait créer des components react et les réemployer, l'étudiant a bien intialisé son projet avec CRA et structuré son app react dans les bonnes procédures, l'étudiant a bien intégré et mis en place la librairie react router. ",
+            "mentionEn": "The student knows how to create react components and reuse them, the student has correctly initialized his project with CRA and structured his react app using the right procedures, the student has successfully integrated and set up the react router library. ",
             "descriptionEn": "An AirBnB-like Integration",
             "descriptionFr": "Une intégration basé sur le concept AirBnB",
             "tags": [
@@ -32,7 +33,8 @@
                 "/my-portfolio/dashboard.png",
                 "/my-portfolio/signIn.png"
             ],
-            "mention": "Willem a fait un excellent travail! Avec une posture professionnelle, il été à l'aise à l'oral, ce qui a rendu sa présentation agréable à suivre, il a bien défendu son travail, il a manifesté une très bonne compréhension du projet, et a su fournir des éléments de réponse pertinents face aux questions posées. Très bon travail, bon courage pour la suite de parcours",
+            "mentionFr": "Willem a fait un excellent travail! Avec une posture professionnelle, il été à l'aise à l'oral, ce qui a rendu sa présentation agréable à suivre, il a bien défendu son travail, il a manifesté une très bonne compréhension du projet, et a su fournir des éléments de réponse pertinents face aux questions posées. Très bon travail, bon courage pour la suite de parcours",
+            "mentionEn": "Willem did an excellent job! With a professional posture, he was comfortable speaking, which made his presentation pleasant to follow, he defended his work well, he demonstrated a very good understanding of the project , and was able to provide relevant answers to the questions asked. Very good work, good luck for the rest of the journey",
             "descriptionEn": "Use an API for a bank user account with React",
             "descriptionFr": "Utiliser une API pour un compte bancaire utilisateurs avec React",
             "tags": [
@@ -51,13 +53,59 @@
                 "/my-portfolio/filters.png",
                 "/my-portfolio/tags.png"
             ],
-            "mention": "Bonne connaissance du code, présentation bien préparée. S'il fallait chercher un axe d'amélioration je dirais de plus détailler certains choix techniques ( mais c'est pour trouver un axe d'amélioration). Willem a su montrer sa connaissance du code et du projet, quelques petites réponses sur JS qui ont étés très bien expliquées !",
+            "mentionFr": "Bonne connaissance du code, présentation bien préparée. S'il fallait chercher un axe d'amélioration je dirais de plus détailler certains choix techniques ( mais c'est pour trouver un axe d'amélioration). Willem a su montrer sa connaissance du code et du projet, quelques petites réponses sur JS qui ont étés très bien expliquées !",
+            "mentionEn": "Good knowledge of the code, well-prepared presentation. If I had to look for an area of improvement I would say to detail certain technical choices in more detail (but it is to find an area of improvement). Willem was able to show his knowledge of the code and the project, some small answers on JS which were very well explained!",
             "descriptionEn": "Develop a search algorithm in JavaScript",
             "descriptionFr": "Développer un algorithme de recherche en JavaScript",
             "tags": [
                 "Algorithm",
                 "Pure JavaScript",
                 "Functionnal Programming"
+            ]
+        }
+    ],
+    "otherWorks": [
+        {
+            "id": "adkesj6s44",
+            "title": "Counter Color",
+            "subtitle": "A simple counter that colorize numbers with random colors.",
+            "cover": "",
+            "pictures": [
+                "/my-portfolio/homeKasa.png",
+                "/my-portfolio/card.png",
+                "/my-portfolio/homeFlat.png",
+                "/my-portfolio/footerFlat.png",
+                "/my-portfolio/about.png"
+            ],
+            "mentionFr": "Voici une petite application amusante permettant de créer des palettes de couleurs de manière aléatoire, à l'aide d'un compteur. il est possible de changer le code couleur (hexadécimal ou RVB) et de copier le code lorsque l'utilisateur clique dessus, et également de créer des palettes de trois couleurs maximum pour les enregistrer afin de les réutiliser ultérieurement",
+            "mentionEn": "Here is a funny little application allowing the creation of color palettes randomly, using a counter. it is possible to change the color code (hexadecimal or rgb) and to copy the code when user clicking on it, and also create palettes of up to three colors for saving them to reuse later",
+            "descriptionEn": "A simple counter that colorize numbers with random colors.",
+            "descriptionFr": "Un compteur simple qui colore les nombres de manière aléatoire.",
+            "tags": [
+                "Browser Storage",
+                "TailWind",
+                "UI"
+            ]
+        },
+        {
+            "id": "azsk114fd4s",
+            "title": "Billed App",
+            "subtitle": "Use Jest and Chrome Debugger in a AGILE way",
+            "cover": "/my-portfolio/homeB.png",
+            "pictures": [
+                "/my-portfolio/frais.png",
+                "/my-portfolio/note.png",
+                "/my-portfolio/valid.png"
+            ],
+            "mentionFr": "Willem sait utiliser ChromeDebugger et m'a montré comment mettre des points d'arrets et voir l'état d'une variable. Le plan End to End sur la partie employé est bien rédigé avec la nomenclature BDD (Given When Then). Willem s'est mis à la place de l'utilisateur pour réaliser les cas de tests.",
+            "mentionEn": "Willem knows how to use ChromeDebugger and showed me how to set breakpoints and see the state of a variable. The End to End plan on the employee part is well written with the BDD (Given When Then) nomenclature. Willem put himself in the user's shoes to carry out the test cases.",
+            "descriptionEn": "Write unit, integration and end-to-end tests with Jest in JS. Debug a web application with the Chrome Debugger",
+            "descriptionFr": "Ecrire des tests unitaires, d'intégration et end-to-end avec Jest en JS. Débugger une application web avec le Chrome Debugger",
+            "tags": [
+                "Testing",
+                "Jest",
+                "Debugger Tools",
+                "Agile Methodology"
             ]
         }
     ],

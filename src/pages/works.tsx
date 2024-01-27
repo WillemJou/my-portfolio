@@ -3,6 +3,7 @@ import { Gallery } from '../components/gallery'
 import { RevealOnScroll } from '../utils/revealOn'
 import { useContext } from 'react'
 import { LanguageContext } from '../globals/languages'
+import data from '../data.json'
 
 export function Works() {
   useEffect(() => {
@@ -25,7 +26,8 @@ export function Works() {
             </p>
           </div>
         </div>
-        <Gallery />
+        <Gallery works={data.selectedWorks} />
+        <Gallery works={data.otherWorks} />
       </div>
     </RevealOnScroll>
   )

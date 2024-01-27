@@ -8,9 +8,16 @@ type StackType = {
   icon: string
 }[]
 
-export const SelectedProjects = (id: string | undefined) => {
-  const project = data.selectedWorks.find((project) => project.id === id)
-  return { project }
+export const selectedProjects = (id: string | undefined) => {
+  const selectedProject = data.selectedWorks.find(
+    (project) => project.id === id
+  )
+  return { selectedProject }
+}
+
+export const otherProjects = (id: string | undefined) => {
+  const otherProject = data.otherWorks.find((project) => project.id === id)
+  return { otherProject }
 }
 
 export const selectedStacks = () => {
