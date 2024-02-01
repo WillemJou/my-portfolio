@@ -2,12 +2,18 @@ import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { Error } from '../components/error'
 
-export function Carousel({ projects, project }) {
+interface CarouselProps {
+  projects: (id: string | undefined) => void
+  project: any
+}
+
+export function Carousel({ projects, project }: CarouselProps) {
   const { id } = useParams()
   {
     project
   }
   projects(id)
+  console.log(project)
 
   if (project) {
     const [currentImg, setCurrentImg] = useState(0)
@@ -61,7 +67,7 @@ export function Carousel({ projects, project }) {
                 transform: `translateX(-${currentImg * 100}%)`,
                 MozTransform: `translateX(-${currentImg * 100}%)`,
               }}>
-              {project?.pictures.map((pic, index) => (
+              {project?.pictures.map((pic: string, index: number) => (
                 <img key={index} src={pic} alt='photos des projets' />
               ))}
             </div>

@@ -1,8 +1,14 @@
 import { Link } from 'react-router-dom'
-export function Gallery({ works }) {
+import { Project } from '../utils/dataService'
+
+interface WorksProps {
+  works: Project[]
+}
+
+export function Gallery({ works }: WorksProps) {
   return (
     <ul className='card-layout'>
-      {works.map((project) => (
+      {works.map((project: Project) => (
         <li className='li-card' key={project.id}>
           <Link
             className='relative card'
