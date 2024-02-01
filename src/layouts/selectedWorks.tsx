@@ -10,7 +10,7 @@ export function SelectedWorksContainer() {
   const languages = useContext(LanguageContext)
   const stateLanguage = languages.language
   return (
-    <section className='relative stack gap-20'>
+    <section id='projects' className='relative stack gap-20'>
       <header className='section-header stack'>
         <div className='gap-4 stack'>
           <h3 className='title sub-title-2'>

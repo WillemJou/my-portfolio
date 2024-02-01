@@ -30,7 +30,7 @@ export function Header() {
           />
         </Link>
       </header>
-      <a className='stack-link' href='#box'>
+      <a className='upper-link' href='#stackBox'>
         <h3 className='title sub-title-4'>
           {' '}
           {stateLanguage === 'en' ? 'My Stack' : 'Ma Stack'}

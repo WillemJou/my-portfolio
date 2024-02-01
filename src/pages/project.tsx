@@ -13,7 +13,6 @@ export function Project() {
   const { id } = useParams()
   const { selectedProject } = selectedProjects(id)
   const { otherProject } = otherProjects(id)
-  console.log(selectedProject)
 
   const languages = useContext(LanguageContext)
   const stateLanguage = languages.language

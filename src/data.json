@@ -68,19 +68,17 @@
         {
             "id": "adkesj6s44",
             "title": "Counter Color",
-            "subtitle": "A simple counter that colorize numbers with random colors.",
-            "cover": "",
+            "subtitle": "A simple counter that colorize numbers with random colors",
+            "cover": "/my-portfolio/color.png",
             "pictures": [
-                "/my-portfolio/homeKasa.png",
-                "/my-portfolio/card.png",
-                "/my-portfolio/homeFlat.png",
-                "/my-portfolio/footerFlat.png",
-                "/my-portfolio/about.png"
+                "/my-portfolio/color.png",
+                "/my-portfolio/palettes.png",
+                "/my-portfolio/hexa.png"
             ],
-            "mentionFr": "Voici une petite application amusante permettant de créer des palettes de couleurs de manière aléatoire, à l'aide d'un compteur. il est possible de changer le code couleur (hexadécimal ou RVB) et de copier le code lorsque l'utilisateur clique dessus, et également de créer des palettes de trois couleurs maximum pour les enregistrer afin de les réutiliser ultérieurement",
+            "mentionFr": "Voici une petite application amusante permettant de créer des palettes de couleurs de manière aléatoire, à l'aide d'un compteur. il est possible de changer le code couleur (hexadécimal ou RGB) et de copier le code lorsque l'utilisateur clique dessus, et également de créer des palettes de trois couleurs maximum pour les enregistrer afin de les réutiliser ultérieurement",
             "mentionEn": "Here is a funny little application allowing the creation of color palettes randomly, using a counter. it is possible to change the color code (hexadecimal or rgb) and to copy the code when user clicking on it, and also create palettes of up to three colors for saving them to reuse later",
-            "descriptionEn": "A simple counter that colorize numbers with random colors.",
-            "descriptionFr": "Un compteur simple qui colore les nombres de manière aléatoire.",
+            "descriptionEn": "A simple counter that colorize numbers with random colors (in progress...).",
+            "descriptionFr": "Un compteur qui colore les nombres de manière aléatoire (en pré-développement).",
             "tags": [
                 "Browser Storage",
                 "TailWind",

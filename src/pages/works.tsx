@@ -26,8 +26,8 @@ export function Works() {
             </p>
           </div>
         </div>
-        <Gallery works={data.selectedWorks} />
         <Gallery works={data.otherWorks} />
+        <Gallery works={data.selectedWorks} />
       </div>
     </RevealOnScroll>
   )
