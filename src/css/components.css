@@ -24,7 +24,7 @@
 .menu-btn_opened,
 .menu-btn_closed {
   position: absolute;
-  top: 0;
+  top: 27px;
   right: 0;
   width: var(--shape-xs);
   height: var(--shape-xs);
@@ -82,6 +82,11 @@
   margin-bottom: var(--measure-20);
 }
 
+.stack-link {
+  margin-bottom: var(--measure-10);
+  padding-top: var(--measure-4);
+}
+
 .arrow-icon,
 .stack-arrow-icon {
   width: var(--shape-s);
@@ -137,10 +142,12 @@
 
 .send-link {
   padding: 0.4rem 1.7rem;
+  gap: var(--measure-3);
 }
 
 .view-all-link {
   padding: var(--measure-2) var(--measure-3);
+  gap: var(--measure-2);
 }
 
 .view-all-link,
@@ -148,7 +155,6 @@
   display: flex;
   align-items: center;
   position: relative;
-  gap: var(--measure-3);
   color: var(--accent-text-over);
   font-size: var(--text-base);
   border-radius: 999rem;
@@ -215,11 +221,11 @@
   height: var(--shape-s);
   padding: var(--measure-2);
   position: absolute;
-  top: 3px;
+  top: 1.4px;
   left: 2px;
   background-color: var(--accent-regular);
   border-radius: 999rem;
-  transform: translateX(118%);
+  transform: translateX(102%);
   transition: transform var(--theme-transition), color var(--theme-transition);
 }
 
@@ -263,8 +269,7 @@
   color: var(--gray-0);
   line-height: 1.1;
   font-family: var(--font-brand);
-  font-weight: 600;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .big-title {
@@ -312,7 +317,6 @@
 
 .stack-element {
   border-bottom: 1px solid var(--accent-dark);
-  height: auto;
   padding-bottom: var(--shape-l);
 }
 
@@ -320,12 +324,12 @@
   border-bottom: none;
 }
 
-.stack-lists-container {
-  padding: 2rem 0;
+.stack-list {
+  padding: 1rem 3rem;
 }
 
-.stack-list {
-  padding: 0 2rem;
+.stack-li-el {
+  padding: 0.2rem 0;
 }
 
 .li-card {

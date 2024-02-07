@@ -143,18 +143,16 @@
             "title": "Mobile",
             "id": 80,
             "topics": [
-                "",
-                "Functionnal Components",
-                "State Manager",
-                "Hooks",
-                "Routing",
-                "Testing"
+                "Android SDK & iOS",
+                "Expo",
+                "Core Components",
+                "Storage",
+                "Interactions"
             ],
             "frameworks": [
-                "React Native",
-                "Flutter"
+                "React Native"
             ],
-            "icon": "/my-portfolio/flutter-icon.svg"
+            "icon": "/my-portfolio/react-icon.svg"
         }
     ],
     "skills": [

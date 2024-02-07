@@ -1,65 +1,26 @@
-import { useState, useContext } from 'react'
-import { selectedStacks } from '../utils/dataService'
+import { useContext } from 'react'
 import { RevealOnScroll } from '../utils/revealOn'
 import { LanguageContext } from '../globals/languages'
+import { selectedStacks } from '../utils/dataService'
+import { Stack } from '../components/stack'
 
-interface Stack {
-  title: string
-  id: number
-  topics: string[]
-  frameworks: string[]
-  icon: string
-}
 export function BoxStack() {
   const languages = useContext(LanguageContext)
   const stateLanguage = languages.language
-
   const { stacks } = selectedStacks()
-  const [isMounted, setisMounted] = useState(-1)
-
-  const handleOpen = (currIndex: number) => {
-    currIndex === isMounted ? setisMounted(-1) : setisMounted(currIndex)
-  }
+  const JS = stacks.find((js) => js.id === 29)
+  const REACT = stacks.find((js) => js.id === 11)
+  const MOBILE = stacks.find((js) => js.id === 80)
 
   return (
-    <div id='stackBox' className='skills stack'>
+    <div className='skills stack relative'>
       <RevealOnScroll>
         <section className='box'>
-          {stacks.map((stack: Stack, listIndex) => (
-            <ul
-              key={stack.id}
-              className='stack stack-element pointer relative gap-2'
-              onClick={() => handleOpen(listIndex)}>
-              <h3 className='title sub-title-4'>{stack.title}</h3>
-
-              {isMounted === listIndex ? (
-                <div className='stack-lists-container'>
-                  <p className='stack-list'>
-                    {stack.topics.map((topic, index) => (
-                      <li key={index}>{topic}</li>
-                    ))}
-                  </p>
-                  <p className='stack-list'>
-                    {stack.frameworks.map((framework, index) => (
-                      <li key={index}>{framework}</li>
-                    ))}
-                  </p>
-                </div>
-              ) : null}
-
-              <img className='techno-icon' src={stack.icon} />
-              <svg
-                className={
-                  isMounted === listIndex
-                    ? 'icon pointer menu-btn_opened'
-                    : 'icon pointer menu-btn_closed'
-                }
-                xmlns='http://www.w3.org/2000/svg'
-                viewBox='0 0 1024 1024'>
-                <path d='m488.832 344.32l-339.84 356.672a32 32 0 0 0 0 44.16l.384.384a29.44 29.44 0 0 0 42.688 0l320-335.872l319.872 335.872a29.44 29.44 0 0 0 42.688 0l.384-.384a32 32 0 0 0 0-44.16L535.168 344.32a32 32 0 0 0-46.336 0'></path>
-              </svg>
-            </ul>
-          ))}
+          <>
+            <Stack stack={JS} />
+            <Stack stack={REACT} />
+            <Stack stack={MOBILE} />
+          </>
         </section>
         <a className='upper-link end' href='#projects'>
           <h3 className='title sub-title-4'>

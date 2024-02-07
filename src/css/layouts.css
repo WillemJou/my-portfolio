@@ -11,6 +11,20 @@ html {
   justify-content: flex-end;
 }
 
+.fade {
+  transition: 0.8s all ease;
+  height: 300px;
+  opacity: 1;
+  padding: 3rem 0;
+  transform: scale(1);
+}
+.fade.out {
+  transform: scale(0);
+  height: 0px;
+  padding: 0;
+  opacity: 0;
+}
+
 .stack {
   display: flex;
   justify-content: center;
