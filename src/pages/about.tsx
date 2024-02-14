@@ -37,8 +37,8 @@ export function About() {
           <div className='content'>
             <p>
               {stateLanguage === 'en'
-                ? ' I have always had a computer. I started coding in 2011 with astatic HTML/CSS page during computer science classes. Then Icontinued to be self-taught with an interest in web pages and Icreated some more successful pages in 2018.'
-                : " J'ai toujours eu un ordinateur. Je commence à coder en 2011 avec une page HTML/CSS statique lors de cours informatique dans une école de marché de l'art. J'ai continué à être autodidacte avec un intérêt pour les pages web et j'ai créé des pages plus réussies en 2018. "}
+                ? 'I have always had a computer. I started coding in 2011 with astatic HTML/CSS page during computer science classes. Then Icontinued to be self-taught with an interest in web pages and Icreated some more successful pages in 2018.'
+                : "J'ai toujours eu un ordinateur. Je commence à coder en 2011 avec une page HTML/CSS statique lors de cours informatique dans une école de marché de l'art. J'ai continué à être autodidacte avec un intérêt pour les pages web et j'ai créé des pages plus réussies en 2018. "}
             </p>
             <p></p>
           </div>
@@ -50,7 +50,7 @@ export function About() {
           <div className='content'>
             <p>
               {stateLanguage === 'en'
-                ? " Coming from a literary background, I studied art history at the EAC school and at the university. I worked in the world of catering and maritime. I'm interested in programming for several years now, but it is in 2022 that I invest 100% in web development, thanks to the training “ application developer” from OpenClassRooms, where I learn JavaScript then React for 14 months, and I haven't stopped since more !"
+                ? "Coming from a literary background, I studied art history at the EAC school and at the university. I worked in the world of catering and maritime. I'm interested in programming for several years now, but it is in 2022 that I invest 100% in web development, thanks to the training « application developer » from OpenClassRooms, where I learn JavaScript then React for 14 months, and I haven't stopped since more !"
                 : "Issu d'une formation littéraire, j'ai étudié l'histoire de l'art à l'EAC et à l’université. J'ai travaillé dans le monde de la restauration et du maritime. Je m'intéresse à la programmation depuis plusieurs années maintenant et c'est en 2022 que je m'investis à 100% dans le développement avec la formation « développeur d'applications » d'OpenClassRooms où j'ai appris JavaScript puis React pendant 14 mois, et depuis je ne m'arrête plus !"}
             </p>
             <p></p>

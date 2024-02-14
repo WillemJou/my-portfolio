@@ -63,7 +63,7 @@ export function Project() {
             </div>
           </div>
         </header>
-        <main className=''>
+        <section className=''>
           <div className='stack gap-10 work-content'>
             {otherProject === undefined ? (
               <Carousel projects={selectedProjects} project={selectedProject} />
@@ -87,7 +87,7 @@ export function Project() {
               "
             </article>
           </div>
-        </main>
+        </section>
       </div>
     </RevealOnScroll>
   )

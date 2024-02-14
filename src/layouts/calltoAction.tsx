@@ -15,8 +15,8 @@ export function CallToAction() {
       </h3>
       <Link to={`mailto:${email}`} className='send-link simple-flex'>
         {stateLanguage === 'en'
-          ? 'Send me a message ?'
-          : 'Envoyez-moi un message'}
+          ? 'Send me a message !'
+          : 'Envoyez-moi un message...'}
         <svg
           xmlns='http://www.w3.org/2000/svg'
           className='icon send-icon'

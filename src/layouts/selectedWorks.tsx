@@ -11,20 +11,17 @@ export function SelectedWorksContainer() {
   const stateLanguage = languages.language
   return (
     <section id='projects' className='relative stack gap-20'>
-      <header className='section-header stack'>
-        <div className='gap-4 stack'>
-          <h3 className='title sub-title-2'>
-            {stateLanguage === 'en'
-              ? ' Selected Works'
-              : 'Projets sélectionnés'}
-          </h3>
-          <p>
-            {' '}
-            {stateLanguage === 'en'
-              ? 'Take a look below at some of my featured work from my training'
-              : 'Voici quelques projets conçus pendant ma formation'}
-          </p>
-        </div>
+      <header className='section-header stack gap-4'>
+        <h3 className='title sub-title-2'>
+          {stateLanguage === 'en' ? ' Selected Works' : 'Projets sélectionnés'}
+        </h3>
+        <p>
+          {' '}
+          {stateLanguage === 'en'
+            ? 'Take a look below at some of my featured work from my training'
+            : 'Voici quelques projets conçus pendant ma formation'}
+        </p>
+
         <div className='content-box'>
           <Link className='view-all-link simple-flex' to='/my-portfolio/works'>
             {stateLanguage === 'en' ? 'View All' : 'Voir tout'}

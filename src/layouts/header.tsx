@@ -7,7 +7,7 @@ export function Header() {
   const languages = useContext(LanguageContext)
   const stateLanguage = languages.language
   return (
-    <div className='wrapper stack gap-4'>
+    <div className='screen wrapper stack gap-4'>
       <header className='main-header hero'>
         <div className='stack start gap-2 pad-top-1 w-50%'>
           <h1 className='title big-title'>
@@ -22,7 +22,7 @@ export function Header() {
               : 'Je suis un développeur basé à Paris 🧑🏻‍💻'}
           </p>
         </div>
-        <Link to='/my-portfolio/about'>
+        <Link className='main-img-link' to='/my-portfolio/about'>
           <img
             src={mainPortrait}
             alt='shoot de Willem dans une entreprise super sympa #LaBelleFolie ^^'
@@ -30,7 +30,7 @@ export function Header() {
           />
         </Link>
       </header>
-      <a id='stackBox' className='upper-link stack-link' href='#stackBox'>
+      <a className='upper-link' href='#stackBox'>
         <h3 className='title sub-title-4'>
           {' '}
           {stateLanguage === 'en' ? 'My Stack' : 'Ma Stack'}

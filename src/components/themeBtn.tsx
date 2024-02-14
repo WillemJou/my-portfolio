@@ -9,7 +9,7 @@ export function ThemeBtn() {
     <div className='theme-toggle'>
       <button
         className={
-          stateTheme === 'light' ? 'theme-btn-light' : 'theme-btn_dark'
+          stateTheme === 'light' ? 'theme-btn-light' : 'theme-btn-dark'
         }
         onClick={() => theme.clickHandler()}>
         <span className='sr-only'>Theme</span>

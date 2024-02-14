@@ -20,9 +20,13 @@ html {
 }
 .fade.out {
   transform: scale(0);
-  height: 0px;
+  height: 0;
   padding: 0;
   opacity: 0;
+}
+
+.screen {
+  min-height: 91vh;
 }
 
 .stack {
@@ -49,6 +53,8 @@ html {
 .main-header {
   display: flex;
   justify-content: center;
+  align-items: center;
+  min-height: 65vh;
   padding: 0 var(--measure-24);
   font-size: var(--text-xl);
   gap: var(--measure-10);
@@ -155,6 +161,11 @@ html {
   align-items: baseline;
 }
 
+.box-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .box {
   width: 60%;
   display: flex;
@@ -163,7 +174,8 @@ html {
   border: 1px solid var(--accent-dark);
   box-shadow: var(--shadow-md);
   border-radius: 1.5rem;
-  padding: var(--measure-10);
+  padding: var(--measure-10) var(--measure-10) var(--measure-4)
+    var(--measure-10);
   gap: var(--measure-10);
 }
 

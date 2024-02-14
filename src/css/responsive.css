@@ -1,4 +1,106 @@
-@media (min-width: 2444px) {
+/* Using variables to adjust values according to screen resolution. */
+@media (min-width: 1800px) {
+  :root {
+    --text-sm: 1rem;
+    --text-base: 1.75rem;
+    --text-md: 2rem;
+    --text-lg: 2.25rem;
+    --text-xl: 2.5rem;
+    --text-2xl: 3.25rem;
+    --text-3xl: 4.25rem;
+    --text-4xl: 5.25rem;
+    --text-5xl: 6rem;
+
+    --shape-xxs: 0.3rem;
+    --shape-xs: 0.6rem;
+    --shape-s: 2.6rem;
+    --shape-m: 3.4rem;
+    --shape-l: 4rem;
+    --shape-xl: 20rem;
+    --shape-xxl: 34rem;
+    --shape-xxxl: 46rem;
+
+    --measure-1: 0.2rem;
+    --measure-2: 0.7rem;
+    --measure-3: 1rem;
+    --measure-4: 2rem;
+    --measure-10: 3rem;
+    --measure-12: 5rem;
+    --measure-13: 6rem;
+    --measure-20: 8rem;
+    --measure-24: 10rem;
+    --measure-29: 14rem;
+    --measure-48: 18rem;
+  }
+
+  a {
+    font-size: 1.5rem;
+  }
+
+  .footer-link,
+  .back-link,
+  article,
+  p,
+  span {
+    font-size: 2rem;
+  }
+
+  .nav-items {
+    padding: 1rem var(--shape-xxs);
+  }
+
+  .link {
+    padding: 0.8rem var(--measure-4);
+  }
+
+  .theme-icon,
+  .menu-btn_closed,
+  .menu-btn_opened,
+  .icon_active {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .theme-btn-dark,
+  .theme-btn-light {
+    padding: 1rem;
+    gap: var(--measure-3);
+  }
+
+  .theme-btn-dark::before,
+  .theme-btn-light::before {
+    width: 3.3rem;
+    height: 3.3rem;
+    left: 5px;
+    top: 5px;
+  }
+
+  .theme-btn-dark::before {
+    transform: translateX(89%);
+  }
+
+  .hero {
+    margin-bottom: 0;
+  }
+
+  .main-header {
+    min-height: 61vh;
+  }
+
+  .stack-element {
+    padding-bottom: var(--measure-13);
+  }
+
+  .fade {
+    height: 430px;
+  }
+
+  .work-content {
+    max-width: 90ch;
+  }
+}
+
+@media (min-width: 2550px) {
   :root {
     --text-sm: 1.75rem;
     --text-base: 2rem;
@@ -14,7 +116,7 @@
     --shape-xs: 2.6rem;
     --shape-s: 3.4rem;
     --shape-m: 4rem;
-    --shape-l: 10rem;
+    --shape-l: 12rem;
     --shape-xl: 34rem;
     --shape-xxl: 46rem;
     --shape-xxxl: 52rem;
@@ -32,15 +134,124 @@
     --measure-48: 24rem;
   }
 
-  .main-img {
-    width: 60rem;
+  article,
+  p,
+  span {
+    font-size: 2.3rem;
   }
 
   .language-btn {
     font-size: 2rem;
   }
 
-  body {
+  .stack-element {
+    padding-bottom: var(--measure-13);
+  }
+
+  .stack-link {
+    margin-bottom: var(--measure-20);
+  }
+
+  .fade {
+    height: 660px;
+    padding: 7rem 0;
+  }
+
+  .tagline {
     font-size: 3rem;
+  }
+
+  .sub-title-2 {
+    margin-top: var(--measure-20);
+  }
+
+  .main-header {
+    margin-bottom: 0;
+  }
+  .work-content {
+    max-width: 140ch;
+  }
+
+  .theme-btn-dark,
+  .theme-btn-light {
+    padding: 1.5rem;
+  }
+
+  .theme-btn-dark::before,
+  .theme-btn-light::before {
+    width: 4rem;
+    height: 4rem;
+    left: 10px;
+    top: 8px;
+  }
+
+  .theme-btn-dark::before {
+    transform: translateX(85%);
+  }
+}
+
+@media (min-width: 3500px) {
+  :root {
+    --text-sm: 2rem;
+    --text-base: 3rem;
+    --text-md: 3.5rem;
+    --text-lg: 4rem;
+    --text-xl: 4.25rem;
+    --text-2xl: 5.25rem;
+    --text-3xl: 7rem;
+    --text-4xl: 9rem;
+    --text-5xl: 10rem;
+
+    --shape-xxs: 2.6rem;
+    --shape-xs: 3.4rem;
+    --shape-s: 4rem;
+    --shape-m: 6rem;
+    --shape-l: 34rem;
+    --shape-xl: 46rem;
+    --shape-xxl: 52rem;
+    --shape-xxxl: 55rem;
+
+    --measure-1: 1rem;
+    --measure-2: 1.6rem;
+    --measure-3: 2rem;
+    --measure-4: 5rem;
+    --measure-10: 6rem;
+    --measure-12: 8rem;
+    --measure-13: 10rem;
+    --measure-20: 11rem;
+    --measure-24: 18rem;
+    --measure-29: 24rem;
+    --measure-48: 28rem;
+  }
+
+  .techno-icon {
+    width: var(--measure-12);
+    height: var(--measure-12);
+  }
+
+  .theme-btn-dark,
+  .theme-btn-light {
+    padding: 1.3rem;
+  }
+
+  .theme-btn-dark::before,
+  .theme-btn-light::before {
+    width: 5.5rem;
+    height: 5.5rem;
+    left: 6px;
+    top: 4px;
+  }
+
+  .theme-btn-dark::before {
+    transform: translateX(85%);
+  }
+
+  .nav-items {
+    padding: var(--measure-3) 0.5rem;
+  }
+
+  article,
+  p {
+    font-size: var(--text-md);
   }
 }
