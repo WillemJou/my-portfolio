@@ -2,6 +2,35 @@ html {
   scroll-behavior: smooth !important;
 }
 
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.flex-align {
+  display: flex;
+  align-items: baseline;
+}
+
+.simple-row-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
 .none {
   display: none;
 }
@@ -25,8 +54,12 @@ html {
   opacity: 0;
 }
 
-.screen {
-  min-height: 91vh;
+.all-screen {
+  min-height: 100vh;
+}
+
+.hero-screen {
+  min-height: 90vh;
 }
 
 .stack {
@@ -60,27 +93,6 @@ html {
   gap: var(--measure-10);
 }
 
-.flex-between {
-  display: flex;
-  justify-content: space-between;
-}
-
-.relative {
-  position: relative;
-}
-
-.no-margin {
-  margin: 0;
-}
-
-.content-box {
-  position: absolute;
-  top: 66%;
-  left: 79%;
-  width: max-content;
-  height: max-content;
-}
-
 .background {
   color: var(--gray-200);
   font-family: var(--font-body);
@@ -96,7 +108,7 @@ html {
   padding-inline: var(--padding-inline-1);
 }
 
-.pad-top-1 {
+.hero-text {
   padding-top: var(--measure-24);
 }
 
@@ -150,17 +162,6 @@ html {
   font-size: var(--text-lg);
 }
 
-.flex-align {
-  display: flex;
-  align-items: baseline;
-}
-
-.simple-row-layout {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-
 .box-container {
   display: flex;
   justify-content: space-between;
@@ -168,6 +169,7 @@ html {
 
 .box {
   width: 60%;
+  min-height: 65vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

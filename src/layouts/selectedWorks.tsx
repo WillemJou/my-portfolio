@@ -12,17 +12,12 @@ export function SelectedWorksContainer() {
   return (
     <section id='projects' className='relative stack gap-20'>
       <header className='section-header stack gap-4'>
-        <h3 className='title sub-title-2'>
-          {stateLanguage === 'en' ? ' Selected Works' : 'Projets sélectionnés'}
-        </h3>
-        <p>
-          {' '}
-          {stateLanguage === 'en'
-            ? 'Take a look below at some of my featured work from my training'
-            : 'Voici quelques projets conçus pendant ma formation'}
-        </p>
-
-        <div className='content-box'>
+        <div className='flex-between'>
+          <h3 className='title sub-title-2'>
+            {stateLanguage === 'en'
+              ? ' Selected Works'
+              : 'Projets sélectionnés'}
+          </h3>
           <Link className='view-all-link simple-flex' to='/my-portfolio/works'>
             {stateLanguage === 'en' ? 'View All' : 'Voir tout'}
             <svg
@@ -33,6 +28,12 @@ export function SelectedWorksContainer() {
             </svg>
           </Link>
         </div>
+        <p>
+          {' '}
+          {stateLanguage === 'en'
+            ? 'Take a look below at some of my featured work from my training'
+            : 'Voici quelques projets conçus pendant ma formation'}
+        </p>
       </header>
       <RevealOnScroll>
         {data ? <Gallery works={data.selectedWorks} /> : <Error />}

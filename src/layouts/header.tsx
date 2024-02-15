@@ -7,16 +7,16 @@ export function Header() {
   const languages = useContext(LanguageContext)
   const stateLanguage = languages.language
   return (
-    <div className='screen wrapper stack gap-4'>
+    <div className='hero-screen wrapper stack relative gap-4'>
       <header className='main-header hero'>
-        <div className='stack start gap-2 pad-top-1 w-50%'>
+        <div className='stack start gap-2 hero-text w-50%'>
           <h1 className='title big-title'>
             {' '}
             {stateLanguage === 'en'
               ? 'Hello, my name is Willem !'
-              : "Bienvenue, ici c'est Willem !"}
+              : "Bienvenue, moi c'est Willem !"}
           </h1>
-          <p className='tagline'>
+          <p className='tagline hero-sub-title'>
             {stateLanguage === 'en'
               ? 'I am a developer who is currently based in Paris 🧑🏻‍💻'
               : 'Je suis un développeur basé à Paris 🧑🏻‍💻'}
@@ -30,7 +30,7 @@ export function Header() {
           />
         </Link>
       </header>
-      <a className='upper-link' href='#stackBox'>
+      <a className='upper-link stack-link' href='#stackBox'>
         <h3 className='title sub-title-4'>
           {' '}
           {stateLanguage === 'en' ? 'My Stack' : 'Ma Stack'}

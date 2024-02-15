@@ -1,5 +1,54 @@
 /* Using variables to adjust values according to screen resolution. */
-@media (min-width: 1800px) {
+@media (max-width: 1030px) {
+  .flex-align {
+    flex-direction: column;
+  }
+
+  .project-link {
+    bottom: -145px;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .details {
+    flex-direction: column;
+  }
+
+  .main-img {
+    width: 40vw;
+  }
+  .main-header {
+    flex-direction: column-reverse;
+    padding: 0;
+    min-height: 0;
+  }
+
+  .hero-sub-title,
+  .big-title {
+    text-align: center;
+  }
+
+  .hero-text {
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    column-gap: var(--measure-4);
+  }
+
+  .img-about {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1500px) {
   :root {
     --text-sm: 1rem;
     --text-base: 1.75rem;
@@ -97,6 +146,11 @@
 
   .work-content {
     max-width: 90ch;
+  }
+
+  .techno-icon {
+    width: var(--measure-12);
+    height: var(--measure-12);
   }
 }
 

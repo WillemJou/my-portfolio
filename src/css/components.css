@@ -148,6 +148,7 @@
 }
 
 .view-all-link {
+  height: fit-content;
   padding: var(--measure-2) var(--measure-3);
   gap: var(--measure-2);
 }
