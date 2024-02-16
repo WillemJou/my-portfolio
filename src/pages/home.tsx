@@ -11,7 +11,7 @@ export function Home() {
   return (
     <RevealOnScroll>
       <Header />
-      <div className='stack wrapper gap-20'>
+      <div className='stack wrapper gap-24'>
         <BoxStack />
         <SelectedWorksContainer />
       </div>

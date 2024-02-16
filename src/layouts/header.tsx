@@ -13,13 +13,13 @@ export function Header() {
           <h1 className='title big-title'>
             {' '}
             {stateLanguage === 'en'
-              ? 'Hello, my name is Willem !'
-              : "Bienvenue, moi c'est Willem !"}
+              ? 'Hello, my name is Willem'
+              : "Bienvenue, moi c'est Willem"}
           </h1>
           <p className='tagline hero-sub-title'>
             {stateLanguage === 'en'
-              ? 'I am a developer who is currently based in Paris 🧑🏻‍💻'
-              : 'Je suis un développeur basé à Paris 🧑🏻‍💻'}
+              ? 'I am a front-end developer who is currently based in Paris 🧑🏻‍💻'
+              : 'Je suis développeur front-end, basé à Paris 🧑🏻‍💻'}
           </p>
         </div>
         <Link className='main-img-link' to='/my-portfolio/about'>

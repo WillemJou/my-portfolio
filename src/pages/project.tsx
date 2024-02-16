@@ -19,7 +19,7 @@ export function Project() {
 
   return (
     <RevealOnScroll>
-      <div className='stack gap-20'>
+      <div className='stack gap-24'>
         <header className='header stack gap-2'>
           <Link className='back-link' to='/my-portfolio/works'>
             <svg

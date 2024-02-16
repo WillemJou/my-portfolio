@@ -12,7 +12,7 @@ export function Root() {
     <RevealOnScroll>
       <div className='stack background' data-theme={theme}>
         <Nav />
-        <main className='stack gap-20'>
+        <main className='stack gap-24'>
           <Outlet />
           <CallToAction />
         </main>

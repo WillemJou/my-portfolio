@@ -4,6 +4,7 @@ html {
 
 .flex-between {
   display: flex;
+  align-items: baseline;
   justify-content: space-between;
 }
 
@@ -232,8 +233,8 @@ html {
   gap: var(--measure-10);
 }
 
-.gap-20 {
-  gap: var(--measure-20);
+.gap-24 {
+  gap: var(--measure-24);
 }
 
 .gap-48 {

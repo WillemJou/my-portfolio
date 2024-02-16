@@ -1,4 +1,17 @@
-/* Using variables to adjust values according to screen resolution. */
+@media (max-width: 1007px) {
+  .li-card,
+  .card {
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    height: auto;
+  }
+
+  .img-card {
+    height: auto;
+  }
+}
+
 @media (max-width: 1030px) {
   .flex-align {
     flex-direction: column;

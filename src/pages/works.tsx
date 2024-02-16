@@ -13,9 +13,9 @@ export function Works() {
   const stateLanguage = languages.language
   return (
     <RevealOnScroll>
-      <div className=' stack gap-20'>
+      <div className=' stack gap-24'>
         <div className='header stack gap-4 start'>
-          <div className='stack gap-2'>
+          <div className='stack gap-2 flex-center'>
             <h1 className='title big-title'>
               {stateLanguage === 'en' ? 'My Work' : 'Mes projets'}
             </h1>
@@ -26,8 +26,10 @@ export function Works() {
             </p>
           </div>
         </div>
-        <Gallery works={data.otherWorks} />
-        <Gallery works={data.selectedWorks} />
+        <ul className='card-layout'>
+          <Gallery works={data.otherWorks} />
+          <Gallery works={data.selectedWorks} />
+        </ul>
       </div>
     </RevealOnScroll>
   )

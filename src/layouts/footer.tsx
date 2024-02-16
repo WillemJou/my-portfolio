@@ -22,8 +22,8 @@ export function Footer() {
         </p>
         <p>
           {stateLanguage === 'en'
-            ? 'Developed and stylized by'
-            : 'Développement et Design par'}{' '}
+            ? 'Hand Made and Stylized by'
+            : 'Fait Main et Designé par'}{' '}
           <Link
             to='/my-portfolio/about'
             className='footer-link'

@@ -66,6 +66,10 @@
   fill: var(--gray-0);
 }
 
+.hamburger-icon {
+  stroke: var(--gray-0);
+}
+
 .send-icon {
   stroke: #ffff;
   fill: var(--accent-regular);

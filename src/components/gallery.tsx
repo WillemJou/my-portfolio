@@ -7,7 +7,7 @@ interface WorksProps {
 
 export function Gallery({ works }: WorksProps) {
   return (
-    <ul className='card-layout'>
+    <>
       {works.map((project: Project) => (
         <li className='li-card' key={project.id}>
           <Link
@@ -22,6 +22,6 @@ export function Gallery({ works }: WorksProps) {
           </Link>
         </li>
       ))}
-    </ul>
+    </>
   )
 }

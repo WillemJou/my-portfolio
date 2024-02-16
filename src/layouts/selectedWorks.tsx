@@ -10,7 +10,7 @@ export function SelectedWorksContainer() {
   const languages = useContext(LanguageContext)
   const stateLanguage = languages.language
   return (
-    <section id='projects' className='relative stack gap-20'>
+    <section id='projects' className='relative stack gap-24'>
       <header className='section-header stack gap-4'>
         <div className='flex-between'>
           <h3 className='title sub-title-2'>
@@ -36,7 +36,13 @@ export function SelectedWorksContainer() {
         </p>
       </header>
       <RevealOnScroll>
-        {data ? <Gallery works={data.selectedWorks} /> : <Error />}
+        {data ? (
+          <ul className='card-layout'>
+            <Gallery works={data.selectedWorks} />
+          </ul>
+        ) : (
+          <Error />
+        )}
       </RevealOnScroll>
     </section>
   )
