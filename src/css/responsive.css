@@ -8,7 +8,7 @@
   }
 
   .img-card {
-    height: auto;
+    aspect-ratio: 7/5;
   }
 }
 
