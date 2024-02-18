@@ -23,7 +23,7 @@ export function Stack({ stack }: StackProps) {
       className='stack stack-element pointer relative gap-2'
       onClick={() => handleOpen()}>
       <h3 className='title sub-title-4'>{stack?.title}</h3>
-      <Fade visible={isMounted}>
+      <Fade fadeStyle='fade-stack' outStyle=' out-stack' visible={isMounted}>
         <div className='stack-lists-container'>
           <p className='stack-list'>
             {stack?.topics.map((topic, index) => (

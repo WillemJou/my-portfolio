@@ -2,7 +2,6 @@
   width: var(--shape-m);
   height: var(--shape-m);
   position: relative;
-  z-index: 1;
   transition: color var(--theme-transition), fill var(--theme-transition);
 }
 
@@ -67,7 +66,12 @@
 }
 
 .hamburger-icon {
-  stroke: var(--gray-0);
+  stroke: var(--link-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-slider .hamburger-icon {
+  stroke: var(--gray-999);
 }
 
 .send-icon {
@@ -166,7 +170,7 @@
   font-size: var(--text-base);
   border-radius: 999rem;
   overflow: hidden;
-  background: var(--gradient-accent-orange);
+  background: var(--gradient-accent-dark-blue);
   box-shadow: var(--shadow-sm);
   white-space: nowrap;
   transition: all 0.2s ease-in-out;
@@ -281,6 +285,7 @@
   line-height: 1.1;
   font-family: var(--font-brand);
   font-weight: 500;
+  transition: all 0.2s ease-in-out;
 }
 
 .big-title {

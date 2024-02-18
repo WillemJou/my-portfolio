@@ -2,16 +2,16 @@ import { ReactElement, useEffect, useState } from 'react'
 
 interface FadeProps {
   visible: boolean
+  fadeStyle: string
+  outStyle: string
   children?: ReactElement
 }
 
-export function Fade({ visible, children }: FadeProps) {
-  console.log(children)
-
+export function Fade({ visible, children, fadeStyle, outStyle }: FadeProps) {
   const [showChildren, isShowChildren] = useState(visible)
-  let className = 'fade'
+  let className = fadeStyle
   if (!visible) {
-    className += ' out'
+    className += outStyle
   }
 
   useEffect(() => {

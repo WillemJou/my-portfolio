@@ -20,7 +20,6 @@ export const LanguageProvider = ({ children }: Props) => {
   const getLanguage = JSON.parse(localStorage.getItem('language') || '[]')
 
   const [language, setLanguage] = useState(getLanguage)
-  console.log(language)
 
   const clickHandler = () => {
     const newLanguage = language === 'en' ? 'fr' : 'en'

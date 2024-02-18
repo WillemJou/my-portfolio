@@ -82,12 +82,19 @@
     var(--gradient-stop-2),
     var(--gradient-stop-3)
   );
-  --gradient-accent-orange: linear-gradient(
+  --gradient-accent-dark-blue: linear-gradient(
     150deg,
     #3e63dd,
     var(--accent-regular),
     var(--accent-dark)
   );
+  --gradient-accent-light-blue: linear-gradient(
+    800deg,
+    #3e63dd,
+    var(--accent-regular),
+    var(--accent-dark)
+  );
+
   --gradient-stroke: linear-gradient(180deg, var(--gray-900), var(--gray-700));
 
   /* Shadows */
@@ -130,11 +137,17 @@
     var(--gray-900) 19%,
     var(--gray-999) 81%
   );
-  --gradient-accent-orange: linear-gradient(
+  --gradient-accent-dark-blue: linear-gradient(
     150deg,
     #e1f5fc,
     var(--accent-regular),
     var(--accent-light)
+  );
+  --gradient-accent-light-blue: linear-gradient(
+    800deg,
+    #3e63dd,
+    var(--accent-dark),
+    var(--accent-regular)
   );
   --gradient-stroke: linear-gradient(180deg, var(--gray-600), var(--gray-800));
 

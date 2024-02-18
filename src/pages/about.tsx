@@ -13,7 +13,7 @@ export function About() {
     <RevealOnScroll>
       <section className='about wrapper'>
         <div className='header stack gap-4'>
-          <div className='stack gap-2'>
+          <div className='stack gap-4'>
             <h1 className='title big-title'>
               {stateLanguage === 'en' ? 'About' : 'À Propos'}
             </h1>

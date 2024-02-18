@@ -2,6 +2,9 @@ html {
   scroll-behavior: smooth !important;
 }
 
+.above {
+  z-index: 999;
+}
 .flex-between {
   display: flex;
   align-items: baseline;
@@ -11,6 +14,11 @@ html {
 .flex-center {
   display: flex;
   align-items: center;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .relative {
@@ -41,17 +49,29 @@ html {
   justify-content: flex-end;
 }
 
-.fade {
+.fade-stack {
   transition: 0.8s all ease;
   height: 300px;
   opacity: 1;
   padding: 3rem 0;
   transform: scale(1);
 }
-.fade.out {
+.fade-stack.out-stack {
   transform: scale(0);
   height: 0;
   padding: 0;
+  opacity: 0;
+}
+
+.fade-slider {
+  opacity: 1;
+  transform: translateX(126%);
+  transition: 0.8s all ease;
+}
+
+.fade-slider.out-slider {
+  transform: translateX(200%);
+  transition: 0.8s all ease;
   opacity: 0;
 }
 
@@ -76,6 +96,7 @@ html {
 
 .text {
   font-size: var(--text-lg);
+  transition: all 0.2s ease-in-out;
 }
 
 .header {
@@ -130,11 +151,8 @@ html {
 
 .nav-items {
   display: flex;
-  flex-direction: row;
-  gap: var(--measure-4);
   line-height: 1.2;
   position: relative;
-  flex-direction: row;
   font-size: var(--text-sm);
   border-radius: 999rem;
   border: 0;
@@ -228,7 +246,9 @@ html {
 .gap-4 {
   gap: var(--measure-4);
 }
-
+.gap-6 {
+  gap: var(--shape-s);
+}
 .gap-10 {
   gap: var(--measure-10);
 }
