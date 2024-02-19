@@ -18,6 +18,10 @@
   }
 
   .nav-layout {
+    z-index: 100;
+    background-color: #1d134f;
+    position: sticky;
+    top: 0;
     grid-template-columns: 1fr 1fr;
   }
 
@@ -35,14 +39,14 @@
 
   .fixed {
     position: fixed;
-    top: -72px;
-    right: 29px;
+    top: 17px;
+    right: 17px;
   }
 
-  .absolute {
+  .slider-position {
     position: absolute;
-    top: -72px;
-    right: 29px;
+    top: 17px;
+    right: -126px;
   }
 
   .footer-link,
@@ -83,6 +87,7 @@
   }
 
   .nav-items {
+    align-items: flex-end;
     background: none;
     box-shadow: none;
   }

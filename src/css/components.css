@@ -70,6 +70,11 @@
   transition: all 0.2s ease-in-out;
 }
 
+.hamburger-icon_hidden {
+  height: 32px;
+  display: hidden;
+}
+
 .nav-slider .hamburger-icon {
   stroke: var(--gray-999);
 }
