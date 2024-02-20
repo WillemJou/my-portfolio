@@ -28,7 +28,7 @@ export function SelectedWorksContainer() {
             </svg>
           </Link>
         </div>
-        <p>
+        <p className='tagline'>
           {' '}
           {stateLanguage === 'en'
             ? 'Take a look below at some of my featured work from my training'

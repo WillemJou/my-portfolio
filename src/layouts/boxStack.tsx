@@ -20,7 +20,7 @@ export function BoxStack() {
             {stateLanguage === 'en' ? 'My Stack' : 'Ma Stack'}
           </h3>
         </a>
-        <p>
+        <p className='tagline'>
           {stateLanguage === 'en'
             ? 'I code in JavaScript and React, as well as React Native for mobile.'
             : "Je code en JavaScript et React, j'utilise React Native pour le mobile."}

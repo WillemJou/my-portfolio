@@ -51,7 +51,7 @@ export function Project() {
                     </div>
                   ))}
               </div>
-              <p className='description'>
+              <p className='tagline'>
                 {' '}
                 {stateLanguage === 'en'
                   ? selectedProject?.descriptionEn
@@ -76,7 +76,7 @@ export function Project() {
                 ? 'Evaluation reviews'
                 : "Critique d'évaluation"}
             </h4>
-            <article>
+            <article className='article'>
               "
               {stateLanguage === 'en'
                 ? selectedProject?.mentionEn
