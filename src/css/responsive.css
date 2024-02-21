@@ -383,7 +383,7 @@
     --shape-xxs: 2.6rem;
     --shape-xs: 3.4rem;
     --shape-s: 4rem;
-    --shape-m: 6rem;
+    --shape-m: 5rem;
     --shape-l: 34rem;
     --shape-xl: 46rem;
     --shape-xxl: 52rem;
@@ -402,6 +402,14 @@
     --measure-48: 28rem;
   }
 
+  .link {
+    font-size: var(--text-md);
+  }
+
+  .stack-link {
+    margin-top: 0;
+  }
+
   .theme-btn-dark,
   .theme-btn-light {
     padding: 1.3rem;
@@ -416,7 +424,15 @@
   }
 
   .theme-btn-dark::before {
-    transform: translateX(108%);
+    transform: translateX(160%);
+  }
+  
+.sub-title-3 {
+  max-width: fit-content;
+}
+
+  .fade-stack {
+    height: 700px;
   }
 
   .nav-items {
