@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState, useEffect, MouseEventHandler } from 'react'
 import { NavItems } from './navItems'
 import { Socials } from './socials'
 import { LanguageBtn } from './languageBtn'
@@ -7,36 +7,40 @@ import { Fade } from '../utils/fade'
 
 type SliderProps = {
   openHamburger: boolean
-  setOpenHamburger: (openHamburger: boolean) => void
+  handleOpen: MouseEventHandler
 }
 
-export function Slider({ openHamburger, setOpenHamburger }: SliderProps) {
+export function Slider({ openHamburger, handleOpen }: SliderProps) {
   const [style, setStyle] = useState('slider-position')
-  const slider = useRef<HTMLDivElement>(null)
-
-  const closeOpenSlider = (e: MouseEvent) => {
-    if (openHamburger && slider.current?.contains(e.target as Node | null)) {
-      setOpenHamburger(false)
-      setStyle('slider-position')
-    }
-  }
-  document.addEventListener('mousedown', closeOpenSlider)
 
   useEffect(() => {
     if (openHamburger) {
       setStyle('fixed')
     }
-  }, [closeOpenSlider])
+  }, [openHamburger])
 
   return (
-    <div className='back-screen absolute' ref={slider}>
+    <div>
       <Fade
         fadeStyle={`${style} fade-slider`}
         outStyle=' out-slider'
         visible={openHamburger}>
         <div className={`${style} above`}>
-          <div className='nav-slider stack flex-center gap-6'>
-            <NavItems />
+          <div className='nav-slider relative stack flex-center gap-6'>
+            <div className='flex-end wrap'>
+              <button style={{ paddingTop: '1rem' }} onClick={handleOpen}>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  className='icon cross-icon'
+                  viewBox='0 0 24 24'>
+                  <path
+                    strokeLinecap='round'
+                    strokeWidth='1.5'
+                    d='m8.464 15.535l7.072-7.07m-7.072 0l7.072 7.07'></path>
+                </svg>
+              </button>
+              <NavItems />
+            </div>
             <Socials />
             <LanguageBtn />
             <div className='theme-language-container'>

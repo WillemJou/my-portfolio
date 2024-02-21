@@ -14,6 +14,12 @@
   transform: translate(-50%, -50%);
 }
 
+.cross-icon {
+  stroke: var(--gray-900);
+  width: var(--shape-l);
+  height: var(--measure-12);
+}
+
 .theme-icon {
   width: var(--shape-xs);
   height: var(--shape-xs);
@@ -65,20 +71,6 @@
   fill: var(--gray-0);
 }
 
-.hamburger-icon {
-  stroke: var(--link-color);
-  transition: all 0.2s ease-in-out;
-}
-
-.hamburger-icon_hidden {
-  height: 32px;
-  display: hidden;
-}
-
-.nav-slider .hamburger-icon {
-  stroke: var(--gray-999);
-}
-
 .send-icon {
   stroke: #ffff;
   fill: var(--accent-regular);
@@ -107,19 +99,15 @@
   width: var(--shape-s);
   height: var(--shape-s);
   font-weight: 500;
-  fill: var(--gray-200);
+  fill: var(--link-color);
 }
 
 .me-link {
   font-size: var(--text-lg);
-  color: var(--gray-200);
-  transition: all 0.5s ease-out;
 }
 
-.me-link:hover {
-  transition: all 0.3s ease-out;
-  color: var(--gray-0);
-  inset: 0 0 0 1px var(--accent-overlay);
+.stack-link {
+  min-height: 10vh;
 }
 
 .socials {
@@ -279,10 +267,6 @@
   aspect-ratio: 3 / 4;
   border-radius: 4.5rem;
   object-fit: cover;
-}
-
-.main-img-link {
-  flex: 1 1 242px;
 }
 
 .title {
@@ -521,12 +505,7 @@
 }
 
 .footer-link {
-  transition: all 0.5s ease-in-out;
-}
-
-.footer-link:hover {
-  color: var(--gray-0);
-  transition: all 0.3s ease-in-out;
+  color: var(--link-color);
 }
 
 .sr-only {

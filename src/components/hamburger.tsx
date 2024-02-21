@@ -1,10 +1,15 @@
+import { MouseEventHandler } from 'react'
+
 type StateBtn = {
   openHamburger: boolean
+  handleOpen: MouseEventHandler
 }
 
-export function Hamburger({ openHamburger }: StateBtn) {
+export function Hamburger({ openHamburger, handleOpen }: StateBtn) {
   return (
-    <>
+    <button
+      style={openHamburger ? { zIndex: 99 } : { height: '32px' }}
+      onClick={handleOpen}>
       <svg
         xmlns='http://www.w3.org/2000/svg'
         className={
@@ -17,6 +22,6 @@ export function Hamburger({ openHamburger }: StateBtn) {
           strokeWidth='2'
           d='M5 8h22M5 16h22M5 24h22'></path>
       </svg>
-    </>
+    </button>
   )
 }

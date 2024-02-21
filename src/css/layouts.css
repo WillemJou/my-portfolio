@@ -21,6 +21,10 @@ html {
   justify-content: flex-end;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
 .relative {
   position: relative;
 }
@@ -78,9 +82,8 @@ html {
 
 .fade-slider.out-slider {
   width: fit-content;
-  transform: translateX(26px);
+  transform: translateX(390px);
   transition: 1s all ease;
-  opacity: 0.3;
 }
 
 .all-screen {
@@ -89,12 +92,6 @@ html {
 
 .hero-screen {
   min-height: 90vh;
-}
-
-.back-screen {
-  z-index: 9;
-  width: 100vw;
-  min-height: 100%;
 }
 
 .stack {
@@ -157,6 +154,7 @@ html {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
+  min-height: 11vh;
   margin-bottom: var(--margin-6);
   padding: var(--measure-10) var(--measure-20);
   font-family: var(--font-brand);

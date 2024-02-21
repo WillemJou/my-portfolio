@@ -7,7 +7,7 @@ export function Header() {
   const languages = useContext(LanguageContext)
   const stateLanguage = languages.language
   return (
-    <div className='hero-screen wrapper stack relative gap-4'>
+    <div className='wrapper stack relative gap-4'>
       <header className='main-header hero'>
         <div className='stack start gap-2 hero-text w-50%'>
           <h1 className='title big-title'>

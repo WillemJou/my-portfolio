@@ -90,9 +90,9 @@
   );
   --gradient-accent-light-blue: linear-gradient(
     800deg,
-    #3e63dd,
-    var(--accent-regular),
-    var(--accent-dark)
+    #3e63dd 0%,
+    var(--accent-regular) 5%,
+    var(--accent-dark) 100%
   );
 
   --gradient-stroke: linear-gradient(180deg, var(--gray-900), var(--gray-700));
@@ -145,9 +145,9 @@
   );
   --gradient-accent-light-blue: linear-gradient(
     800deg,
-    #3e63dd,
-    var(--accent-dark),
-    var(--accent-regular)
+    #3e63dd 0%,
+    var(--accent-dark) 45%,
+    var(--accent-regular) 100%
   );
   --gradient-stroke: linear-gradient(180deg, var(--gray-600), var(--gray-800));
 

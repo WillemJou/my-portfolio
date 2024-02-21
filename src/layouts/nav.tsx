@@ -11,9 +11,10 @@ export function Nav() {
   let width = window.screen.width
 
   const [openHamburger, setOpenHamburger] = useState(false)
+  console.log(openHamburger)
 
   const handleOpen = () => {
-    setOpenHamburger(true)
+    setOpenHamburger(!openHamburger)
   }
 
   return (
@@ -37,14 +38,9 @@ export function Nav() {
             <NameNavLink />
           </div>
           <div className='flex-end'>
-            <button style={{ zIndex: 99 }} onClick={handleOpen}>
-              <Hamburger openHamburger={openHamburger} />
-            </button>
+            <Hamburger handleOpen={handleOpen} openHamburger={openHamburger} />
           </div>
-          <Slider
-            openHamburger={openHamburger}
-            setOpenHamburger={setOpenHamburger}
-          />
+          <Slider openHamburger={openHamburger} handleOpen={handleOpen} />
         </>
       )}
     </nav>
