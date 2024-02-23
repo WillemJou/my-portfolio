@@ -27,7 +27,7 @@ export function Slider({ openHamburger, handleOpen }: SliderProps) {
         visible={openHamburger}>
         <div className={`${style} above`}>
           <div className='nav-slider relative stack flex-center gap-6'>
-            <div className='flex-end wrap'>
+            <div className='stack-end'>
               <button style={{ paddingTop: '1rem' }} onClick={handleOpen}>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'

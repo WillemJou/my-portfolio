@@ -313,6 +313,7 @@
 }
 
 .skills {
+  min-height: 100vh;
   display: flex;
   justify-content: space-evenly;
   scroll-behavior: smooth;
@@ -432,6 +433,13 @@
   font-size: var(--text-md);
   line-height: 1.35;
   white-space: nowrap;
+}
+
+.article,
+.description,
+.stack-list,
+.tagline {
+  font-size: var(--text-lg);
 }
 
 .work-content {

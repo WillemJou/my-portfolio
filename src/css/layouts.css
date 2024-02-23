@@ -21,8 +21,11 @@ html {
   justify-content: flex-end;
 }
 
-.wrap {
-  flex-wrap: wrap;
+.stack-end {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 .relative {
@@ -154,8 +157,8 @@ html {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  min-height: 11vh;
-  margin-bottom: var(--margin-6);
+  min-height: 15vh;
+  margin-bottom: var(--measure-4);
   padding: var(--measure-10) var(--measure-20);
   font-family: var(--font-brand);
   font-weight: 500;
@@ -207,8 +210,7 @@ html {
   border: 1px solid var(--accent-dark);
   box-shadow: var(--shadow-md);
   border-radius: 1.5rem;
-  padding: var(--measure-10) var(--measure-10) var(--measure-4)
-    var(--measure-10);
+  padding: var(--measure-10) var(--measure-10) 0 var(--measure-10);
   gap: var(--measure-10);
 }
 
@@ -223,6 +225,7 @@ html {
 }
 
 .section-header {
+  min-height: 11vh;
   position: relative;
   font-size: var(--text-lg);
 }

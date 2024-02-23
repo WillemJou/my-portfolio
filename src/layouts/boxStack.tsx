@@ -13,7 +13,7 @@ export function BoxStack() {
   const MOBILE = stacks.find((js) => js.id === 80)
 
   return (
-    <div className='all-screen skills stack relative'>
+    <div className='skills stack relative'>
       <div id='stackBox' className='section-header gap-4 stack'>
         <a href='#stackBox'>
           <h3 className='title sub-title-2'>
