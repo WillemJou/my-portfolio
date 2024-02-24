@@ -5,13 +5,26 @@
   transition: color var(--theme-transition), fill var(--theme-transition);
 }
 
-.techno-icon {
+.techno-icon_closed,
+.techno-icon_opened {
   width: var(--shape-l);
   height: var(--shape-l);
+}
+
+.techno-icon_closed {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: all 1s ease;
+}
+
+.techno-icon_opened {
+  position: absolute;
+  top: 4%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 1s ease;
 }
 
 .cross-icon {
@@ -333,8 +346,13 @@
   padding: 1rem 3rem;
 }
 
-.stack-li-el {
+.style-list,
+.no-style-list {
   padding: 0.2rem 0;
+}
+
+.style-list {
+  list-style-type: disc;
 }
 
 .li-card {

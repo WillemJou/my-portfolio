@@ -17,6 +17,9 @@ export function Stack({ stack }: StackProps) {
   const handleOpen = () => {
     setisMounted(!isMounted)
   }
+
+  //const listStyle = (el: string) => (el === '' ?  : 'list-style-type: disc')
+
   return (
     <ul
       key={stack?.id}
@@ -27,21 +30,26 @@ export function Stack({ stack }: StackProps) {
         <div className='stack-lists-container'>
           <p className='stack-list'>
             {stack?.topics.map((topic, index) => (
-              <li className='stack-li-el' key={index}>
+              <li
+                className={topic === '' ? 'no-style-list' : 'style-list'}
+                key={index}>
                 {topic}
               </li>
             ))}
           </p>
           <p className='stack-list'>
             {stack?.frameworks.map((framework, index) => (
-              <li className='stack-li-el' key={index}>
+              <li className='style-list' key={index}>
                 {framework}
               </li>
             ))}
           </p>
         </div>
       </Fade>
-      <img className='techno-icon' src={stack?.icon} />
+      <img
+        className={`${isMounted ? 'techno-icon_opened' : 'techno-icon_closed'}`}
+        src={stack?.icon}
+      />
       <svg
         className={
           isMounted
