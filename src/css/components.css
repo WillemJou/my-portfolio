@@ -21,7 +21,7 @@
 
 .techno-icon_opened {
   position: absolute;
-  top: 4%;
+  top: 9%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: all 1s ease;
@@ -30,7 +30,7 @@
 .cross-icon {
   stroke: var(--gray-900);
   width: var(--shape-l);
-  height: var(--measure-12);
+  height: var(--shape-lnav-);
 }
 
 .theme-icon {
@@ -100,6 +100,7 @@
   justify-content: end;
   margin-bottom: var(--measure-10);
   padding-top: var(--measure-4);
+  z-index: 10;
 }
 
 .project-link {
@@ -474,7 +475,6 @@
 .carousel-wrapper {
   width: 100%;
   display: flex;
-  width: max-content;
   height: var(--shape-xxxl);
   position: relative;
 }

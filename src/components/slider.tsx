@@ -25,7 +25,7 @@ export function Slider({ openHamburger, handleOpen }: SliderProps) {
         fadeStyle={`${style} fade-slider`}
         outStyle=' out-slider'
         visible={openHamburger}>
-        <div className={`${style} above`}>
+        <div className={`${style} above-all`}>
           <div className='nav-slider relative stack flex-center gap-6'>
             <div className='stack-end'>
               <button style={{ paddingTop: '1rem' }} onClick={handleOpen}>

@@ -2,7 +2,7 @@ html {
   scroll-behavior: smooth !important;
 }
 
-.above {
+.above-all {
   z-index: 9999;
 }
 .flex-between {
@@ -66,7 +66,7 @@ html {
   transition: 0.8s all ease;
   height: 300px;
   opacity: 1;
-  padding: 3rem 0;
+  margin: 3rem 0;
   transform: scale(1);
 }
 .fade-stack.out-stack {
