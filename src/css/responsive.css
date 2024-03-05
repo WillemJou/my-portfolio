@@ -398,10 +398,6 @@ padding-top: var(--measure-12);
     height: 415px;
   }
 
-  .stack-element {
-    padding-bottom: var(--measure-13);
-  }
-
   .work-content {
     max-width: 90ch;
   }

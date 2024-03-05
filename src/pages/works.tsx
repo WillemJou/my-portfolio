@@ -12,25 +12,23 @@ export function Works() {
   const languages = useContext(LanguageContext)
   const stateLanguage = languages.language
   return (
-    <RevealOnScroll>
-      <div className=' stack gap-24'>
-        <div className='header stack gap-4 start'>
-          <div className='stack gap-2 flex-center'>
-            <h1 className='title big-title'>
-              {stateLanguage === 'en' ? 'My Work' : 'Mes projets'}
-            </h1>
-            <p className='tagline'>
-              {stateLanguage === 'en'
-                ? 'See some projects below !'
-                : 'Voici quelques projets qui  me tiennent à coeur !'}
-            </p>
-          </div>
+    <div className=' stack gap-24'>
+      <div className='header stack gap-4 start'>
+        <div className='stack gap-2 flex-center'>
+          <h1 className='title big-title'>
+            {stateLanguage === 'en' ? 'My Work' : 'Mes projets'}
+          </h1>
+          <p className='tagline'>
+            {stateLanguage === 'en'
+              ? 'See some projects below !'
+              : 'Voici quelques projets qui  me tiennent à coeur !'}
+          </p>
         </div>
-        <ul className='card-layout'>
-          <Gallery works={data.otherWorks} />
-          <Gallery works={data.selectedWorks} />
-        </ul>
       </div>
-    </RevealOnScroll>
+      <ul className='card-layout'>
+        <Gallery works={data.otherWorks} />
+        <Gallery works={data.selectedWorks} />
+      </ul>
+    </div>
   )
 }

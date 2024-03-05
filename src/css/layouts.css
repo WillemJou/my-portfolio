@@ -160,7 +160,6 @@ html {
   min-height: 15vh;
   margin-bottom: var(--measure-4);
   padding: var(--measure-10) var(--measure-20);
-  font-family: var(--font-brand);
   font-weight: 500;
 }
 
@@ -215,12 +214,12 @@ html {
 }
 
 .reveal {
-  transition: all 1s ease-in-out;
+  transition: all 1.5s ease-in-out;
   opacity: 100;
 }
 
 .unreveal {
-  transition: all 1s ease-in-out;
+  transition: all 1.5s ease-in-out;
   opacity: 0;
 }
 

@@ -26,29 +26,27 @@ export function BoxStack() {
             : "Je code en JavaScript et React, j'utilise React Native pour le mobile."}
         </p>
       </div>
-      <RevealOnScroll>
-        <section className='box-container relative'>
-          <div className='box'>
-            <>
-              <Stack stack={JS} />
-              <Stack stack={REACT} />
-              <Stack stack={MOBILE} />
-            </>
-          </div>
-          <a className='upper-link project-link end' href='#projects'>
-            <h3 className='title sub-title-4'>
-              {' '}
-              {stateLanguage === 'en' ? 'My Projects' : 'Mes Projets'}
-            </h3>
-            <svg
-              className='arrow-icon'
-              xmlns='http://www.w3.org/2000/svg'
-              viewBox='0 0 32 32'>
-              <path d='M24.59 16.59L17 24.17V4h-2v20.17l-7.59-7.58L6 18l10 10l10-10z'></path>
-            </svg>
-          </a>
-        </section>
-      </RevealOnScroll>
+      <section className='box-container relative'>
+        <div className='box'>
+          <>
+            <Stack stack={JS} />
+            <Stack stack={REACT} />
+            <Stack stack={MOBILE} />
+          </>
+        </div>
+        <a className='upper-link project-link end' href='#projects'>
+          <h3 className='title sub-title-4'>
+            {' '}
+            {stateLanguage === 'en' ? 'My Projects' : 'Mes Projets'}
+          </h3>
+          <svg
+            className='arrow-icon'
+            xmlns='http://www.w3.org/2000/svg'
+            viewBox='0 0 32 32'>
+            <path d='M24.59 16.59L17 24.17V4h-2v20.17l-7.59-7.58L6 18l10 10l10-10z'></path>
+          </svg>
+        </a>
+      </section>
     </div>
   )
 }

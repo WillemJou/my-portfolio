@@ -18,8 +18,6 @@ export function Stack({ stack }: StackProps) {
     setisMounted(!isMounted)
   }
 
-  //const listStyle = (el: string) => (el === '' ?  : 'list-style-type: disc')
-
   return (
     <ul
       key={stack?.id}

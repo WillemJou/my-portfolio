@@ -286,7 +286,6 @@
 .title {
   color: var(--gray-0);
   line-height: 1.1;
-  font-family: var(--font-brand);
   font-weight: 500;
   transition: all 0.2s ease-in-out;
 }
@@ -336,7 +335,7 @@
 
 .stack-element {
   border-bottom: 1px solid var(--accent-dark);
-  padding-bottom: var(--shape-l);
+  padding-bottom: var(--shape-m);
 }
 
 .stack-element:last-child {

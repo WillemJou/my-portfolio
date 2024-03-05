@@ -11,7 +11,6 @@ export function Nav() {
   let width = window.screen.width
 
   const [openHamburger, setOpenHamburger] = useState(false)
-  console.log(openHamburger)
 
   const handleOpen = () => {
     setOpenHamburger(!openHamburger)

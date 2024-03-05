@@ -9,12 +9,12 @@ export function Home() {
     window.scrollTo(0, 0)
   }, [])
   return (
-    <RevealOnScroll>
+    <>
       <Header />
       <div className='stack wrapper gap-24'>
         <BoxStack />
         <SelectedWorksContainer />
       </div>
-    </RevealOnScroll>
+    </>
   )
 }
