@@ -10,7 +10,7 @@ export function Root() {
   return (
     <div className='stack background' data-theme={theme}>
       <Nav />
-      <main className='stack gap-24'>
+      <main className='stack'>
         <Outlet />
         <CallToAction />
       </main>

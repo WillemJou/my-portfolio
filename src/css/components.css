@@ -529,8 +529,16 @@
   rotate: 270deg;
 }
 
-.footer-link {
-  color: var(--link-color);
+[data-theme='light'] {
+  .footer-link {
+    color: var(--link-color);
+  }
+}
+
+[data-theme='dark'] {
+  .footer-link {
+    color: var(--gray-0);
+  }
 }
 
 .sr-only {

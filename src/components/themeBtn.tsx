@@ -1,9 +1,16 @@
 import { useContext } from 'react'
 import { ThemeContext } from '../globals/theme'
+import daySound from '../daySound.mp3'
+import nightSound from '../nightSound.mp3'
 
 export function ThemeBtn() {
   const theme = useContext(ThemeContext)
   const stateTheme = theme.theme
+  const playSound = () => {
+    const nightSoundClick = new Audio(nightSound)
+    const daySoundClick = new Audio(daySound)
+    stateTheme === 'light' ? nightSoundClick.play() : daySoundClick.play()
+  }
 
   return (
     <div className='theme-toggle'>
@@ -11,7 +18,9 @@ export function ThemeBtn() {
         className={
           stateTheme === 'light' ? 'theme-btn-light' : 'theme-btn-dark'
         }
-        onClick={() => theme.clickHandler()}>
+        onClick={() => {
+          theme.clickHandler(), playSound()
+        }}>
         <span className='sr-only'>Theme</span>
         <svg
           xmlns='http://www.w3.org/2000/svg'
