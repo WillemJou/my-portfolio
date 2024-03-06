@@ -1,6 +1,5 @@
 import { useContext, useEffect } from 'react'
 import face from '/face.jpg'
-import { RevealOnScroll } from '../utils/revealOn'
 import { LanguageContext } from '../globals/languages'
 
 export function About() {

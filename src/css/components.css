@@ -230,7 +230,7 @@
   left: 2px;
   background-color: var(--accent-regular);
   border-radius: 999rem;
-  transition: transform var(--theme-transition), color var(--theme-transition);
+  transition: var(--theme-transition), color var(--theme-transition);
 }
 
 .theme-btn-dark::before {

@@ -1,6 +1,5 @@
 import { useEffect } from 'react'
 import { Gallery } from '../components/gallery'
-import { RevealOnScroll } from '../utils/revealOn'
 import { useContext } from 'react'
 import { LanguageContext } from '../globals/languages'
 import data from '../data.json'

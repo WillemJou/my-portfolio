@@ -1,7 +1,6 @@
 import { useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { otherProjects, selectedProjects } from '../utils/dataService'
-import { RevealOnScroll } from '../utils/revealOn'
 import { Carousel } from '../components/carrousel'
 import { useContext } from 'react'
 import { LanguageContext } from '../globals/languages'
