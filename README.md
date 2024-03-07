@@ -1,20 +1,21 @@
-# This is my port-folio !
+# This is my port-folio ! 🌱
 
-Here is my portfolio, started with Vite using the `npm create vite@latest --template react-ts` cli and design with the help of Astro !
+Here is my [portfolio](https://willemjou.github.io/my-portfolio/), started with [Vite](https://vitejs.dev/) using the `npm create vite@latest --template react-ts` cli and design with the help of [Astro](https://astro.build/) !
 
 The Astro template:
 
 - [Astro Template](https://astro.build/themes/details/portfolio/)
 
-## React + TypeScript + Vite
+## Made with React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I used the React library, but also TypeScript for the typing as well as Vite for the environment. The perfect combo for my portfolio !
 
-Currently, two official plugins are available:
+## The other library I used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I implemented my routing using [React Router](https://reactrouter.com/en/main) (their documentation is really great!)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Otherwise I did everything "bear hand" ! 🐻
+
+## Authors
+
+- [@WillemJou](https://www.github.com/WillemJou)
