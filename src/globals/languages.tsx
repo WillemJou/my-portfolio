@@ -3,7 +3,7 @@ import { useState, useEffect, createContext, PropsWithChildren } from 'react'
 interface LanguageContextType {
   getLanguage: string
   language: string
-  setLanguage: (newLanguage: 'en' | 'fr') => void
+  setLanguage: (_newLanguage: 'en' | 'fr') => void
   clickHandler: () => void
 }
 
@@ -27,7 +27,7 @@ export const LanguageProvider = ({ children }: Props) => {
   }
 
   useEffect(() => {
-    localStorage.setItem('language', JSON.stringify(language))
+    localStorage.setItem('language', JSON.stringify('en'))
   }, [language])
 
   return (
