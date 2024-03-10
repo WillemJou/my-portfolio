@@ -44,10 +44,17 @@ export function Stack({ stack }: StackProps) {
           </p>
         </div>
       </Fade>
-      <img
-        className={`${isMounted ? 'techno-icon_opened' : 'techno-icon_closed'}`}
-        src={stack?.icon}
-      />
+      <div
+        className={`${
+          isMounted ? 'techno-icon_opened' : 'techno-icon_closed'
+        }`}>
+        <img
+          className={`${
+            stack?.title === 'JavaScript' ? 'js-anim-icon' : 'react-anim-icon'
+          }`}
+          src={stack?.icon}
+        />
+      </div>
       <svg
         className={
           isMounted

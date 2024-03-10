@@ -5,8 +5,8 @@
   transition: color var(--theme-transition), fill var(--theme-transition);
 }
 
-.techno-icon_closed,
-.techno-icon_opened {
+.js-anim-icon,
+.react-anim-icon {
   width: var(--shape-l);
   height: var(--shape-l);
 }
@@ -15,16 +15,37 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   transition: all 1s ease;
+  transform: translate(-50%, -50%);
 }
-
 .techno-icon_opened {
   position: absolute;
   top: 9%;
   left: 50%;
-  transform: translate(-50%, -50%);
   transition: all 1s ease;
+  transform: translate(-50%, -50%);
+}
+
+.js-anim-icon:hover {
+  animation: bouncing 1s ease;
+}
+
+.react-anim-icon:hover {
+  transform: rotate(360deg);
+  transition: all 1s ease;
+}
+
+@keyframes bouncing {
+  40%,
+  60% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
 }
 
 .cross-icon {
@@ -118,6 +139,10 @@
 
 .me-link {
   font-size: var(--text-lg);
+}
+
+.me-link:hover {
+  color: #3e63dd;
 }
 
 .stack-link {
@@ -268,6 +293,10 @@
   display: flex;
   justify-content: flex-end;
   padding: 0 var(--measure-2);
+}
+
+.language-btn:hover {
+  color: #3e63dd;
 }
 
 .hero {
