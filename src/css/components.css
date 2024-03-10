@@ -155,7 +155,27 @@
   width: var(--shape-s);
   height: var(--shape-s);
   font-weight: 500;
-  fill: var(--link-color);
+}
+
+[data-theme='light'] {
+  .upper-link:hover .arrow-icon {
+    fill: var(--link-color);
+  }
+  .back-link:hover .arrow-icon {
+    fill: var(--link-color);
+  }
+}
+
+[data-theme='dark'] {
+  .arrow-icon {
+    fill: var(--gray-200);
+  }
+  .upper-link:hover .arrow-icon {
+    fill: var(--gray-0);
+  }
+  .back-link:hover .arrow-icon {
+    fill: var(--gray-0);
+  }
 }
 
 .me-link {
@@ -481,7 +501,7 @@
   display: flex;
   align-items: last baseline;
   gap: var(--measure-1);
-  color: var(--gray-200);
+  color: var(--gray-0);
   align-items: center;
   text-decoration: 1px solid underline transparent;
   text-underline-offset: 0.25em;
@@ -553,7 +573,32 @@
 .carousel-content {
   display: flex;
   height: -webkit-fill-available;
-  transition: all 250ms linear;
+  transition: all 380ms
+    linear(
+      0 0%,
+      0 1.8%,
+      0.01 3.6%,
+      0.03 6.35%,
+      0.07 9.1%,
+      0.13 11.4%,
+      0.19 13.4%,
+      0.27 15%,
+      0.34 16.1%,
+      0.54 18.35%,
+      0.66 20.6%,
+      0.72 22.4%,
+      0.77 24.6%,
+      0.81 27.3%,
+      0.85 30.4%,
+      0.88 35.1%,
+      0.92 40.6%,
+      0.94 47.2%,
+      0.96 55%,
+      0.98 64%,
+      0.99 74.4%,
+      1 86.4%,
+      1 100%
+    );
   scrollbar-width: none;
   border-radius: 25px;
 }
