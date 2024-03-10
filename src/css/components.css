@@ -32,7 +32,28 @@
 
 .react-anim-icon:hover {
   transform: rotate(360deg);
+}
+
+.js-anim-icon:hover {
+  animation: bouncing 1s ease;
+}
+
+.react-anim-icon:hover {
+  transform: rotate(360deg);
   transition: all 1s ease;
+}
+
+@keyframes bouncing {
+  40%,
+  60% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
 }
 
 @keyframes bouncing {
@@ -141,8 +162,16 @@
   font-size: var(--text-lg);
 }
 
-.me-link:hover {
-  color: #3e63dd;
+[data-theme='light'] {
+  .me-link:hover {
+    color: #3e63dd;
+  }
+}
+
+[data-theme='dark'] {
+  .me-link:hover {
+    color: #ffff;
+  }
 }
 
 .stack-link {
@@ -295,8 +324,16 @@
   padding: 0 var(--measure-2);
 }
 
-.language-btn:hover {
-  color: #3e63dd;
+[data-theme='dark'] {
+  .language-btn:hover {
+    color: #ffff;
+  }
+}
+
+[data-theme='light'] {
+  .language-btn:hover {
+    color: #3e63dd;
+  }
 }
 
 .hero {
