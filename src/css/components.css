@@ -356,10 +356,6 @@
   }
 }
 
-.hero {
-  margin-bottom: var(--shape-m);
-}
-
 .main-img {
   width: 25vw;
   height: auto;

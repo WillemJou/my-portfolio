@@ -14,11 +14,10 @@ export function Nav() {
   const handleOpen = () => {
     setOpenHamburger(!openHamburger)
   }
-  console.log(widthSize)
 
   return (
     <nav className='nav-layout gap-4'>
-      {widthSize > 1030 ? (
+      {widthSize > 1020 && (
         <>
           <div className='flex-align gap-4'>
             <NameNavLink />
@@ -30,7 +29,8 @@ export function Nav() {
             <ThemeBtn />
           </div>
         </>
-      ) : (
+      )}
+      {widthSize < 1020 && (
         <>
           <div className='flex-align gap-4'>
             <NameNavLink />

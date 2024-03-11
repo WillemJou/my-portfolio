@@ -28,13 +28,13 @@ export function BoxStack() {
           </p>
         </div>
         <section className='box-container relative'>
-          <div className='box'>
+          <ul className='box'>
             <>
               <Stack stack={JS} />
               <Stack stack={REACT} />
               <Stack stack={MOBILE} />
             </>
-          </div>
+          </ul>
           <a className='upper-link project-link end' href='#projects'>
             <h3 className='title sub-title-4'>
               {' '}

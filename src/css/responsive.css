@@ -1,4 +1,5 @@
-@media (orientation: portrait) and (max-width: 768px) {
+/* Compact Portrait Size*/
+@media (max-width: 768px) {
   :root {
     --shape-xxs: 0.3rem;
     --shape-xs: 0.8rem;
@@ -87,17 +88,15 @@
   }
 }
 
-@media (orientation: portrait) and (min-width: 768px) and (max-width: 1030px) {
+/* Medium Portrait Size */
+@media (min-width: 768px) and (max-width: 1030px) {
   .fade-stack {
     height: 370px;
   }
-
-  .nav-items {
-    font-size: var(--text-2xl);
-  }
 }
 
-@media (orientation: portrait) and (min-width: 1030px) {
+// Expanded Portrait Size
+@media (min-width: 1030px) {
   .main-header {
     flex-direction: column-reverse;
     gap: 0;
@@ -117,7 +116,8 @@
   }
 }
 
-@media (orientation: portrait) and (max-width: 1030px) {
+/*Compact & Medium  Size */
+@media (max-width: 1030px) {
   .header {
     padding-top: var(--measure-12);
   }
@@ -193,12 +193,9 @@
       color: var(--gray-0);
     }
   }
-  .hamburger-container {
-    height: 1.7rem;
-  }
 
   .hamburger-icon_hidden {
-    opacity: 0;
+    display: hidden;
   }
 
   .box {
@@ -250,10 +247,6 @@
     color: var(--gray-200);
   }
 
-  .nav-items {
-    padding: var(--measure-10);
-  }
-
   .nav-slider .socials,
   .nav-items {
     gap: var(--shape-s) !important;
@@ -271,6 +264,8 @@
   }
 
   .nav-items {
+    font-size: var(--text-2xl);
+    padding: var(--measure-10);
     align-items: flex-end;
     background: none;
     box-shadow: none;
@@ -307,6 +302,7 @@
   }
 }
 
+/* Desktop */
 @media (orientation: landscape) and (min-width: 1600px) {
   :root {
     --text-sm: 1rem;
@@ -406,6 +402,7 @@
   }
 }
 
+/* 2k*/
 @media (orientation: landscape) and (min-width: 2550px) {
   :root {
     --text-sm: 1.75rem;
@@ -535,6 +532,7 @@
   }
 }
 
+/*4k*/
 @media (orientation: landscape) and (min-width: 3500px) {
   :root {
     --text-sm: 2rem;
