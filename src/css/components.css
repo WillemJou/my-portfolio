@@ -519,7 +519,9 @@
 
 .tags {
   display: flex;
+  justify-content: center;
   gap: var(--measure-2);
+  flex-wrap: wrap;
 }
 
 .pointer {

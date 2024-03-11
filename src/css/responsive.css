@@ -193,9 +193,12 @@
       color: var(--gray-0);
     }
   }
+  .hamburger-container {
+    height: 1.7rem;
+  }
 
   .hamburger-icon_hidden {
-    display: hidden;
+    opacity: 0;
   }
 
   .box {
