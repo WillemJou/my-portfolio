@@ -1,4 +1,4 @@
-/* Compact Portrait Size*/
+/* Compact Size*/
 @media (max-width: 768px) {
   :root {
     --shape-xxs: 0.3rem;
@@ -88,14 +88,14 @@
   }
 }
 
-/* Medium Portrait Size */
+/* Medium Size */
 @media (min-width: 768px) and (max-width: 1030px) {
   .fade-stack {
-    height: 370px;
+    height: 250px;
   }
 }
 
-// Expanded Portrait Size
+// Expanded Size
 @media (min-width: 1030px) {
   .main-header {
     flex-direction: column-reverse;
@@ -116,7 +116,7 @@
   }
 }
 
-/*Compact & Medium  Size */
+/*Compact & Medium Size */
 @media (max-width: 1030px) {
   .header {
     padding-top: var(--measure-12);

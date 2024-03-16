@@ -26,34 +26,22 @@
   transform: translate(-50%, -50%);
 }
 
-.js-anim-icon:hover {
+.stack-element:not(:active) .js-anim-icon {
   animation: bouncing 1s ease;
 }
 
-.react-anim-icon:hover {
-  transform: rotate(360deg);
-}
-
-.js-anim-icon:hover {
-  animation: bouncing 1s ease;
-}
-
-.react-anim-icon:hover {
-  transform: rotate(360deg);
+.stack-element:not(:active) .react-anim-icon {
   transition: all 1s ease;
+  transform: rotate(360deg);
 }
 
-@keyframes bouncing {
-  40%,
-  60% {
-    transform: rotate(-20deg);
-  }
-  50% {
-    transform: rotate(20deg);
-  }
-  70% {
-    transform: rotate(0deg);
-  }
+.rotate-div:hover {
+  transition: all 1s ease;
+  transform: rotate(360deg);
+}
+
+.bouncing-div:hover {
+  animation: bouncing 1s ease;
 }
 
 @keyframes bouncing {
@@ -416,6 +404,7 @@
 }
 
 .stack-element {
+  text-align: start;
   border-bottom: 1px solid var(--accent-dark);
   padding-bottom: var(--shape-m);
 }
