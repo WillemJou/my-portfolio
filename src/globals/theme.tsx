@@ -4,7 +4,7 @@ interface ThemeContextType {
   checkDefaultTheme: boolean
   favoriteTheme: string
   theme: string
-  setTheme: (newTheme: 'light' | 'dark') => void
+  setTheme: (_newTheme: 'light' | 'dark') => void
   clickHandler: () => void
 }
 
@@ -32,6 +32,9 @@ export const ThemeProvider = ({ children }: Props) => {
   const [theme, setTheme] = useState(
     favoriteTheme.length == 0 ? defaultTheme : favoriteTheme
   )
+  console.log(favoriteTheme)
+
+  console.log(theme)
 
   const clickHandler = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light'

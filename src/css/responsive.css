@@ -67,7 +67,10 @@
 
   .carousel-wrapper {
     width: 75%;
-    height: auto;
+  }
+
+  .review-title {
+    margin-top: 2rem;
   }
 
   .work-content {

@@ -13,7 +13,6 @@ export function Carousel({ projects, project }: CarouselProps) {
     project
   }
   projects(id)
-  console.log(project)
 
   if (project) {
     const [currentImg, setCurrentImg] = useState(0)

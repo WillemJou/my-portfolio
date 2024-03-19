@@ -68,7 +68,7 @@ export function Project() {
           ) : (
             <Carousel projects={otherProjects} project={otherProject} />
           )}
-          <h4 className='sub-title-4'>
+          <h4 className='sub-title-4 review-title'>
             {' '}
             {stateLanguage === 'en'
               ? 'Evaluation reviews'
