@@ -17,7 +17,7 @@ export function Nav() {
 
   return (
     <nav className='nav-layout gap-4'>
-      {widthSize > 1020 && (
+      {widthSize > 1030 && (
         <>
           <div className='flex-align gap-4'>
             <NameNavLink />
@@ -30,7 +30,7 @@ export function Nav() {
           </div>
         </>
       )}
-      {widthSize < 1020 && (
+      {widthSize < 1030 && (
         <>
           <div className='flex-align gap-4'>
             <NameNavLink />

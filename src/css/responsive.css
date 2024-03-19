@@ -37,6 +37,16 @@
     font-size: var(--shape-s);
   }
 
+  .theme-btn-dark::before,
+  .theme-btn-light::before {
+    left: 1px;
+    top: 1px;
+  }
+
+  .theme-btn-dark::before {
+    transform: translateX(83%);
+  }
+
   .fade-stack {
     height: 215px;
   }
@@ -92,6 +102,16 @@
 @media (min-width: 768px) and (max-width: 1030px) {
   .fade-stack {
     height: 250px;
+  }
+
+  .theme-btn-dark::before,
+  .theme-btn-light::before {
+    left: 2px;
+    top: 1px;
+  }
+
+  .theme-btn-dark::before {
+    transform: translateX(104%);
   }
 }
 
