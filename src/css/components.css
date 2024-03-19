@@ -547,7 +547,7 @@
 .carousel-wrapper {
   width: 100%;
   display: flex;
-  height: var(--shape-xxxl);
+  height: 40vh;
   position: relative;
 }
 
