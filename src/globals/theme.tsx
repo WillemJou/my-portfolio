@@ -23,14 +23,16 @@ export const ThemeProvider = ({ children }: Props) => {
     '(prefers-color-scheme: light)'
   ).matches
 
-  const defaultTheme = JSON.parse(localStorage.getItem('systemTheme') || '[]')
-
   const favoriteTheme = JSON.parse(
     sessionStorage.getItem('favoriteTheme') || '[]'
   )
 
   const [theme, setTheme] = useState(
-    favoriteTheme.length == 0 ? defaultTheme : favoriteTheme
+    favoriteTheme.length == 0
+      ? checkDefaultTheme
+        ? 'light'
+        : 'dark'
+      : favoriteTheme
   )
   console.log(favoriteTheme)
 
@@ -47,7 +49,7 @@ export const ThemeProvider = ({ children }: Props) => {
       'systemTheme',
       JSON.stringify(checkDefaultTheme ? 'light' : 'dark')
     )
-  }, [theme])
+  }, [])
 
   return (
     <ThemeContext.Provider
