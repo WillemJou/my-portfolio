@@ -16,12 +16,12 @@ export function Header() {
               {' '}
               {stateLanguage === 'en'
                 ? 'Hello, my name is Willem'
-                : "Bienvenue, moi c'est Willem"}
+                : 'Bienvenue, je suis Willem'}
             </h1>
             <p className='tagline hero-sub-title'>
               {stateLanguage === 'en'
                 ? 'I am a front-end developer who is currently based in Paris 🧑🏻‍💻'
-                : 'Je suis développeur front-end, basé à Paris 🧑🏻‍💻'}
+                : 'Développeur front-end basé à Paris 🧑🏻‍💻'}
             </p>
           </div>
           <Link className='main-img-link' to='/my-portfolio/about'>
