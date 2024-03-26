@@ -34,9 +34,6 @@ export const ThemeProvider = ({ children }: Props) => {
         : 'dark'
       : favoriteTheme
   )
-  console.log(favoriteTheme)
-
-  console.log(theme)
 
   const clickHandler = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light'

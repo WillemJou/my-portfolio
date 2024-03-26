@@ -195,7 +195,11 @@
 
   [data-theme='light'] {
     .nav-layout {
-      background: var(--gradient-accent-light-blue);
+      background: var(--accent-regular);
+      opacity: 0.95;
+    }
+    .nav-slider {
+      background: var(--accent-regular);
     }
     .hamburger-icon {
       stroke: var(--gray-800);
@@ -209,6 +213,9 @@
     .nav-layout {
       background: #1c174f;
       opacity: 0.95;
+    }
+    .nav-slider {
+      background: var(--gradient-accent-light-blue);
     }
     .hamburger-icon {
       stroke: var(--gray-0);
@@ -238,7 +245,6 @@
     width: fit-content;
     height: fit-content;
     padding-bottom: 5rem;
-    background: var(--gradient-accent-light-blue);
     color: var(--gray-999);
     box-shadow: var(--shadow-lg);
     border-radius: 1.5rem;
