@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { LanguageBtn } from '../components/languageBtn'
 import { NameNavLink } from '../components/nameNavLink'
 import { NavItems } from '../components/navItems'
@@ -14,6 +14,9 @@ export function Nav() {
   const handleOpen = () => {
     setOpenHamburger(!openHamburger)
   }
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <nav className='nav-layout gap-4'>

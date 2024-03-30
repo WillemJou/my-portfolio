@@ -172,7 +172,7 @@
 
 [data-theme='light'] {
   .me-link:hover {
-    color: #3e63dd;
+    color: var(--gray-200);
   }
 }
 
