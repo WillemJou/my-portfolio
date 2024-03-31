@@ -27,7 +27,7 @@ export function Slider({ openHamburger, handleOpen }: SliderProps) {
         visible={openHamburger}>
         <div className={`${style} above-all`}>
           <div className='nav-slider relative stack flex-center gap-6'>
-            <div className='stack-end'>
+            <div className='cross-btn-container'>
               <button style={{ paddingTop: '1rem' }} onClick={handleOpen}>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -39,11 +39,11 @@ export function Slider({ openHamburger, handleOpen }: SliderProps) {
                     d='m8.464 15.535l7.072-7.07m-7.072 0l7.072 7.07'></path>
                 </svg>
               </button>
-              <NavItems />
             </div>
+            <NavItems />
             <Socials />
-            <LanguageBtn />
             <div className='theme-language-container'>
+              <LanguageBtn />
               <ThemeBtn />
             </div>
           </div>

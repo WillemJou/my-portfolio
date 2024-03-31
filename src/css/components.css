@@ -59,8 +59,8 @@
 
 .cross-icon {
   stroke: var(--gray-900);
-  width: var(--shape-l);
-  height: var(--shape-lnav-);
+  width: var(--measure-12);
+  height: var(--measure-12);
 }
 
 .theme-icon {
@@ -319,11 +319,11 @@
   box-shadow: inset 0 0 0 1px var(--accent-overlay);
 }
 
-.theme-language-container {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: var(--measure-10);
+.cross-btn-container {
+  position: absolute;
+  top: -20px;
+  right: 1px;
+  z-index: 99999;
 }
 
 .language-btn {
