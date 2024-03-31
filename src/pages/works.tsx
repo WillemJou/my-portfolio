@@ -3,13 +3,11 @@ import { Gallery } from '../components/gallery'
 import { useContext } from 'react'
 import { LanguageContext } from '../globals/languages'
 import data from '../data.json'
+import { scrollToTop } from '../utils/scrollToTop'
 
 export function Works() {
   useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    })
+    scrollToTop()
   }, [])
   const languages = useContext(LanguageContext)
   const stateLanguage = languages.language
