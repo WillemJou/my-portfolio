@@ -12,7 +12,7 @@ export const RevealOnScroll = ({ children }: Props) => {
       ([entry]) => {
         setIsVisible(entry.isIntersecting) // Mettre à jour l'état en fonction de l'intersection
       },
-      { threshold: 0.28 }
+      { threshold: 0.2 }
     ) // Observer lorsque l'élément est entièrement visible
 
     scrollObserver.observe(ref.current!)
