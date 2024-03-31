@@ -159,10 +159,10 @@
     fill: var(--gray-200);
   }
   .upper-link:hover .arrow-icon {
-    fill: var(--gray-0);
+    fill: var(--accent-regular);
   }
   .back-link:hover .arrow-icon {
-    fill: var(--gray-0);
+    fill: var(--accent-regular);
   }
 }
 
@@ -172,13 +172,13 @@
 
 [data-theme='light'] {
   .me-link:hover {
-    color: var(--gray-200);
+    color: var(--link-color);
   }
 }
 
 [data-theme='dark'] {
   .me-link:hover {
-    color: #ffff;
+    color: var(--accent-regular);
   }
 }
 
@@ -636,6 +636,9 @@
 [data-theme='dark'] {
   .footer-link {
     color: var(--gray-0);
+  }
+  .footer-link:hover {
+    color: var(--accent-regular);
   }
 }
 

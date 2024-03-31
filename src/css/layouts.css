@@ -44,7 +44,6 @@ html {
 
 .flex-align {
   display: flex;
-  align-items: baseline;
 }
 
 .simple-row-layout {

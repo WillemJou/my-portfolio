@@ -15,7 +15,10 @@ export function Nav() {
     setOpenHamburger(!openHamburger)
   }
   useEffect(() => {
-    window.scrollTo(0, 0)
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
   }, [])
 
   return (
@@ -33,7 +36,7 @@ export function Nav() {
           </div>
         </>
       )}
-      {widthSize < 1030 && (
+      {widthSize <= 1030 && (
         <>
           <div className='flex-align gap-4'>
             <NameNavLink />

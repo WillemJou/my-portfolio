@@ -4,10 +4,11 @@ import { otherProjects, selectedProjects } from '../utils/dataService'
 import { Carousel } from '../components/carrousel'
 import { useContext } from 'react'
 import { LanguageContext } from '../globals/languages'
+import { scrollToTop } from '../utils/scrollToTop'
 
 export function Project() {
   useEffect(() => {
-    window.scrollTo(0, 0)
+    scrollToTop()
   }, [])
   const { id } = useParams()
   const { selectedProject } = selectedProjects(id)

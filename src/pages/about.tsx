@@ -1,13 +1,14 @@
 import { useContext, useEffect } from 'react'
 import face from '/face.jpg'
 import { LanguageContext } from '../globals/languages'
+import { scrollToTop } from '../utils/scrollToTop'
 
 export function About() {
+  useEffect(() => {
+    scrollToTop()
+  }, [])
   const languages = useContext(LanguageContext)
   const stateLanguage = languages.language
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
   return (
     <section className='about wrapper'>
       <div className='header stack gap-4'>

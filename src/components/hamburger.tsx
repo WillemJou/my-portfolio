@@ -8,7 +8,9 @@ type StateBtn = {
 export function Hamburger({ openHamburger, handleOpen }: StateBtn) {
   return (
     <button
-      style={openHamburger ? { zIndex: 99 } : { height: '32px' }}
+      style={
+        openHamburger ? { zIndex: 99, height: '32px' } : { height: '32px' }
+      }
       onClick={handleOpen}>
       <svg
         xmlns='http://www.w3.org/2000/svg'

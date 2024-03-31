@@ -6,7 +6,10 @@ import data from '../data.json'
 
 export function Works() {
   useEffect(() => {
-    window.scrollTo(0, 0)
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
   }, [])
   const languages = useContext(LanguageContext)
   const stateLanguage = languages.language

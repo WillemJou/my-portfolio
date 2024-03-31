@@ -1,15 +1,12 @@
-import { Link, useLocation } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { useContext } from 'react'
 import { LanguageContext } from '../globals/languages'
 import { Socials } from '../components/socials'
+import { scrollToTop } from '../utils/scrollToTop'
 
 export function Footer() {
   const languages = useContext(LanguageContext)
   const stateLanguage = languages.language
-  const location = useLocation()
-  const scrolltopIfSameUrl = () => {
-    location.pathname === '/my-portfolio/about' ? window.scrollTo(0, 0) : null
-  }
   return (
     <>
       <footer className='footer'>
@@ -27,7 +24,7 @@ export function Footer() {
           <Link
             to='/my-portfolio/about'
             className='footer-link'
-            onClick={scrolltopIfSameUrl}>
+            onClick={scrollToTop}>
             Willem Jouret,
           </Link>{' '}
           {stateLanguage === 'en' ? 'Paris' : 'Paris '}
