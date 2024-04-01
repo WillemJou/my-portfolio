@@ -73,12 +73,6 @@
     position: relative;
   }
 
-  .view-all-link {
-    position: absolute;
-    bottom: -20%;
-    left: 68%;
-  }
-
   .carousel-container {
     justify-content: center;
   }
@@ -183,7 +177,6 @@
     justify-content: center;
     width: 85%;
     height: auto;
-    transition: 0;
   }
 
   .img-card {
@@ -192,6 +185,12 @@
 
   .flex-align {
     flex-direction: column;
+  }
+
+  .reveal,
+  .unreveal {
+    display: flex;
+    justify-content: center;
   }
 
   .nav-layout {
@@ -285,6 +284,12 @@
     color: var(--gray-200);
   }
 
+  .view-all-link {
+    position: absolute;
+    bottom: -22%;
+    left: 78%;
+  }
+
   .project-link {
     bottom: -121px;
   }
@@ -361,6 +366,9 @@
   }
   .theme-language-container {
     flex-direction: column;
+  }
+  .carousel-wrapper {
+    height: 75vh;
   }
 }
 

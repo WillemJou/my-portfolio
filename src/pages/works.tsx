@@ -4,6 +4,7 @@ import { useContext } from 'react'
 import { LanguageContext } from '../globals/languages'
 import data from '../data.json'
 import { scrollToTop } from '../utils/scrollToTop'
+import { RevealOnScroll } from '../utils/revealOn'
 
 export function Works() {
   useEffect(() => {
@@ -13,22 +14,26 @@ export function Works() {
   const stateLanguage = languages.language
   return (
     <div className=' stack gap-24'>
-      <div className='header stack gap-4 start'>
-        <div className='stack gap-2 flex-center'>
-          <h1 className='title big-title'>
-            {stateLanguage === 'en' ? 'My Work' : 'Mes projets'}
-          </h1>
-          <p className='tagline'>
-            {stateLanguage === 'en'
-              ? 'See some projects below !'
-              : 'Voici quelques projets qui  me tiennent à coeur !'}
-          </p>
+      <RevealOnScroll>
+        <div className='header stack gap-4 start'>
+          <div className='stack gap-2 flex-center'>
+            <h1 className='title big-title'>
+              {stateLanguage === 'en' ? 'My Work' : 'Mes projets'}
+            </h1>
+            <p className='tagline'>
+              {stateLanguage === 'en'
+                ? 'See some projects below !'
+                : 'Voici quelques projets qui  me tiennent à coeur !'}
+            </p>
+          </div>
         </div>
-      </div>
-      <ul className='card-layout'>
-        <Gallery works={data.otherWorks} />
-        <Gallery works={data.selectedWorks} />
-      </ul>
+      </RevealOnScroll>
+      <RevealOnScroll>
+        <ul className='card-layout'>
+          <Gallery works={data.otherWorks} />
+          <Gallery works={data.selectedWorks} />
+        </ul>
+      </RevealOnScroll>
     </div>
   )
 }
