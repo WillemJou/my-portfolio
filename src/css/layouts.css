@@ -31,6 +31,11 @@ html {
   right: 0;
 }
 
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
 .no-margin {
   margin: 0;
 }

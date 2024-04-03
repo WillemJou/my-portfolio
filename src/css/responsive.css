@@ -196,8 +196,6 @@
   .nav-layout {
     min-height: 11vh;
     z-index: 100;
-    position: sticky;
-    top: 0;
     grid-template-columns: 1fr 1fr;
   }
 

@@ -7,13 +7,16 @@ import { ThemeBtn } from '../components/themeBtn'
 import { Hamburger } from '../components/hamburger'
 import { Slider } from '../components/slider'
 import { useWidthScreen } from '../hooks/useWidthScreen'
+import { useScrollingUp } from '../hooks/useScrollingUp'
 
 export function Nav() {
   const [openHamburger, setOpenHamburger] = useState(false)
+  const scrollingUp = useScrollingUp()
   const widthSize = useWidthScreen()
   const handleOpen = () => {
     setOpenHamburger(!openHamburger)
   }
+
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -22,7 +25,7 @@ export function Nav() {
   }, [])
 
   return (
-    <nav className='nav-layout gap-4'>
+    <nav className={`nav-layout ${scrollingUp ? 'sticky' : ''} gap-4`}>
       {widthSize > 1030 && (
         <>
           <div className='flex-align gap-4'>
