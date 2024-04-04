@@ -34,6 +34,32 @@ html {
 .sticky {
   position: sticky;
   top: 0;
+  animation: slideDown 0.8s ease-in-out;
+}
+
+.nav_hide {
+  position: sticky;
+  animation: slideUp 0.8s ease-in-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(0);
+    top: 0;
+  }
+  to {
+    transform: translateY(-100%);
+    top: -100px;
+  }
 }
 
 .no-margin {
@@ -66,6 +92,7 @@ html {
   margin: 3rem 0;
   transform: scale(1);
 }
+
 .fade-stack.out-stack {
   transform: scale(0);
   height: 0;

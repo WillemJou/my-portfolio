@@ -7,6 +7,12 @@ interface FadeProps {
   children?: ReactElement
 }
 
+/**
+ * Handles fading in and out of children based on the visibility
+ * prop.
+ * @returns A `<div>` element with the `className` set based on the `fadeStyle` and `outStyle` props,
+ * and the `children` rendered conditionally based on the `showChildren` state.
+ */
 export function Fade({ visible, children, fadeStyle, outStyle }: FadeProps) {
   const [showChildren, isShowChildren] = useState(visible)
   let className = fadeStyle

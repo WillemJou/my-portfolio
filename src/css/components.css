@@ -321,8 +321,8 @@
 
 .cross-btn-container {
   position: absolute;
-  top: -20px;
-  right: 1px;
+  top: -13px;
+  right: 2px;
   z-index: 99999;
 }
 

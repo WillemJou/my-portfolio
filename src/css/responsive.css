@@ -194,6 +194,7 @@
   }
 
   .nav-layout {
+    transition: transform 0.5s ease-in-out;
     min-height: 11vh;
     z-index: 100;
     grid-template-columns: 1fr 1fr;
@@ -214,6 +215,9 @@
     .hamburger-icon {
       stroke: var(--gray-800);
     }
+    .hamburger-icon:hover {
+      stroke: var(--gray-200);
+    }
     .me-link {
       color: var(--gray-800);
     }
@@ -232,6 +236,9 @@
     }
     .hamburger-icon {
       stroke: var(--gray-0);
+    }
+    .hamburger-icon:hover {
+      stroke: var(--accent-regular);
     }
     .me-link {
       color: var(--gray-0);

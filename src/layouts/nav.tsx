@@ -11,7 +11,7 @@ import { useScrollingUp } from '../hooks/useScrollingUp'
 
 export function Nav() {
   const [openHamburger, setOpenHamburger] = useState(false)
-  const scrollingUp = useScrollingUp()
+  const { scrollUp } = useScrollingUp()
   const widthSize = useWidthScreen()
   const handleOpen = () => {
     setOpenHamburger(!openHamburger)
@@ -25,9 +25,9 @@ export function Nav() {
   }, [])
 
   return (
-    <nav className={`nav-layout ${scrollingUp ? 'sticky' : ''} gap-4`}>
+    <>
       {widthSize > 1030 && (
-        <>
+        <nav className='nav-layout gap-4'>
           <div className='flex-align gap-4'>
             <NameNavLink />
             <Socials />
@@ -37,10 +37,10 @@ export function Nav() {
             <LanguageBtn />
             <ThemeBtn />
           </div>
-        </>
+        </nav>
       )}
       {widthSize <= 1030 && (
-        <>
+        <nav className={`nav-layout ${scrollUp ? 'sticky' : 'nav_hide'}`}>
           <div className='flex-align gap-4'>
             <NameNavLink />
           </div>
@@ -48,8 +48,8 @@ export function Nav() {
             <Hamburger handleOpen={handleOpen} openHamburger={openHamburger} />
           </div>
           <Slider openHamburger={openHamburger} handleOpen={handleOpen} />
-        </>
+        </nav>
       )}
-    </nav>
+    </>
   )
 }

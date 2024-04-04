@@ -1,21 +1,21 @@
 import { useEffect, useState } from 'react'
 
 export const useScrollingUp = () => {
-  let prevScroll = window.scrollY
-  const [scrollingUp, setScrollingUp] = useState(false)
+  let scroll = window.scrollY
+  const [scrollUp, setScrollUp] = useState(false)
 
-  const handleScroll = () => {
+  const trackScroll = () => {
     const currScroll = window.scrollY
-    const isScrolled = prevScroll > currScroll
-    setScrollingUp(isScrolled)
-    prevScroll = currScroll
+    const isScrolledUp = scroll > currScroll
+    setScrollUp(isScrolledUp)
+    scroll = currScroll
   }
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', trackScroll)
     return () => {
-      window.removeEventListener('scroll', handleScroll)
+      window.removeEventListener('scroll', trackScroll)
     }
   }, [])
-  return scrollingUp
+  return { scrollUp }
 }
