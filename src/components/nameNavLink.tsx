@@ -7,7 +7,7 @@ export function NameNavLink() {
       <div className='simple-row-layout'>
         <Link
           onClick={scrollToTop}
-          to='/my-portfolio/about'
+          to='/my-portfolio/'
           className='me-link lg-font-size'>
           Willem Jouret
         </Link>
