@@ -31,10 +31,15 @@ html {
   right: 0;
 }
 
-.sticky {
+.sticky_animated {
   position: sticky;
   top: 0;
   animation: slideDown 0.8s ease-in-out;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
 }
 
 .nav_hide {

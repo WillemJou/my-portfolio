@@ -6,13 +6,13 @@ import { Socials } from '../components/socials'
 import { ThemeBtn } from '../components/themeBtn'
 import { Hamburger } from '../components/hamburger'
 import { Slider } from '../components/slider'
-import { useWidthScreen } from '../hooks/useWidthScreen'
+import { useSizeScreen } from '../hooks/useSizeScreen'
 import { useScrollingUp } from '../hooks/useScrollingUp'
 
 export function Nav() {
   const [openHamburger, setOpenHamburger] = useState(false)
   const { scrollUp } = useScrollingUp()
-  const widthSize = useWidthScreen()
+  const { widthSize, heightSize } = useSizeScreen()
   const handleOpen = () => {
     setOpenHamburger(!openHamburger)
   }
@@ -40,7 +40,10 @@ export function Nav() {
         </nav>
       )}
       {widthSize <= 1030 && (
-        <nav className={`nav-layout ${scrollUp ? 'sticky' : 'nav_hide'}`}>
+        <nav
+          className={`nav-layout ${
+            scrollUp && heightSize < widthSize ? 'sticky_animated' : ' nav_hide'
+          }${heightSize > widthSize ? ' sticky' : ' '}`}>
           <div className='flex-align gap-4'>
             <NameNavLink />
           </div>
