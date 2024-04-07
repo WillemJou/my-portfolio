@@ -193,13 +193,6 @@
     justify-content: center;
   }
 
-  .nav-layout {
-    transition: transform 0.5s ease-in-out;
-    min-height: 11vh;
-    z-index: 100;
-    grid-template-columns: 1fr 1fr;
-  }
-
   .section-header {
     padding-top: 15vh;
   }
@@ -222,7 +215,7 @@
       color: var(--gray-800);
     }
     .me-link:hover {
-      color: var(--gray-200);
+      color: #fdfdfe;
     }
   }
 
@@ -240,8 +233,8 @@
     .hamburger-icon:hover {
       stroke: var(--accent-regular);
     }
-    .me-link {
-      color: var(--gray-0);
+    .me-link:hover {
+      color: #fdfdfe;
     }
   }
 
@@ -264,7 +257,7 @@
     align-items: center;
     width: fit-content;
     height: fit-content;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
     color: var(--gray-999);
     box-shadow: var(--shadow-lg);
     border-radius: 1.5rem;
@@ -282,11 +275,22 @@
     right: -126px;
   }
 
+  .link,
+  .text {
+    color: #d2deff;
+  }
+
+  .link.active {
+    border-radius: 0;
+    border-bottom: 1px solid #fdfdfe;
+  }
+
   .link:hover,
   .link.active:hover,
-  .link.active {
+  .link.active,
+  .text:hover {
     background-color: transparent;
-    color: var(--gray-200);
+    color: #fdfdfe;
   }
 
   .view-all-link {
@@ -303,8 +307,7 @@
     color: var(--gray-200);
   }
 
-  .nav-slider .socials,
-  .nav-items {
+  .nav-slider .socials {
     gap: var(--shape-s) !important;
     flex-direction: column;
   }
@@ -364,11 +367,29 @@
   }
 }
 
-@media (orientation: landscape) and (max-width: 1030px) {
-  .nav-slider {
-    flex-direction: row;
-    padding: var(--shape-xs);
+@media (orientation: portrait) and (max-width: 1030px) {
+  .nav-layout {
+    transition: transform 0.5s ease-in-out;
+    min-height: 11vh;
+    z-index: 100;
+    grid-template-columns: 1fr 1fr;
   }
+  .nav-items {
+    gap: var(--shape-s) !important;
+    flex-direction: column;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 1030px) {
+  .nav-layout {
+    padding: var(--measure-2);
+  }
+
+  .nav-items,
+  .text {
+    font-size: var(--text-xl);
+  }
+
   .theme-language-container {
     flex-direction: column;
   }

@@ -39,7 +39,7 @@ export function Nav() {
           </div>
         </nav>
       )}
-      {widthSize <= 1030 && (
+      {widthSize <= 1030 && heightSize > widthSize ? (
         <nav
           className={`nav-layout ${
             scrollUp && heightSize < widthSize ? 'sticky_animated' : ' nav_hide'
@@ -51,6 +51,21 @@ export function Nav() {
             <Hamburger handleOpen={handleOpen} openHamburger={openHamburger} />
           </div>
           <Slider openHamburger={openHamburger} handleOpen={handleOpen} />
+        </nav>
+      ) : (
+        <nav
+          className={`above-all nav-layout gap-4 ${
+            scrollUp ? 'sticky_animated' : ' nav_hide'
+          }`}>
+          <div className='flex-align flex-center text-align gap-4'>
+            <NameNavLink />
+            <Socials />
+          </div>
+          <NavItems />
+          <div className='theme-language-container'>
+            <LanguageBtn />
+            <ThemeBtn />
+          </div>
         </nav>
       )}
     </>
