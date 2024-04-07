@@ -368,6 +368,15 @@
 }
 
 @media (orientation: portrait) and (max-width: 1030px) {
+  [data-theme='dark'] {
+    .link {
+      color: var(--gray-800);
+    }
+    .link:hover,
+    .link.active {
+      color: #fdfdfe;
+    }
+  }
   .nav-layout {
     transition: transform 0.5s ease-in-out;
     min-height: 11vh;
