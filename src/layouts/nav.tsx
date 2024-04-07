@@ -39,7 +39,7 @@ export function Nav() {
           </div>
         </nav>
       )}
-      {widthSize <= 1030 && heightSize > widthSize ? (
+      {widthSize <= 1030 && heightSize > widthSize && (
         <nav
           className={`nav-layout ${
             scrollUp && heightSize < widthSize ? 'sticky_animated' : ' nav_hide'
@@ -52,7 +52,8 @@ export function Nav() {
           </div>
           <Slider openHamburger={openHamburger} handleOpen={handleOpen} />
         </nav>
-      ) : (
+      )}
+      {widthSize <= 1030 && heightSize < widthSize && (
         <nav
           className={`above-all nav-layout gap-4 ${
             scrollUp ? 'sticky_animated' : ' nav_hide'
