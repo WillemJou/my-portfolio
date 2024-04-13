@@ -24,7 +24,6 @@ export const LanguageProvider = ({ children }: Props) => {
   const [language, setLanguage] = useState(
     getFavoriteLanguage.length == 0 ? 'fr' : getFavoriteLanguage
   )
-  console.log(getFavoriteLanguage)
 
   const clickHandler = () => {
     const newLanguage = language === 'en' ? 'fr' : 'en'

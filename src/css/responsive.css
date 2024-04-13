@@ -369,11 +369,13 @@
 
 @media (orientation: portrait) and (max-width: 1030px) {
   [data-theme='dark'] {
-    .link {
+    .link,
+    .text {
       color: var(--gray-800);
     }
     .link:hover,
-    .link.active {
+    .link.active,
+    .text:hover {
       color: #fdfdfe;
     }
   }

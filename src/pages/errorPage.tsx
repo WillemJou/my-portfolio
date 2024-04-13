@@ -10,7 +10,7 @@ export function ErrorPage() {
   return (
     <div className='stack background error' data-theme={theme}>
       <div className='stack error' id='error'>
-        <h1 className='big-title title'>Oops!</h1>
+        <h1 className='page-title title'>Oops!</h1>
         <p>Sorry, an unexpected error has occurred.</p>
         <p>
           <i className='error-msg'>

@@ -17,7 +17,7 @@ export function Works() {
       <RevealOnScroll>
         <div className='header stack gap-4 start'>
           <div className='stack gap-2 flex-center'>
-            <h1 className='title big-title'>
+            <h1 className='title page-title'>
               {stateLanguage === 'en' ? 'My Work' : 'Mes projets'}
             </h1>
             <p className='tagline'>
