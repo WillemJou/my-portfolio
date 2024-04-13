@@ -455,6 +455,7 @@
   padding: var(--measure-2) var(--measure-4);
   background: var(--gray-999);
   color: var(--gray-200);
+  transition: opacity 0.5s, transform:scale 0.5s, padding 0.5s;
 }
 
 .img-card {
@@ -476,7 +477,6 @@
   border: solid var(--accent-regular);
   opacity: 0.9;
   transform: scale(1, 1);
-  transition: all 0.5s ease;
 }
 
 .about {
