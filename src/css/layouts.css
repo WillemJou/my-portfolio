@@ -243,7 +243,6 @@ html {
 
 .box {
   width: 60%;
-  min-height: 65vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

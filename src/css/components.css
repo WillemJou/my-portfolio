@@ -7,8 +7,8 @@
 
 .js-anim-icon,
 .react-anim-icon {
-  width: var(--shape-l);
-  height: var(--shape-l);
+  width: var(--text-4xl);
+  height: var(--text-4xl);
 }
 
 .techno-icon_closed {
@@ -397,7 +397,7 @@
 }
 
 .skills {
-  min-height: 100vh;
+  max-height: 90vh;
   display: flex;
   justify-content: space-evenly;
   scroll-behavior: smooth;

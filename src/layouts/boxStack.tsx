@@ -14,7 +14,7 @@ export function BoxStack() {
 
   return (
     <RevealOnScroll>
-      <div className='skills stack relative'>
+      <section className='skills stack relative'>
         <div id='stackBox' className='section-header gap-4 stack'>
           <a href='#stackBox'>
             <h3 className='title sub-title-2'>
@@ -27,7 +27,7 @@ export function BoxStack() {
               : "Je code en JavaScript et React, j'utilise React Native pour le mobile."}
           </p>
         </div>
-        <section className='box-container relative'>
+        <div className='box-container relative'>
           <ul className='box'>
             <>
               <Stack stack={JS} />
@@ -47,8 +47,8 @@ export function BoxStack() {
               <path d='M24.59 16.59L17 24.17V4h-2v20.17l-7.59-7.58L6 18l10 10l10-10z'></path>
             </svg>
           </a>
-        </section>
-      </div>
+        </div>
+      </section>
     </RevealOnScroll>
   )
 }
