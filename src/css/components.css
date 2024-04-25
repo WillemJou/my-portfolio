@@ -128,6 +128,42 @@
   transform: scale(1.1);
 }
 
+.go-top-btn {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  bottom: 10vh;
+  right: 9vw;
+  font-size: var(--text-md);
+  color: var(--accent-text-over);
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(
+    150deg,
+    #e1f5fc,
+    var(--accent-regular),
+    var(--accent-light)
+  );
+  border-radius: 29px;
+  cursor: pointer;
+  transition: transform 0.5s;
+  box-shadow: var(--shadow-sm);
+}
+
+.go-top-btn:hover {
+  transform: scale(1.1);
+}
+
+.go-top-btn_hidden {
+  display: none;
+}
+
+.go-top-btn_showed {
+  display: flex;
+}
+
 .upper-link {
   display: flex;
   gap: var(--measure-2);

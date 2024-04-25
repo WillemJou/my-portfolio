@@ -7,12 +7,11 @@ import { ThemeBtn } from '../components/themeBtn'
 import { Hamburger } from '../components/hamburger'
 import { Slider } from '../components/slider'
 import { useSizeScreen } from '../hooks/useSizeScreen'
-import { useScrollPosition } from '../hooks/useScrollPosition'
 
 export function Nav() {
   const [openHamburger, setOpenHamburger] = useState(false)
-  const { scrollPosition } = useScrollPosition()
   const { widthSize, heightSize } = useSizeScreen()
+
   const handleOpen = () => {
     setOpenHamburger(!openHamburger)
   }
@@ -23,8 +22,6 @@ export function Nav() {
       behavior: 'smooth',
     })
   }, [])
-
-  console.log(scrollPosition)
 
   return (
     <>

@@ -3,15 +3,15 @@ import { useEffect, useState } from 'react'
 export const useScrollPosition = () => {
   const [scrollPosition, setScrollPosition] = useState(0)
 
-  const handleVisibleButton = () => {
+  const showPosition = () => {
     let scrollY = window.scrollY
     setScrollPosition(scrollY)
   }
 
   useEffect(() => {
-    window.addEventListener('scroll', handleVisibleButton)
+    window.addEventListener('scroll', showPosition)
     return () => {
-      window.removeEventListener('scroll', handleVisibleButton)
+      window.removeEventListener('scroll', showPosition)
     }
   }, [])
   return { scrollPosition }
