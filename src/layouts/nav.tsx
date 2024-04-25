@@ -7,11 +7,11 @@ import { ThemeBtn } from '../components/themeBtn'
 import { Hamburger } from '../components/hamburger'
 import { Slider } from '../components/slider'
 import { useSizeScreen } from '../hooks/useSizeScreen'
-//import { useScrollingUp } from '../hooks/useScrollingUp'
+import { useScrollPosition } from '../hooks/useScrollPosition'
 
 export function Nav() {
   const [openHamburger, setOpenHamburger] = useState(false)
-  // const { scrollUp } = useScrollingUp()
+  const { scrollPosition } = useScrollPosition()
   const { widthSize, heightSize } = useSizeScreen()
   const handleOpen = () => {
     setOpenHamburger(!openHamburger)
@@ -24,10 +24,12 @@ export function Nav() {
     })
   }, [])
 
+  console.log(scrollPosition)
+
   return (
     <>
       {widthSize > 1030 && (
-        <nav className='nav-layout gap-4'>
+        <nav className='nav-layout above-all gap-4'>
           <div className='flex-align gap-4'>
             <NameNavLink />
             <Socials />

@@ -40,6 +40,37 @@ html {
   top: 0;
 }
 
+.sticky_animated {
+  position: sticky;
+  top: 0;
+  animation: slideDown 0.8s ease-in-out;
+}
+
+.nav_hide {
+  position: sticky;
+  animation: slideUp 0.8s ease-in-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(0);
+    top: 0;
+  }
+  to {
+    transform: translateY(-100%);
+    top: -100px;
+  }
+}
+
 .no-margin {
   margin: 0;
 }
@@ -160,6 +191,7 @@ html {
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   min-height: 15vh;
+  opacity: 0.95;
   margin-bottom: var(--measure-4);
   padding: var(--measure-10) var(--measure-20);
   font-weight: 500;
