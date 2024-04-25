@@ -114,6 +114,11 @@
   fill: var(--gray-0);
 }
 
+.x {
+  width: var(--shape-s);
+  height: var(--shape-s);
+}
+
 .send-icon {
   stroke: #ffff;
   fill: var(--accent-regular);
@@ -189,6 +194,7 @@
 .socials {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   font-size: var(--icon-size);
 }
@@ -319,8 +325,8 @@
 
 .cross-btn-container {
   position: absolute;
-  top: -13px;
-  right: 2px;
+  top: -8px;
+  right: 4px;
   z-index: 99999;
 }
 
