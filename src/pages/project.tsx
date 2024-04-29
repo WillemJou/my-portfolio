@@ -1,15 +1,10 @@
-import { useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { otherProjects, selectedProjects } from '../utils/dataService'
 import { Carousel } from '../components/carrousel'
 import { useContext } from 'react'
 import { LanguageContext } from '../globals/languages'
-import { scrollToTop } from '../utils/scrollToTop'
 
 export function Project() {
-  useEffect(() => {
-    scrollToTop()
-  }, [])
   const { id } = useParams()
   const { selectedProject } = selectedProjects(id)
   const { otherProject } = otherProjects(id)

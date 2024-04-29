@@ -2,10 +2,11 @@ import { Link } from 'react-router-dom'
 import { useContext } from 'react'
 import { LanguageContext } from '../globals/languages'
 import { Socials } from '../components/socials'
-import { scrollToTop } from '../utils/scrollToTop'
+import { useScrollToTop } from '../hooks/useScrollToTop'
 
 export function Footer() {
   const languages = useContext(LanguageContext)
+  const { scrollToTop } = useScrollToTop()
   const stateLanguage = languages.language
   return (
     <>

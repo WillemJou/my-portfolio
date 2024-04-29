@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { LanguageBtn } from '../components/languageBtn'
 import { NameNavLink } from '../components/nameNavLink'
 import { NavItems } from '../components/navItems'
@@ -15,13 +15,6 @@ export function Nav() {
   const handleOpen = () => {
     setOpenHamburger(!openHamburger)
   }
-
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    })
-  }, [])
 
   return (
     <>

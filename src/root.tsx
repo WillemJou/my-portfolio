@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router-dom'
+import { Outlet, ScrollRestoration } from 'react-router-dom'
 import { useContext } from 'react'
 import { ThemeContext } from './globals/theme'
 import { CallToAction } from './layouts/calltoAction'
@@ -13,6 +13,7 @@ export function Root() {
   return (
     <div className='stack background' data-theme={theme}>
       {widthSize > heightSize ? <GoTop /> : null}
+      <ScrollRestoration />
       <Nav />
       <main className='stack'>
         <Outlet />

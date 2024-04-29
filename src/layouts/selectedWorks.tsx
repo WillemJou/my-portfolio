@@ -1,7 +1,8 @@
+import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { Gallery } from '../components/gallery'
 import { RevealOnScroll } from '../utils/revealOn'
-import { useContext } from 'react'
+import { useScrollToTop } from '../hooks/useScrollToTop'
 import { LanguageContext } from '../globals/languages'
 import data from '../data.json'
 import { Error } from '../components/error'
@@ -9,6 +10,7 @@ import { Error } from '../components/error'
 export function SelectedWorksContainer() {
   const languages = useContext(LanguageContext)
   const stateLanguage = languages.language
+  const { scrollToTop } = useScrollToTop()
   return (
     <RevealOnScroll>
       <section id='projects' className='relative stack gap-24'>
@@ -21,7 +23,8 @@ export function SelectedWorksContainer() {
             </h3>
             <Link
               className='view-all-link simple-flex'
-              to='/my-portfolio/works'>
+              to='/my-portfolio/works'
+              onClick={scrollToTop}>
               {stateLanguage === 'en' ? 'View All' : 'Voir tout'}
               <svg
                 xmlns='http://www.w3.org/2000/svg'

@@ -1,21 +1,17 @@
-import { useEffect } from 'react'
 import { Gallery } from '../components/gallery'
 import { useContext } from 'react'
 import { LanguageContext } from '../globals/languages'
 import data from '../data.json'
-import { scrollToTop } from '../utils/scrollToTop'
 import { RevealOnScroll } from '../utils/revealOn'
 
 export function Works() {
-  useEffect(() => {
-    scrollToTop()
-  }, [])
   const languages = useContext(LanguageContext)
   const stateLanguage = languages.language
+
   return (
     <div className=' stack gap-24'>
       <RevealOnScroll>
-        <div className='header stack gap-4 start'>
+        <header className='header stack gap-4 start'>
           <div className='stack gap-2 flex-center'>
             <h1 className='title page-title'>
               {stateLanguage === 'en' ? 'My Work' : 'Mes projets'}
@@ -26,7 +22,7 @@ export function Works() {
                 : 'Voici quelques projets qui  me tiennent à coeur !'}
             </p>
           </div>
-        </div>
+        </header>
       </RevealOnScroll>
       <RevealOnScroll>
         <ul className='card-layout'>

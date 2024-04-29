@@ -1,15 +1,18 @@
 import { useContext, useEffect } from 'react'
 import face from '/face.jpg'
 import { LanguageContext } from '../globals/languages'
-import { scrollToTop } from '../utils/scrollToTop'
 import { RevealOnScroll } from '../utils/revealOn'
+import { useLocation } from 'react-router-dom'
 
 export function About() {
-  useEffect(() => {
-    scrollToTop()
-  }, [])
+  const location = useLocation()
   const languages = useContext(LanguageContext)
   const stateLanguage = languages.language
+
+  useEffect(() => {
+    document.documentElement.scrollTo(0, 0)
+  }, [location.pathname])
+
   return (
     <RevealOnScroll>
       <section className='about wrapper'>

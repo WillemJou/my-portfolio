@@ -1,14 +1,10 @@
 import { Link } from 'react-router-dom'
-import { scrollToTop } from '../utils/scrollToTop'
 
 export function NameNavLink() {
   return (
     <>
       <div className='simple-row-layout'>
-        <Link
-          onClick={scrollToTop}
-          to='/my-portfolio/'
-          className='me-link lg-font-size'>
+        <Link to='/my-portfolio/' className='me-link lg-font-size'>
           Willem Jouret
         </Link>
       </div>
