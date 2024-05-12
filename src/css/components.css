@@ -146,10 +146,15 @@
     var(--accent-regular),
     var(--accent-light)
   );
-  border-radius: 29px;
+  border-radius: 100%;
   cursor: pointer;
   transition: transform 0.5s;
   box-shadow: var(--shadow-sm);
+}
+
+.go-top-icon {
+  width: 15px;
+  height: 15px;
 }
 
 .go-top-btn:hover {
@@ -437,7 +442,6 @@
 }
 
 .skills {
-  max-height: 90vh;
   display: flex;
   justify-content: space-evenly;
   scroll-behavior: smooth;

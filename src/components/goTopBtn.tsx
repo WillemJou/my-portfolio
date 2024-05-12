@@ -30,8 +30,7 @@ export function GoTop() {
       <div className={showBtn} onClick={scrollUp}>
         <button className='go-top-btn text-align above-all'>
           <svg
-            width='20'
-            height='20'
+            className='go-top-icon'
             xmlns='http://www.w3.org/2000/svg'
             viewBox='0 0 24 24'>
             <path

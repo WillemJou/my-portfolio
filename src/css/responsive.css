@@ -557,6 +557,16 @@
     width: var(--measure-12);
     height: var(--measure-12);
   }
+
+  .go-top-btn {
+    width: 90px;
+    height: 90px;
+  }
+
+  .go-top-icon {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 /* 2k*/
@@ -775,5 +785,15 @@
     p {
       font-size: var(--text-md) !important;
     }
+  }
+
+  .go-top-btn {
+    width: 150px;
+    height: 150px;
+  }
+
+  .go-top-icon {
+    width: 50px;
+    height: 50px;
   }
 }
