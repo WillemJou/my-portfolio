@@ -11,7 +11,7 @@ export const AnchorLink = ({ titleEn, titleFr, anchor }: AnchorLinkProps) => {
   const languages = useContext(LanguageContext)
   const stateLanguage = languages.language
   return (
-    <div className="stacklink-container">
+    <div className="anchorlink-container">
       <a className="upper-link " href={anchor}>
         <h3 className="title sub-title-4">
           {' '}

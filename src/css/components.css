@@ -115,7 +115,9 @@
 .social-icon,
 .me-link,
 .language-btn,
-.upper-link {
+.upper-link,
+.main-name-link,
+.stack-title {
   transition: all 0.2s ease-in-out;
 }
 
@@ -132,7 +134,8 @@
 .social-icon:hover,
 .me-link:hover,
 .language-btn:hover,
-.upper-link:hover {
+.upper-link:hover,
+.back-link:hover {
   transform: scale(1.1);
 }
 
@@ -230,7 +233,7 @@
   }
 }
 
-.stacklink-container {
+.anchorlink-container {
   display: flex;
   justify-content: flex-end;
   min-height: 10vh;
@@ -401,6 +404,17 @@
   aspect-ratio: 3 / 4;
   border-radius: 4.5rem;
   object-fit: cover;
+  transition: all 0.4s ease-in-out;
+}
+
+.main-img-link :hover {
+  border: 1px solid var(--accent-dark);
+  transform: scale(1.1, 1.1);
+}
+
+.main-name-link:hover,
+.stack-element:hover .stack-title {
+  color: var(--accent-regular);
 }
 
 .title {
@@ -478,10 +492,12 @@
 
 .li-card {
   transition: all 0.2s ease-in-out;
+  border-radius: 1.5rem;
 }
 
 .li-card:hover {
   transform: scale(1.1, 1.1);
+  border: 1px solid var(--accent-dark);
 }
 
 .card {
@@ -548,6 +564,9 @@
   border-radius: 1.5rem;
   box-shadow: var(--shadow-md);
 }
+.backlink-container {
+  display: flex;
+}
 
 .back-link {
   display: flex;
@@ -557,7 +576,7 @@
   align-items: center;
   text-decoration: 1px solid underline transparent;
   text-underline-offset: 0.25em;
-  transition: text-decoration-color var(--theme-transition);
+  transition: text-decoration-color var(--theme-transition), 0.2s ease-in-out;
 }
 
 .details {

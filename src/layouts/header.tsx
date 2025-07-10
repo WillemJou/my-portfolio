@@ -14,13 +14,25 @@ export function Header() {
           <div className="stack start gap-2 hero-text w-50%">
             <h1 className="title big-title">
               {' '}
-              {stateLanguage === 'en'
-                ? 'Hello, my name is Willem'
-                : 'Bienvenue, je suis Willem'}
+              {stateLanguage === 'en' ? (
+                <>
+                  Hello, I'm{' '}
+                  <Link className="main-name-link" to="/my-portfolio/about">
+                    Willem
+                  </Link>
+                </>
+              ) : (
+                <>
+                  Bienvenue, je suis{' '}
+                  <Link className="main-name-link" to="/my-portfolio/about">
+                    Willem
+                  </Link>
+                </>
+              )}
             </h1>
             <p className="tagline hero-sub-title">
               {stateLanguage === 'en'
-                ? 'I am a front-end developer who is currently based in Paris 🧑🏻‍💻'
+                ? 'front-end developer currently based in Paris 🧑🏻‍💻'
                 : 'Développeur front-end basé à Paris 🧑🏻‍💻'}
             </p>
           </div>

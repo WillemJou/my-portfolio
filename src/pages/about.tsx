@@ -23,8 +23,8 @@ export function About() {
             </h1>
             <p className="tagline">
               {stateLanguage === 'en'
-                ? 'Thanks for stopping by. Read below to learn more about myself and my background.'
-                : "Merci d'être passé. Un peu de lecture ci-dessous pour en savoir plus sur moi et mon parcours ?"}
+                ? 'Thanks for stopping by ! Read below to learn more about myself and my background.'
+                : "Merci d'être passé ! Un peu de lecture ci-dessous pour en savoir plus sur moi et mon parcours atypique."}
             </p>
           </div>
           <img
