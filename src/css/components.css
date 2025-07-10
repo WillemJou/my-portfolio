@@ -108,10 +108,15 @@
   height: var(--shape-xs);
   fill: #ffff;
 }
-
 .social-icon {
-  transition: all 0.2s ease-in-out;
   fill: var(--gray-0);
+}
+
+.social-icon,
+.me-link,
+.language-btn,
+.upper-link {
+  transition: all 0.2s ease-in-out;
 }
 
 .x {
@@ -124,7 +129,10 @@
   fill: var(--accent-regular);
 }
 
-.social-icon:hover {
+.social-icon:hover,
+.me-link:hover,
+.language-btn:hover,
+.upper-link:hover {
   transform: scale(1.1);
 }
 
@@ -222,8 +230,11 @@
   }
 }
 
-.stack-link {
+.stacklink-container {
+  display: flex;
+  justify-content: flex-end;
   min-height: 10vh;
+  margin-right: 3vw;
 }
 
 .socials {
