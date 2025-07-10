@@ -83,20 +83,20 @@
   transform: rotate(180deg);
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   .theme-icon {
     fill: transparent;
   }
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   .theme-icon:hover {
     transition: all 0.2s ease-in-out;
     fill: #ffc53d;
   }
 }
 
-[data-theme='light'] {
+[data-theme="light"] {
   .theme-icon:hover {
     transition: all 0.2s ease-in-out;
     fill: #3e63dd;
@@ -134,18 +134,11 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  bottom: 10vh;
-  right: 9vw;
+  bottom: 5vh;
+  right: 3vw;
   font-size: var(--text-md);
-  color: var(--accent-text-over);
   width: 60px;
   height: 60px;
-  background: linear-gradient(
-    150deg,
-    #e1f5fc,
-    var(--accent-regular),
-    var(--accent-light)
-  );
   border-radius: 100%;
   cursor: pointer;
   transition: transform 0.5s;
@@ -153,8 +146,9 @@
 }
 
 .go-top-icon {
-  width: 15px;
-  height: 15px;
+  width: 30px;
+  height: 30px;
+  fill: var(--gray-0);
 }
 
 .go-top-btn:hover {
@@ -191,7 +185,7 @@
   font-weight: 500;
 }
 
-[data-theme='light'] {
+[data-theme="light"] {
   .upper-link:hover .arrow-icon {
     fill: var(--link-color);
   }
@@ -200,7 +194,7 @@
   }
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   .arrow-icon {
     fill: var(--gray-200);
   }
@@ -216,13 +210,13 @@
   font-size: var(--text-lg);
 }
 
-[data-theme='light'] {
+[data-theme="light"] {
   .me-link:hover {
     color: var(--link-color);
   }
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   .me-link:hover {
     color: var(--accent-regular);
   }
@@ -299,7 +293,7 @@
 
 .send-link:after,
 .view-all-link:after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   pointer-events: none;
@@ -330,7 +324,7 @@
 }
 
 .theme-btn-light::before {
-  content: '';
+  content: "";
   width: 2rem;
   height: 2rem;
   position: absolute;
@@ -342,7 +336,7 @@
 }
 
 .theme-btn-dark::before {
-  content: '';
+  content: "";
   width: 2rem;
   height: 2rem;
   position: absolute;
@@ -377,13 +371,13 @@
   padding: 0 var(--measure-2);
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   .language-btn:hover {
     color: #ffff;
   }
 }
 
-[data-theme='light'] {
+[data-theme="light"] {
   .language-btn:hover {
     color: #3e63dd;
   }
@@ -689,13 +683,13 @@
   rotate: 270deg;
 }
 
-[data-theme='light'] {
+[data-theme="light"] {
   .footer-link {
     color: var(--link-color);
   }
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   .footer-link {
     color: var(--gray-0);
   }
