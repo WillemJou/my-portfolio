@@ -19,13 +19,13 @@ export function Nav() {
   return (
     <>
       {widthSize > 1030 && (
-        <nav className='nav-layout above-all gap-4'>
-          <div className='flex-align gap-4'>
+        <nav className="nav-layout above-all gap-4">
+          <div className="flex-align gap-4">
             <NameNavLink />
             <Socials />
           </div>
           <NavItems />
-          <div className='theme-language-container'>
+          <div className="theme-language-container">
             <LanguageBtn />
             <ThemeBtn />
           </div>
@@ -34,23 +34,23 @@ export function Nav() {
       {widthSize <= 1030 && heightSize > widthSize && (
         <nav
           className={`nav-layout ${heightSize > widthSize ? ' sticky' : ' '}`}>
-          <div className='flex-align gap-4'>
+          <div className="flex-align gap-4">
             <NameNavLink />
           </div>
-          <div className='flex-end hamburger-container'>
+          <div className="flex-end hamburger-container">
             <Hamburger handleOpen={handleOpen} openHamburger={openHamburger} />
           </div>
           <Slider openHamburger={openHamburger} handleOpen={handleOpen} />
         </nav>
       )}
       {widthSize <= 1030 && heightSize < widthSize && (
-        <nav className='above-all nav-layout gap-4'>
-          <div className='flex-align flex-center text-align gap-4'>
+        <nav className="above-all nav-layout gap-4">
+          <div className="flex-align flex-center text-align gap-4">
             <NameNavLink />
             <Socials />
           </div>
           <NavItems />
-          <div className='theme-language-container'>
+          <div className="theme-language-container">
             <LanguageBtn />
             <ThemeBtn />
           </div>

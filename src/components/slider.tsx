@@ -23,26 +23,26 @@ export function Slider({ openHamburger, handleOpen }: SliderProps) {
     <div>
       <Fade
         fadeStyle={`${style} fade-slider`}
-        outStyle=' out-slider'
+        outStyle=" out-slider"
         visible={openHamburger}>
         <div className={`${style} above-all`}>
-          <div className='nav-slider relative stack flex-center gap-6'>
-            <div className='cross-btn-container'>
+          <div className="nav-slider relative stack flex-center gap-6">
+            <div className="cross-btn-container">
               <button style={{ paddingTop: '1rem' }} onClick={handleOpen}>
                 <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  className='icon cross-icon'
-                  viewBox='0 0 24 24'>
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="icon cross-icon"
+                  viewBox="0 0 24 24">
                   <path
-                    strokeLinecap='round'
-                    strokeWidth='1.5'
-                    d='m8.464 15.535l7.072-7.07m-7.072 0l7.072 7.07'></path>
+                    strokeLinecap="round"
+                    strokeWidth="1.5"
+                    d="m8.464 15.535l7.072-7.07m-7.072 0l7.072 7.07"></path>
                 </svg>
               </button>
             </div>
             <NavItems />
             <Socials />
-            <div className='theme-language-container'>
+            <div className="theme-language-container">
               <LanguageBtn />
               <ThemeBtn />
             </div>

@@ -11,11 +11,11 @@ export function Root() {
   const { theme } = useContext(ThemeContext)
   const { widthSize, heightSize } = useSizeScreen()
   return (
-    <div className='stack background' data-theme={theme}>
+    <div className="stack background" data-theme={theme}>
       {widthSize > heightSize ? <GoTop /> : null}
       <ScrollRestoration />
       <Nav />
-      <main className='stack'>
+      <main className="stack">
         <Outlet />
         <CallToAction />
       </main>

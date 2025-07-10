@@ -8,12 +8,12 @@ export function ErrorPage() {
   console.error(error)
 
   return (
-    <div className='stack background error' data-theme={theme}>
-      <div className='stack error' id='error'>
-        <h1 className='page-title title'>Oops!</h1>
+    <div className="stack background error" data-theme={theme}>
+      <div className="stack error" id="error">
+        <h1 className="page-title title">Oops!</h1>
         <p>Sorry, an unexpected error has occurred.</p>
         <p>
-          <i className='error-msg'>
+          <i className="error-msg">
             {isRouteErrorResponse(error)
               ? // note that error is type `ErrorResponse`
                 error.data || error.statusText

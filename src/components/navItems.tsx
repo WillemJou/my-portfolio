@@ -8,25 +8,25 @@ export function NavItems() {
   const stateLanguage = languages.language
   const { scrollToTop } = useScrollToTop()
   return (
-    <ul className='nav-items gap-2'>
-      <li className='nav-link-li'>
-        <NavLink onClick={scrollToTop} className='link' to='/my-portfolio/' end>
+    <ul className="nav-items gap-2">
+      <li className="nav-link-li">
+        <NavLink onClick={scrollToTop} className="link" to="/my-portfolio/" end>
           {stateLanguage === 'en' ? 'Home' : 'Bienvenue'}
         </NavLink>
       </li>
-      <li className='nav-link-li'>
+      <li className="nav-link-li">
         <NavLink
           onClick={scrollToTop}
-          className='link'
-          to='/my-portfolio/works'>
+          className="link"
+          to="/my-portfolio/works">
           {stateLanguage === 'en' ? 'Works' : 'Projets'}
         </NavLink>
       </li>
-      <li className='nav-link-li'>
+      <li className="nav-link-li">
         <NavLink
           onClick={scrollToTop}
-          className='link'
-          to='/my-portfolio/about'>
+          className="link"
+          to="/my-portfolio/about">
           {stateLanguage === 'en' ? 'About' : 'À Propos'}
         </NavLink>
       </li>

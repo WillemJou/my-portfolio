@@ -10,21 +10,21 @@ export function Footer() {
   const stateLanguage = languages.language
   return (
     <>
-      <footer className='footer'>
-        <p className='footer-text'>
+      <footer className="footer">
+        <p className="footer-text">
           {stateLanguage === 'en' ? 'Template by' : 'Base de portfolio par'}{' '}
-          <Link to='https://astro.build/' className='footer-link'>
+          <Link to="https://astro.build/" className="footer-link">
             Astro,
           </Link>{' '}
           Portland
         </p>
-        <p className='footer-text'>
+        <p className="footer-text">
           {stateLanguage === 'en'
             ? 'Hand Made and Stylized by'
             : 'Fait Main et Designé par'}{' '}
           <Link
-            to='/my-portfolio/about'
-            className='footer-link'
+            to="/my-portfolio/about"
+            className="footer-link"
             onClick={scrollToTop}>
             Willem Jouret,
           </Link>{' '}

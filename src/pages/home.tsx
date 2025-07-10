@@ -6,7 +6,7 @@ export function Home() {
   return (
     <>
       <Header />
-      <div className='stack wrapper gap-24'>
+      <div className="stack wrapper gap-24">
         <BoxStack />
         <SelectedWorksContainer />
       </div>

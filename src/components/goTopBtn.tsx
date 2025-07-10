@@ -28,15 +28,15 @@ export function GoTop() {
   return (
     <>
       <div className={showBtn} onClick={scrollUp}>
-        <button className='go-top-btn text-align above-all'>
+        <button className="go-top-btn text-align above-all">
           <svg
-            className='go-top-icon'
-            xmlns='http://www.w3.org/2000/svg'
-            viewBox='0 0 24 24'>
+            className="go-top-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24">
             <path
-              fill='#ffff'
-              fill-rule='evenodd'
-              d='m4 15l8-8l8 8l-2 2l-6-6l-6 6z'></path>
+              fill="#ffff"
+              fill-rule="evenodd"
+              d="m4 15l8-8l8 8l-2 2l-6-6l-6 6z"></path>
           </svg>
         </button>
       </div>
