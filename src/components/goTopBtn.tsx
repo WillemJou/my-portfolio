@@ -1,14 +1,23 @@
 import { useState, useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import { useScrollPosition } from '../hooks/useScrollPosition'
 
 export function GoTop() {
   const [showBtn, setShowBtn] = useState('go-top-btn_hidden')
   const { scrollPosition } = useScrollPosition()
+  const location = useLocation()
 
   const handleVisibleButton = () => {
-    scrollPosition > 600
-      ? setShowBtn('go-top-btn_showed')
-      : setShowBtn('go-top-btn_hidden')
+    if (scrollPosition > 600 && location.pathname !== '/my-portfolio/') {
+      setShowBtn('go-top-btn_showed')
+    } else if (
+      scrollPosition > 1800 &&
+      location.pathname === '/my-portfolio/'
+    ) {
+      setShowBtn('go-top-btn_showed')
+    } else {
+      setShowBtn('go-top-btn_hidden')
+    }
   }
 
   const scrollUp = () => {

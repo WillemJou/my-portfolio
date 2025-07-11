@@ -243,7 +243,7 @@ html {
 }
 
 .box {
-  width: 60%;
+  width: 50vw;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

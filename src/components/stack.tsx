@@ -8,14 +8,15 @@ interface Stacks {
   frameworks: string[]
   icon: string
 }
+
 type StackProps = {
   stack: Stacks | undefined
 }
 
 export function Stack({ stack }: StackProps) {
-  const [isMounted, setisMounted] = useState(false)
+  const [isMounted, setIsMounted] = useState(false)
   const handleOpen = () => {
-    setisMounted(!isMounted)
+    setIsMounted(!isMounted)
   }
 
   return (

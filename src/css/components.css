@@ -112,6 +112,10 @@
   fill: var(--gray-0);
 }
 
+.stack-title {
+  font-size: 1.5em !important;
+}
+
 .social-icon,
 .me-link,
 .language-btn,

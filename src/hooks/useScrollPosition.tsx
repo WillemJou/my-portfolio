@@ -4,7 +4,7 @@ export const useScrollPosition = () => {
   const [scrollPosition, setScrollPosition] = useState(0)
 
   const showPosition = () => {
-    let scrollY = window.scrollY
+    const scrollY = window.scrollY
     setScrollPosition(scrollY)
   }
 

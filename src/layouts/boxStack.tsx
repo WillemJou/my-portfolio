@@ -15,7 +15,7 @@ export function BoxStack() {
   return (
     <RevealOnScroll>
       <section className="skills stack relative">
-        <div id="stackBox" className="section-header gap-4 stack">
+        <div id="stackBoxTitle" className="section-header gap-4 stack">
           <a className="stackbox-link" href="#stackBox">
             <h3 className="title sub-title-2">
               {stateLanguage === 'en' ? 'My Stack' : 'Ma Stack'}
@@ -27,6 +27,7 @@ export function BoxStack() {
               : "Je code en JavaScript et React, j'utilise React Native pour le mobile."}
           </p>
         </div>
+
         <div className="box-container relative">
           <ul className="box">
             <>
