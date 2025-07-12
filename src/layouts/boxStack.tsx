@@ -15,7 +15,7 @@ export function BoxStack() {
   return (
     <RevealOnScroll>
       <section className="skills stack relative">
-        <div id="stackBoxTitle" className="section-header gap-4 stack">
+        <div id="stackbox" className="section-header gap-4 stack">
           <a className="stackbox-link" href="#stackBox">
             <h3 className="title sub-title-2">
               {stateLanguage === 'en' ? 'My Stack' : 'Ma Stack'}

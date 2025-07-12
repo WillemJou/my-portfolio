@@ -25,7 +25,14 @@ export function Stack({ stack }: StackProps) {
       key={stack?.id}
       className="stack stack-element pointer relative gap-2"
       onClick={() => handleOpen()}>
-      <h3 className="title sub-title-4 stack-title">{stack?.title}</h3>
+      <h3
+        className={`${
+          isMounted
+            ? 'title sub-title-4 stack-title title-open '
+            : 'title sub-title-4 stack-title title-close '
+        }`}>
+        {stack?.title}
+      </h3>
       <Fade fadeStyle="fade-stack" outStyle=" out-stack" visible={isMounted}>
         <div className="stack-lists-container">
           <p className="stack-list">

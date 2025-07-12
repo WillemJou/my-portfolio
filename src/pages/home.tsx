@@ -7,11 +7,7 @@ export function Home() {
   return (
     <>
       <Header />
-      <AnchorLink
-        titleEn="My Stack"
-        titleFr="Ma Stack"
-        anchor="#stackBoxTitle"
-      />
+      <AnchorLink titleEn="My Stack" titleFr="Ma Stack" anchor="#stackbox" />
       <div className="stack wrapper gap-24">
         <BoxStack />
         <AnchorLink

@@ -421,8 +421,16 @@
 }
 
 .main-name-link:hover,
-.stack-element:hover .stack-title {
-  color: var(--accent-regular);
+.stack-element:hover.stack-title {
+  color: var(--accent-regular) !important;
+}
+
+.title-open {
+  color: var(--accent-regular) !important;
+}
+
+.title-close {
+  color: inherit;
 }
 
 .title {
