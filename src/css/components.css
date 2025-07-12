@@ -289,7 +289,7 @@
 
 .view-all-link {
   height: fit-content;
-  padding: var(--measure-2) var(--measure-3);
+  padding: var(--measure-3) var(--measure-4);
   gap: var(--measure-2);
 }
 

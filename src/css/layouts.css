@@ -25,6 +25,12 @@ html {
   justify-content: flex-end;
 }
 
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
 .relative {
   position: relative;
 }
