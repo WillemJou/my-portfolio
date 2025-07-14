@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { Fade } from '../utils/fade'
 
 interface Stacks {
@@ -14,17 +14,29 @@ type StackProps = {
 }
 
 export function Stack({ stack }: StackProps) {
+  const focusableRef = useRef<HTMLDivElement>(null)
   const [isMounted, setIsMounted] = useState(false)
   const handleOpen = () => {
     setIsMounted(!isMounted)
   }
-
+  const handleViewFocus = () => {
+    if (!isMounted) {
+      setTimeout(() => {
+        focusableRef.current?.scrollIntoView({
+          behavior: 'smooth',
+          block: 'center',
+        })
+      }, 100)
+    }
+  }
   return (
     <div
       tabIndex={0}
       key={stack?.id}
       className="stack stack-element pointer relative gap-2"
-      onClick={() => handleOpen()}>
+      onClick={() => {
+        handleOpen(), handleViewFocus()
+      }}>
       <h3
         className={`${
           isMounted
@@ -34,7 +46,7 @@ export function Stack({ stack }: StackProps) {
         {stack?.title}
       </h3>
       <Fade fadeStyle="fade-stack" outStyle=" out-stack" visible={isMounted}>
-        <div className="stack-lists-container">
+        <div ref={focusableRef} className="drawer-container">
           <p className="stack-list">
             {stack?.topics.map((topic, index) => (
               <li

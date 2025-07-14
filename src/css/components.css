@@ -179,6 +179,7 @@
 }
 
 .stackbox-link {
+  cursor: default;
   width: fit-content;
 }
 
