@@ -3,6 +3,7 @@ import { RevealOnScroll } from '../utils/revealOn'
 import { LanguageContext } from '../globals/languages'
 import { selectedStacks } from '../utils/dataService'
 import { Stack } from '../components/stack'
+import { AnchorLink } from '../components/anchorLink'
 
 export function BoxStack() {
   const languages = useContext(LanguageContext)
@@ -15,7 +16,7 @@ export function BoxStack() {
   return (
     <RevealOnScroll>
       <section className="skills stack relative">
-        <div id="stackbox" className="section-header gap-4 stack">
+        <div id="stackbox" className="section-header stack">
           <a className="stackbox-link" href="#stackBox">
             <h3 className="title sub-title-2">
               {stateLanguage === 'en' ? 'My Stack' : 'Ma Stack'}
@@ -36,6 +37,11 @@ export function BoxStack() {
               <Stack stack={MOBILE} />
             </>
           </ul>
+          <AnchorLink
+            title={stateLanguage === 'en' ? 'My Projects' : 'Mes Projets'}
+            anchor="#projects"
+            className="upper-link project-link"
+          />
         </div>
       </section>
     </RevealOnScroll>

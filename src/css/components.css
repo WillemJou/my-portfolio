@@ -112,7 +112,7 @@
   fill: var(--gray-0);
 }
 
-.stack-title {
+.drawer-title {
   font-size: 1.5em !important;
 }
 
@@ -121,7 +121,7 @@
 .language-btn,
 .upper-link,
 .main-name-link,
-.stack-title {
+.drawer-title {
   transition: all 0.2s ease-in-out;
 }
 
@@ -192,11 +192,6 @@
   z-index: 10;
 }
 
-.project-link {
-  position: absolute;
-  bottom: -40px;
-  right: 0;
-}
 .arrow-icon,
 .stack-arrow-icon {
   width: var(--shape-s);
@@ -246,6 +241,8 @@
   justify-content: flex-end;
   min-height: 10vh;
   margin-right: 3vw;
+}
+.project-link {
 }
 
 .socials {
@@ -421,7 +418,7 @@
 }
 
 .main-name-link:hover,
-.stack-element:hover.stack-title {
+.stack-element:hover .drawer-title {
   color: var(--accent-regular) !important;
 }
 
@@ -446,7 +443,7 @@
 }
 
 .sub-title-2 {
-  margin-top: var(--shape-m);
+  margin-top: var(--shape-s);
   font-size: var(--text-4xl);
 }
 
@@ -484,6 +481,7 @@
 }
 
 .stack-element {
+  height: fit-content;
   text-align: start;
   border-bottom: 1px solid var(--accent-dark);
   padding-bottom: var(--shape-m);
@@ -508,12 +506,12 @@
 
 .li-card {
   transition: all 0.2s ease-in-out;
-  border-radius: 1.5rem;
+  border-radius: 1.7rem;
 }
 
 .li-card:hover {
   transform: scale(1.1, 1.1);
-  border: 1px solid var(--accent-dark);
+  border: 2px solid var(--accent-regular);
 }
 
 .card {

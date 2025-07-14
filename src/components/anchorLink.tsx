@@ -1,22 +1,14 @@
-import { useContext } from 'react'
-import { LanguageContext } from '../globals/languages'
-
 type AnchorLinkProps = {
-  titleFr: string
-  titleEn: string
+  title: string
   anchor: string
+  className: string
 }
 
-export const AnchorLink = ({ titleEn, titleFr, anchor }: AnchorLinkProps) => {
-  const languages = useContext(LanguageContext)
-  const stateLanguage = languages.language
+export const AnchorLink = ({ title, anchor, className }: AnchorLinkProps) => {
   return (
     <div className="anchorlink-container">
-      <a className="upper-link " href={anchor}>
-        <h3 className="title sub-title-4">
-          {' '}
-          {stateLanguage === 'en' ? titleEn : titleFr}
-        </h3>
+      <a className={className} href={anchor}>
+        <h3 className="title sub-title-4">{title}</h3>
         <svg
           className="arrow-icon"
           xmlns="http://www.w3.org/2000/svg"

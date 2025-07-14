@@ -8,20 +8,21 @@ export function GoTopBtn() {
   const { scrollPosition } = useScrollPosition()
   const location = useLocation()
   const { widthSize } = useSizeScreen()
-  console.log(scrollPosition)
+  const ConditionShowBtn =
+    scrollPosition > 600 && location.pathname !== '/my-portfolio/'
+  const ConditionShowBtnHighRes =
+    widthSize > 1080 &&
+    scrollPosition > 1900 &&
+    location.pathname === '/my-portfolio/'
 
   /**
    * This function determines the visibility of a button based on the scroll
-   * position, reference observer API and current location pathname.
+   * position and current location pathname
    */
   const handleVisibleButton = () => {
-    if (scrollPosition > 600 && location.pathname !== '/my-portfolio/') {
+    if (ConditionShowBtn) {
       setShowBtn('go-top-btn_showed')
-    } else if (
-      widthSize > 1080 &&
-      scrollPosition > 1900 &&
-      location.pathname === '/my-portfolio/'
-    ) {
+    } else if (ConditionShowBtnHighRes) {
       setShowBtn('go-top-btn_showed')
     } else {
       setShowBtn('go-top-btn_hidden')

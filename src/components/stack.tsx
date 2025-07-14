@@ -28,8 +28,8 @@ export function Stack({ stack }: StackProps) {
       <h3
         className={`${
           isMounted
-            ? 'title sub-title-4 stack-title title-open '
-            : 'title sub-title-4 stack-title title-close '
+            ? 'title drawer-title title-open '
+            : 'title drawer-title title-close '
         }`}>
         {stack?.title}
       </h3>
