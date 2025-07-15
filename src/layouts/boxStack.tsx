@@ -1,9 +1,9 @@
 import { useContext } from 'react'
-import { RevealOnScroll } from '../utils/revealOn'
+import { RevealOnScroll } from '../utils/RevealOn'
 import { LanguageContext } from '../globals/languages'
 import { selectedStacks } from '../utils/dataService'
-import { Stack } from '../components/stack'
-import { AnchorLink } from '../components/anchorLink'
+import { Stack } from '../components/Stack'
+import { AnchorLink } from '../components/AnchorLink'
 
 export function BoxStack() {
   const languages = useContext(LanguageContext)

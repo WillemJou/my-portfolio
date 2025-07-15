@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import { Error } from '../components/error'
+import { Error } from './Error'
 
 interface CarouselProps {
   projects: (id: string | undefined) => void

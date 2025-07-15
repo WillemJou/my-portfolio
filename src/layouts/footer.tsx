@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom'
 import { useContext } from 'react'
 import { LanguageContext } from '../globals/languages'
-import { Socials } from '../components/socials'
+import { Socials } from '../components/Socials'
 import { useScrollToTop } from '../hooks/useScrollToTop'
-import { RevealOnScroll } from '../utils/revealOn'
+import { RevealOnScroll } from '../utils/RevealOn'
 
 export function Footer() {
   const languages = useContext(LanguageContext)

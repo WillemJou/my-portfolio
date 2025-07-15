@@ -2,7 +2,7 @@ import { useContext } from 'react'
 import { LanguageContext } from '../globals/languages'
 import { Link } from 'react-router-dom'
 import mainPortrait from '/mainPortrait.jpg'
-import { RevealOnScroll } from '../utils/revealOn'
+import { RevealOnScroll } from '../utils/RevealOn'
 
 export function Header() {
   const languages = useContext(LanguageContext)

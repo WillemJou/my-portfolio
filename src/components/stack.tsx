@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react'
-import { Fade } from '../utils/fade'
+import { Fade } from '../utils/Fade'
 
 interface Stacks {
   title: string

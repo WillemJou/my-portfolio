@@ -1,8 +1,8 @@
-import { Gallery } from '../components/gallery'
+import { Gallery } from '../components/Gallery'
 import { useContext } from 'react'
 import { LanguageContext } from '../globals/languages'
 import data from '../data.json'
-import { RevealOnScroll } from '../utils/revealOn'
+import { RevealOnScroll } from '../utils/RevealOn'
 
 export function Works() {
   const languages = useContext(LanguageContext)

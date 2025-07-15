@@ -1,9 +1,9 @@
 import { useState, useEffect, MouseEventHandler } from 'react'
-import { NavItems } from './navItems'
-import { Socials } from './socials'
-import { LanguageBtn } from './languageBtn'
-import { ThemeBtn } from './themeBtn'
-import { Fade } from '../utils/fade'
+import { NavItems } from './NavItems'
+import { Socials } from './Socials'
+import { LanguageBtn } from './LanguageBtn'
+import { ThemeBtn } from './ThemeBtn'
+import { Fade } from '../utils/Fade'
 
 type SliderProps = {
   openHamburger: boolean

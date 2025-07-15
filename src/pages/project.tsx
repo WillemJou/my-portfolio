@@ -1,6 +1,6 @@
 import { Link, useParams } from 'react-router-dom'
 import { otherProjects, selectedProjects } from '../utils/dataService'
-import { Carousel } from '../components/carrousel'
+import { Carousel } from '../components/Carrousel'
 import { useContext } from 'react'
 import { LanguageContext } from '../globals/languages'
 

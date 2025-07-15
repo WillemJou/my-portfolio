@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import { LanguageBtn } from '../components/languageBtn'
-import { NameNavLink } from '../components/nameNavLink'
-import { NavItems } from '../components/navItems'
-import { Socials } from '../components/socials'
-import { ThemeBtn } from '../components/themeBtn'
-import { Hamburger } from '../components/hamburger'
-import { Slider } from '../components/slider'
+import { LanguageBtn } from '../components/LanguageBtn'
+import { NameNavLink } from '../components/NameNavLink'
+import { NavItems } from '../components/NavItems'
+import { Socials } from '../components/Socials'
+import { ThemeBtn } from '../components/ThemeBtn'
+import { Hamburger } from '../components/Hamburger'
+import { Slider } from '../components/Slider'
 import { useSizeScreen } from '../hooks/useSizeScreen'
 
 export function Nav() {

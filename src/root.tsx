@@ -1,10 +1,10 @@
 import { Outlet, ScrollRestoration } from 'react-router-dom'
 import { useContext } from 'react'
 import { ThemeContext } from './globals/theme'
-import { CallToAction } from './layouts/calltoAction'
-import { Footer } from './layouts/footer'
-import { Nav } from './layouts/nav'
-import { GoTopBtn } from './components/goTopBtn'
+import { CallToAction } from './layouts/CalltoAction'
+import { Footer } from './layouts/Footer'
+import { Nav } from './layouts/Nav'
+import { GoTopBtn } from './components/GoTopBtn'
 
 export function Root() {
   const { theme } = useContext(ThemeContext)

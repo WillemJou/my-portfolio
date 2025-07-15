@@ -1,9 +1,9 @@
 import { useContext } from 'react'
 import { LanguageContext } from '../globals/languages'
-import { BoxStack } from '../layouts/boxStack'
-import { Header } from '../layouts/header'
-import { SelectedWorksContainer } from '../layouts/selectedWorks'
-import { AnchorLink } from '../components/anchorLink'
+import { BoxStack } from '../layouts/BoxStack'
+import { Header } from '../layouts/Header'
+import { SelectedWorksContainer } from '../layouts/SelectedWorks'
+import { AnchorLink } from '../components/AnchorLink'
 
 export function Home() {
   const languages = useContext(LanguageContext)
