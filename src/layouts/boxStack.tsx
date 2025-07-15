@@ -18,7 +18,7 @@ export function BoxStack() {
       <section className="skills stack relative">
         <div id="stackbox" className="section-header stack">
           <a className="stackbox-link" href="#stackBox">
-            <h3 className="title sub-title-2">
+            <h3 className="title sub-title-2 title-home-section">
               {stateLanguage === 'en' ? 'My Stack' : 'Ma Stack'}
             </h3>
           </a>

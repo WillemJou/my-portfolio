@@ -147,15 +147,9 @@ html {
   align-items: baseline;
 }
 
-.text {
-  font-size: var(--text-lg);
-  transition: all 0.2s ease-in-out;
-}
-
 .header {
   display: flex;
   padding-inline: var(--measure-20);
-  font-size: var(--text-xl);
 }
 
 .main-header {
@@ -164,7 +158,6 @@ html {
   align-items: center;
   min-height: 65vh;
   padding: 0 var(--measure-24);
-  font-size: var(--text-xl);
   gap: var(--measure-10);
 }
 
@@ -172,7 +165,7 @@ html {
   position: relative;
   color: var(--gray-200);
   font-family: var(--font-body);
-  line-height: 1.5;
+  line-height: var(--line-normal);
   min-height: 100vh;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -205,9 +198,9 @@ html {
 
 .nav-items {
   display: flex;
-  line-height: 1.2;
+  line-height: var(--line-tight);
   position: relative;
-  font-size: var(--text-sm);
+  font-size: var(--text-md);
   border-radius: 999rem;
   border: 0;
   padding: var(--measure-3) var(--shape-xxs);
@@ -240,7 +233,6 @@ html {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  font-size: var(--text-lg);
 }
 
 .box-container {
@@ -274,7 +266,6 @@ html {
 .section-header {
   min-height: 11vh;
   position: relative;
-  font-size: var(--text-lg);
 }
 
 .card-layout {
@@ -297,7 +288,6 @@ html {
   margin-top: auto;
   align-items: center;
   text-align: center;
-  font-size: var(--text-sm);
   color: var(--accent-dark);
 }
 

@@ -10,14 +10,18 @@ export function NavItems() {
   return (
     <ul className="nav-items gap-2">
       <li className="nav-link-li">
-        <NavLink onClick={scrollToTop} className="link" to="/my-portfolio/" end>
+        <NavLink
+          onClick={scrollToTop}
+          className="navbar-link"
+          to="/my-portfolio/"
+          end>
           {stateLanguage === 'en' ? 'Home' : 'Bienvenue'}
         </NavLink>
       </li>
       <li className="nav-link-li">
         <NavLink
           onClick={scrollToTop}
-          className="link"
+          className="navbar-link"
           to="/my-portfolio/works">
           {stateLanguage === 'en' ? 'Works' : 'Projets'}
         </NavLink>
@@ -25,7 +29,7 @@ export function NavItems() {
       <li className="nav-link-li">
         <NavLink
           onClick={scrollToTop}
-          className="link"
+          className="navbar-link"
           to="/my-portfolio/about">
           {stateLanguage === 'en' ? 'About' : 'À Propos'}
         </NavLink>

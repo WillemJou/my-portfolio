@@ -8,7 +8,7 @@ export function CallToAction() {
   const email = 'willem.jouret9@gmail.com'
   return (
     <aside className="aside-layout">
-      <h3 className="title sub-title-3">
+      <h3 className="title sub-title-2 cta-title">
         {stateLanguage === 'en'
           ? 'Interested in working together ?'
           : 'Gardons contact ! '}

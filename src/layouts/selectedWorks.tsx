@@ -17,7 +17,7 @@ export function SelectedWorksContainer() {
       <section id="projects" className="relative stack gap-24">
         <header className="section-header stack gap-4">
           <div className="flex-start gap-24">
-            <h3 className="title sub-title-2">
+            <h3 className="title sub-title-2 title-home-section">
               {stateLanguage === 'en'
                 ? ' Selected Works'
                 : 'Projets sélectionnés'}

@@ -8,7 +8,7 @@ export const AnchorLink = ({ title, anchor, className }: AnchorLinkProps) => {
   return (
     <div className="anchorlink-container">
       <a className={className} href={anchor}>
-        <h3 className="title sub-title-4">{title}</h3>
+        <h3 className="title sub-title-2">{title}</h3>
         <svg
           className="arrow-icon"
           xmlns="http://www.w3.org/2000/svg"

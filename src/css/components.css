@@ -113,7 +113,7 @@
 }
 
 .drawer-title {
-  font-size: 1.5em !important;
+  font-size: var(--title-sub);
 }
 
 .social-icon,
@@ -151,7 +151,6 @@
   flex-direction: column;
   bottom: 5vh;
   right: 3vw;
-  font-size: var(--text-md);
   width: 60px;
   height: 60px;
   border-radius: 100%;
@@ -222,7 +221,7 @@
 }
 
 .me-link {
-  font-size: var(--text-lg);
+  font-size: var(--text-md);
 }
 
 [data-theme="light"] {
@@ -251,7 +250,6 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  font-size: var(--icon-size);
 }
 
 .social {
@@ -262,20 +260,20 @@
   transition: color var(--theme-transition);
 }
 
-.link {
+.navbar-link {
   padding: var(--measure-2) var(--measure-4);
   border-radius: 999rem;
   transition: color var(--theme-transition),
     background-color var(--theme-transition);
 }
 
-.link.active,
-.link.active:hover {
+.navbar-link.active,
+.navbar-link.active:hover {
   color: var(--accent-text-over);
   background-color: var(--accent-regular);
 }
 
-.link:hover {
+.navbar-link:hover {
   color: var(--gray-0);
   background-color: var(--accent-subtle-overlay);
 }
@@ -297,7 +295,7 @@
   align-items: center;
   position: relative;
   color: var(--accent-text-over);
-  font-size: var(--text-base);
+  font-size: var(--text-sm);
   border-radius: 999rem;
   overflow: hidden;
   background: var(--gradient-accent-dark-blue);
@@ -433,32 +431,31 @@
 
 .title {
   color: var(--gray-0);
-  line-height: 1.1;
+  line-height: var(--line-tight);
   font-weight: 500;
   transition: all 0.2s ease-in-out;
 }
 
-.big-title,
+.big-title {
+  font-size: var(--title-hero);
+}
+
 .page-title {
-  font-size: var(--text-5xl);
+  font-size: var(--title-main);
 }
 
-.sub-title-2 {
+.title-section {
   margin-top: var(--shape-s);
-  font-size: var(--text-4xl);
 }
-
-.sub-title-3 {
-  max-width: var(--shape-xxl);
-  font-size: var(--text-3xl);
-  text-align: left;
-}
-
-.sub-title-4 {
+.sub-title-2 {
   font-size: var(--text-2xl);
 }
 
-.sub-title-5 {
+.cta-title {
+  text-align: left;
+}
+
+.sub-title-3 {
   font-size: var(--text-xl);
   grid-column-start: 1;
 }
@@ -623,7 +620,7 @@
   background-color: var(--accent-regular);
   border-radius: 999rem;
   font-size: var(--text-md);
-  line-height: 1.35;
+  line-height: var(--line-tight);
   white-space: nowrap;
 }
 

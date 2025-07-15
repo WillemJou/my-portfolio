@@ -34,7 +34,7 @@ export function About() {
           />
         </div>
         <section className="about-section">
-          <h2 className="title sub-title-5">
+          <h2 className="title sub-title-3">
             {' '}
             {stateLanguage === 'en' ? 'Background' : 'Mon passé'}
           </h2>
@@ -47,7 +47,7 @@ export function About() {
           </div>
         </section>
         <section className="about-section">
-          <h2 className="title sub-title-5">
+          <h2 className="title sub-title-3">
             {stateLanguage === 'en' ? 'Education' : 'Études'}
           </h2>
           <div className="content">
@@ -59,7 +59,7 @@ export function About() {
           </div>
         </section>
         <section className="about-section">
-          <h2 className="title sub-title-5">Soft Skills</h2>
+          <h2 className="title sub-title-3">Soft Skills</h2>
           <div className="content">
             <p className="description">
               {stateLanguage === 'en'
