@@ -32,8 +32,8 @@ export function Header() {
             </h1>
             <p className="tagline hero-sub-title">
               {stateLanguage === 'en'
-                ? 'front-end developer currently based in Paris 🧑🏻‍💻'
-                : 'Développeur front-end basé à Paris 🧑🏻‍💻'}
+                ? 'front-end developer currently based in Brittany 🧑🏻‍💻'
+                : 'Développeur front-end basé en Bretagne 🧑🏻‍💻'}
             </p>
           </div>
           <Link className="main-img-link" to="/my-portfolio/about">
