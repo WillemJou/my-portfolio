@@ -594,7 +594,7 @@
   }
 
   .navbar-link {
-    font-size: var(--text-lg);
+    font-size: var(--text-md);
     padding: 1.3rem var(--measure-6);
   }
 

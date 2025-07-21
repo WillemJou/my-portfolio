@@ -193,7 +193,6 @@ html {
   opacity: 0.95;
   margin-bottom: var(--measure-4);
   padding: var(--measure-10) var(--measure-20);
-  font-weight: 500;
 }
 
 .nav-items {
