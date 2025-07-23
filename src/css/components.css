@@ -211,7 +211,6 @@
 
 .article,
 .description,
-.stack-list,
 .tagline {
   font-size: var(--text-lg);
 }
@@ -253,6 +252,7 @@
 
 .back-link {
   display: flex;
+  font-size: var(--text-lg);
   align-items: last baseline;
   gap: var(--measure-1);
   color: var(--gray-0);

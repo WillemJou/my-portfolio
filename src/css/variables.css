@@ -1,8 +1,16 @@
+/* ===============================================
+   VARIABLES CSS GLOBALES
+   =============================================== */
+
 :root {
-  /*Ratio de l'échelle typographique*/
+  /* ===== TYPOGRAPHIE ===== */
+
+  /* Ratio de l'échelle typographique */
   --type-ratio: 1.25;
+
   /* Taille de base fluide qui s'adapte à l'écran */
   --text-base: clamp(1rem, 2.5vw, 1.125rem);
+
   /* Échelle typographique calculée automatiquement */
   --text-xs: calc(var(--text-base) / var(--type-ratio) / var(--type-ratio));
   --text-sm: calc(var(--text-base) / var(--type-ratio));
@@ -21,13 +29,26 @@
       var(--type-ratio) * var(--type-ratio)
   );
 
-  /* Titres avec clamp pour plus de contrôle */
+  /* Titres avec contrôle responsive */
   --title-hero: clamp(2rem, 6vw, 4rem);
   --title-main: clamp(1.5rem, 4vw, 3rem);
   --title-section: clamp(1.25rem, 3vw, 2rem);
   --title-sub: clamp(1.125rem, 2.5vw, 1.5rem);
 
-  /* Espacements proportionnels */
+  /* Hauteurs de ligne optimisées */
+  --line-tight: 1.2;
+  --line-normal: 1.5;
+  --line-relaxed: 1.6;
+  --line-loose: 1.8;
+
+  /* Polices */
+  --font-system: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --font-body: "Public Sans", var(--font-system);
+
+  /* ===== ESPACEMENTS ===== */
+
+  /* Espacements proportionnels basés sur la taille de texte */
   --space-xs: calc(var(--text-base) * 0.25);
   --space-sm: calc(var(--text-base) * 0.5);
   --space-md: var(--text-base);
@@ -35,13 +56,9 @@
   --space-xl: calc(var(--text-base) * 2);
   --space-2xl: calc(var(--text-base) * 3);
 
-  /* Line heights optimisées */
-  --line-tight: 1.2;
-  --line-normal: 1.5;
-  --line-relaxed: 1.6;
-  --line-loose: 1.8;
+  /* ===== DIMENSIONS ===== */
 
-  /* Sizes */
+  /* Formes et tailles */
   --shape-xxs: 0.3rem;
   --shape-xs: 1.3rem;
   --shape-s: 1.7rem;
@@ -51,7 +68,7 @@
   --shape-xxl: 23rem;
   --shape-xxxl: 26rem;
 
-  /* Measurment */
+  /* Mesures fixes */
   --measure-1: 0.2rem;
   --measure-2: 0.5rem;
   --measure-3: 0.8rem;
@@ -64,27 +81,25 @@
   --measure-29: 9rem;
   --measure-48: 12rem;
 
-  /* Fonts */
-  --font-system: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  --font-body: "Public Sans", var(--font-system);
-  /* Transitions */
+  /* ===== ANIMATIONS ===== */
   --theme-transition: 0.2s ease-in-out;
 }
 
-/* Light Mode */
-[data-theme="light"] {
-  /* Light Theme variables  */
+/* ===============================================
+   THÈME CLAIR
+   =============================================== */
 
-  /* Colors */
-  --gray-0: #11131f;
-  --gray-200: #3d4663;
-  --gray-700: #edf2fe;
-  --gray-800: #f7f9ff;
-  --gray-900: #fdfdfe;
-  --gray-999: #ffffff;
+[data-theme="light"] {
+  /* ===== COULEURS DE BASE ===== */
+  --gray-0: #11131f; /* Noir profond */
+  --gray-200: #3d4663; /* Gris foncé */
+  --gray-700: #edf2fe; /* Gris clair */
+  --gray-800: #f7f9ff; /* Gris très clair */
+  --gray-900: #fdfdfe; /* Blanc cassé */
+  --gray-999: #ffffff; /* Blanc pur */
   --gray-999-basis: 0, 0%, 100%;
 
+  /* ===== COULEURS D'ACCENT ===== */
   --accent-light: #c561f6;
   --accent-regular: #3e63dd;
   --accent-dark: #1c0056;
@@ -92,29 +107,34 @@
   --accent-subtle-overlay: var(--accent-overlay);
   --accent-text-over: var(--gray-999);
 
+  /* ===== COULEURS UTILITAIRES ===== */
   --link-color: var(--accent-regular);
 
-  /* Gradients */
+  /* ===== DÉGRADÉS ===== */
   --gradient-stop-1: var(--accent-light);
   --gradient-stop-2: var(--accent-regular);
   --gradient-stop-3: var(--accent-dark);
+
   --gradient-subtle: linear-gradient(
     150deg,
     var(--gray-900) 19%,
     var(--gray-999) 150%
   );
+
   --gradient-accent: linear-gradient(
     150deg,
     var(--gradient-stop-1),
     var(--gradient-stop-2),
     var(--gradient-stop-3)
   );
+
   --gradient-accent-dark-blue: linear-gradient(
     150deg,
     #3e63dd,
     var(--accent-regular),
     var(--accent-dark)
   );
+
   --gradient-accent-light-blue: linear-gradient(
     800deg,
     #3e63dd 0%,
@@ -124,31 +144,38 @@
 
   --gradient-stroke: linear-gradient(180deg, var(--gray-900), var(--gray-700));
 
-  /* Shadows */
+  /* ===== OMBRES ===== */
   --shadow-sm: 0px 6px 3px rgba(9, 11, 17, 0.01),
     0px 4px 2px rgba(9, 11, 17, 0.01), 0px 2px 2px rgba(9, 11, 17, 0.02),
     0px 0px 1px rgba(9, 11, 17, 0.03);
+
   --shadow-md: 0px 28px 11px rgba(9, 11, 17, 0.01),
     0px 16px 10px rgba(9, 11, 17, 0.03), 0px 7px 7px rgba(9, 11, 17, 0.05),
     0px 2px 4px rgba(9, 11, 17, 0.06);
+
   --shadow-lg: 0px 62px 25px rgba(9, 11, 17, 0.01),
     0px 35px 21px rgba(9, 11, 17, 0.05), 0px 16px 16px rgba(9, 11, 17, 0.1),
     0px 4px 9px rgba(9, 11, 17, 0.12);
 
-  /* Light Mode */
-  /* Background Images */
+  /* ===== IMAGES DE FOND ===== */
   --background__img: url(/background-light.png);
 }
 
+/* ===============================================
+   THÈME SOMBRE
+   =============================================== */
+
 [data-theme="dark"] {
-  --gray-0: #fdfdfe;
-  --gray-200: #d2deff;
-  --gray-600: #253974;
-  --gray-800: #182449;
-  --gray-900: #141726;
-  --gray-999: #11131f;
+  /* ===== COULEURS DE BASE ===== */
+  --gray-0: #fdfdfe; /* Blanc cassé */
+  --gray-200: #d2deff; /* Bleu très clair */
+  --gray-600: #253974; /* Bleu moyen */
+  --gray-800: #182449; /* Bleu foncé */
+  --gray-900: #141726; /* Bleu très foncé */
+  --gray-999: #11131f; /* Noir profond */
   --gray-999-basis: 225, 31%, 5%;
 
+  /* ===== COULEURS D'ACCENT ===== */
   --accent-light: #1c0056;
   --accent-regular: #3e63dd;
   --accent-dark: #d6e1ff;
@@ -156,40 +183,48 @@
   --accent-subtle-overlay: var(--accent-overlay);
   --accent-text-over: var(--gray-0);
 
+  /* ===== COULEURS UTILITAIRES ===== */
   --link-color: var(--accent-dark);
 
+  /* ===== DÉGRADÉS ===== */
   --gradient-stop-1: #4c11c6;
+
   --gradient-subtle: linear-gradient(
     150deg,
     var(--gray-900) 19%,
     var(--gray-999) 81%
   );
+
   --gradient-accent-dark-blue: linear-gradient(
     150deg,
     #e1f5fc,
     var(--accent-regular),
     var(--accent-light)
   );
+
   --gradient-accent-light-blue: linear-gradient(
     800deg,
     #3e63dd 0%,
     var(--accent-dark) 45%,
     var(--accent-regular) 100%
   );
+
   --gradient-stroke: linear-gradient(180deg, var(--gray-600), var(--gray-800));
 
+  /* ===== OMBRES ===== */
   --shadow-sm: 0px 6px 3px rgba(255, 255, 255, 0.01),
     0px 4px 2px rgba(255, 255, 255, 0.01), 0px 2px 2px rgba(255, 255, 255, 0.02),
     0px 0px 1px rgba(255, 255, 255, 0.03);
+
   --shadow-md: 0px 28px 11px rgba(255, 255, 255, 0.01),
     0px 16px 10px rgba(255, 255, 255, 0.03),
     0px 7px 7px rgba(255, 255, 255, 0.05), 0px 2px 4px rgba(255, 255, 255, 0.06);
+
   --shadow-lg: 0px 62px 25px rgba(255, 255, 255, 0.01),
     0px 35px 21px rgba(255, 255, 255, 0.05),
     0px 16px 16px rgba(255, 255, 255, 0.1),
     0px 4px 9px rgba(255, 255, 255, 0.12);
 
-  /* Dark Mode */
-  /* Background Images */
+  /* ===== IMAGES DE FOND ===== */
   --background__img: url(/background-dark.png);
 }
