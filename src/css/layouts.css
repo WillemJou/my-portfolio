@@ -129,7 +129,7 @@ html {
 }
 
 .all-screen {
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
 .hero-screen {
@@ -189,7 +189,6 @@ html {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  min-height: 15vh;
   opacity: 0.95;
   margin-bottom: var(--measure-4);
   padding: var(--measure-10) var(--measure-20);

@@ -294,7 +294,6 @@
 .anchorlink-container {
   display: flex;
   justify-content: flex-end;
-  min-height: 10vh;
   margin-right: 3vw;
 }
 

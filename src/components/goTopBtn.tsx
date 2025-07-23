@@ -1,19 +1,15 @@
 import { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import { useScrollPosition } from '../hooks/useScrollPosition'
-import { useSizeScreen } from '../hooks/useSizeScreen'
 
 export function GoTopBtn() {
   const [showBtn, setShowBtn] = useState('go-top-btn_hidden')
   const { scrollPosition } = useScrollPosition()
   const location = useLocation()
-  const { widthSize } = useSizeScreen()
   const ConditionShowBtn =
     scrollPosition > 600 && location.pathname !== '/my-portfolio/'
   const ConditionShowBtnHighRes =
-    widthSize > 1080 &&
-    scrollPosition > 1900 &&
-    location.pathname === '/my-portfolio/'
+    scrollPosition > 1900 && location.pathname === '/my-portfolio/'
 
   /**
    * This function determines the visibility of a button based on the scroll

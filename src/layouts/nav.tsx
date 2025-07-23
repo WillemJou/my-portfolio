@@ -11,14 +11,17 @@ import { useSizeScreen } from '../hooks/useSizeScreen'
 export function Nav() {
   const [openHamburger, setOpenHamburger] = useState(false)
   const { widthSize, heightSize } = useSizeScreen()
-
   const handleOpen = () => {
     setOpenHamburger(!openHamburger)
   }
+  const laptopRes = widthSize > 1030
+  const mobileAndTablettRes = widthSize <= 1030
+  const portrait = heightSize > widthSize
+  const landscape = heightSize < widthSize
 
   return (
     <>
-      {widthSize > 1030 && (
+      {laptopRes && (
         <nav className="nav-layout above-all gap-4">
           <div className="flex-align gap-4">
             <NameNavLink />
@@ -31,9 +34,8 @@ export function Nav() {
           </div>
         </nav>
       )}
-      {widthSize <= 1030 && heightSize > widthSize && (
-        <nav
-          className={`nav-layout ${heightSize > widthSize ? ' sticky' : ' '}`}>
+      {mobileAndTablettRes && { portrait } && (
+        <nav className={`nav-layout ${landscape ? ' sticky' : ' '}`}>
           <div className="flex-align gap-4">
             <NameNavLink />
           </div>
@@ -43,7 +45,7 @@ export function Nav() {
           <Slider openHamburger={openHamburger} handleOpen={handleOpen} />
         </nav>
       )}
-      {widthSize <= 1030 && heightSize < widthSize && (
+      {mobileAndTablettRes && landscape && (
         <nav className="above-all nav-layout gap-4">
           <div className="flex-align flex-center text-align gap-4">
             <NameNavLink />

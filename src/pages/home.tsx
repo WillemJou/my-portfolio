@@ -11,12 +11,14 @@ export function Home() {
 
   return (
     <>
-      <Header />
-      <AnchorLink
-        title={stateLanguage === 'en' ? 'My Stack' : 'Ma Stack'}
-        className="upper-link"
-        anchor="#stackbox"
-      />
+      <div className="all-screen">
+        <Header />
+        <AnchorLink
+          title={stateLanguage === 'en' ? 'My Stack' : 'Ma Stack'}
+          className="upper-link"
+          anchor="#stackbox"
+        />
+      </div>
       <div className="stack wrapper gap-24">
         <BoxStack />
 
