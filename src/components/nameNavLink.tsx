@@ -1,10 +1,16 @@
 import { Link } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 
 export function NameNavLink() {
+  const urlLocation = useLocation()
+  const dynamicRedirect = urlLocation.pathname.includes('about')
+    ? '/my-portfolio/'
+    : '/my-portfolio/about'
+
   return (
     <>
       <div className="simple-row-layout">
-        <Link to="/my-portfolio/about" className="me-link lg-font-size">
+        <Link to={dynamicRedirect} className="me-link lg-font-size">
           Willem Jouret
         </Link>
       </div>
