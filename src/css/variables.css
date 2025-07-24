@@ -56,30 +56,30 @@
   --space-xl: calc(var(--text-base) * 2);
   --space-2xl: calc(var(--text-base) * 3);
 
-  /* ===== DIMENSIONS ===== */
+  /* ===== DIMENSIONS RESPONSIVES ===== */
 
   /* Formes et tailles */
-  --shape-xxs: 0.3rem;
-  --shape-xs: 1.3rem;
-  --shape-s: 1.7rem;
-  --shape-m: 2rem;
-  --shape-l: 5rem;
-  --shape-xl: 17rem;
-  --shape-xxl: 23rem;
-  --shape-xxxl: 26rem;
+  --shape-xxs: clamp(0.2rem, 0.5vw, 0.4rem);
+  --shape-xs: clamp(1rem, 2vw, 1.6rem);
+  --shape-s: clamp(1.3rem, 2.5vw, 2.1rem);
+  --shape-m: clamp(1.5rem, 3vw, 2.5rem);
+  --shape-l: clamp(3rem, 8vw, 7rem);
+  --shape-xl: clamp(12rem, 25vw, 20rem);
+  --shape-xxl: clamp(18rem, 35vw, 28rem);
+  --shape-xxxl: clamp(20rem, 40vw, 32rem);
 
   /* Mesures fixes */
-  --measure-1: 0.2rem;
-  --measure-2: 0.5rem;
-  --measure-3: 0.8rem;
-  --measure-4: 1rem;
-  --measure-10: 2.5rem;
-  --measure-12: 3rem;
-  --measure-13: 4rem;
-  --measure-20: 5rem;
-  --measure-24: 7rem;
-  --measure-29: 9rem;
-  --measure-48: 12rem;
+  --measure-1: clamp(0.15rem, 0.3vw, 0.25rem);
+  --measure-2: clamp(0.3rem, 0.8vw, 0.7rem);
+  --measure-3: clamp(0.6rem, 1.2vw, 1rem);
+  --measure-4: clamp(0.8rem, 1.5vw, 1.2rem);
+  --measure-10: clamp(2rem, 4vw, 3rem);
+  --measure-12: clamp(2.5rem, 5vw, 3.5rem);
+  --measure-13: clamp(3rem, 6vw, 5rem);
+  --measure-20: clamp(4rem, 8vw, 6rem);
+  --measure-24: clamp(5rem, 12vw, 8rem);
+  --measure-29: clamp(7rem, 15vw, 11rem);
+  --measure-48: clamp(9rem, 20vw, 15rem);
 
   /* ===== ANIMATIONS ===== */
   --theme-transition: 0.2s ease-in-out;

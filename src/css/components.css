@@ -24,8 +24,8 @@
 
 /* Icônes de base */
 .icon {
-  width: var(--shape-m);
-  height: var(--shape-m);
+  width: var(--shape-s);
+  height: var(--shape-s);
   position: relative;
   transition: color var(--theme-transition), fill var(--theme-transition);
 }
@@ -49,8 +49,8 @@
 /* Icônes spécifiques */
 .cross-icon {
   stroke: var(--gray-900);
-  width: var(--measure-12);
-  height: var(--measure-12);
+  width: var(--measure-10);
+  height: var(--measure10);
 }
 
 .theme-icon {
@@ -70,8 +70,8 @@
 }
 
 .x {
-  width: var(--shape-s);
-  height: var(--shape-s);
+  width: var(--shape-xs);
+  height: var(--shape-xs);
 }
 
 .send-icon {
@@ -186,10 +186,6 @@
   text-align: left;
 }
 
-.title-section {
-  margin-top: var(--shape-s);
-}
-
 .title-open {
   color: var(--accent-regular) !important;
 }
@@ -236,13 +232,13 @@
   font-size: var(--text-lg);
   display: flex;
   justify-content: flex-end;
-  padding: 0 var(--measure-2);
+  padding: 0 var(--measure-3);
 }
 
 /* Liens supérieurs */
 .upper-link {
   display: flex;
-  gap: var(--measure-2);
+  gap: var(--space-sm);
   align-items: flex-end;
   justify-content: end;
   margin-bottom: var(--measure-10);
@@ -408,8 +404,9 @@
 
 .theme-btn-light::before {
   content: "";
-  width: 2rem;
-  height: 2rem;
+  width: 49%;
+  height: 89%;
+  aspect-ratio: inherit;
   position: absolute;
   top: 2px;
   left: 2px;
@@ -430,8 +427,9 @@
 
 .theme-btn-dark::before {
   content: "";
-  width: 2rem;
-  height: 2rem;
+  width: 49%;
+  height: 89%;
+  aspect-ratio: inherit;
   position: absolute;
   top: 2px;
   left: 2px;
@@ -461,7 +459,7 @@
 }
 
 .img-about {
-  width: var(--shape-xxl);
+  width: var(--shape-xl);
   height: auto;
   margin-top: var(--shape-s);
   border-radius: 1.5rem;
@@ -665,7 +663,6 @@
   height: fit-content;
   text-align: start;
   border-bottom: 1px solid var(--accent-dark);
-  padding-bottom: var(--shape-m);
 }
 
 .stack-element:last-child {

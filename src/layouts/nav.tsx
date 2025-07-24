@@ -34,7 +34,7 @@ export function Nav() {
           </div>
         </nav>
       )}
-      {mobileAndTablettRes && { portrait } && (
+      {mobileAndTablettRes && portrait && (
         <nav className={`nav-layout ${landscape ? ' sticky' : ' '}`}>
           <div className="flex-align gap-4">
             <NameNavLink />

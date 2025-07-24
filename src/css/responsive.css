@@ -29,8 +29,6 @@
 
   .theme-btn-dark::before,
   .theme-btn-light::before {
-    width: 1.3rem;
-    height: 1.3rem;
     left: 2px;
     top: 2px;
   }
@@ -451,8 +449,6 @@
 
   .theme-btn-dark::before,
   .theme-btn-light::before {
-    width: 3.1rem;
-    height: 3.1rem;
     left: 4px;
     top: 4px;
   }
@@ -536,10 +532,6 @@
     font-size: var(--text-lg);
   }
 
-  .title-section-home {
-    margin-top: var(--measure-13);
-  }
-
   .main-header {
     margin-bottom: 0;
   }
@@ -556,8 +548,6 @@
 
   .theme-btn-dark::before,
   .theme-btn-light::before {
-    width: 4.7rem;
-    height: 4.7rem;
     left: 6px;
     top: 5px;
   }
@@ -605,8 +595,6 @@
 
   .theme-btn-dark::before,
   .theme-btn-light::before {
-    width: 5.5rem;
-    height: 5.5rem;
     left: 8px;
     top: 8px;
   }
