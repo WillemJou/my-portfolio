@@ -128,6 +128,21 @@ html {
   transition: 1s all ease;
 }
 
+.slider-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: grey;
+  opacity: 0.5;
+  /* Créer un nouveau contexte d'empilement */
+  transform: translateZ(0);
+  /* ou 
+  will-change: transform;
+  */
+}
+
 .all-screen {
   min-height: 90vh;
 }

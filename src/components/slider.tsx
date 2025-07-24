@@ -20,7 +20,7 @@ export function Slider({ openHamburger, handleOpen }: SliderProps) {
   }, [openHamburger])
 
   return (
-    <div>
+    <>
       <Fade
         fadeStyle={`${style} fade-slider`}
         outStyle=" out-slider"
@@ -49,6 +49,6 @@ export function Slider({ openHamburger, handleOpen }: SliderProps) {
           </div>
         </div>
       </Fade>
-    </div>
+    </>
   )
 }

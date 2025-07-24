@@ -194,6 +194,10 @@
   color: inherit;
 }
 
+.title-home-section {
+  padding-top: var(--measure-10);
+}
+
 .tagline {
   max-width: max-content;
   margin-inline: unset;
@@ -241,7 +245,6 @@
   gap: var(--space-sm);
   align-items: flex-end;
   justify-content: end;
-  margin-bottom: var(--measure-10);
   padding-top: var(--measure-4);
   z-index: 10;
 }
@@ -444,7 +447,7 @@
    =========================================== */
 
 .main-img {
-  width: 25vw;
+  width: var(--shape-xl);
   height: auto;
   padding: 0;
   aspect-ratio: 3 / 4;

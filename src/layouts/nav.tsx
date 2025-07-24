@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { LanguageBtn } from '../components/LanguageBtn'
 import { NameNavLink } from '../components/NameNavLink'
 import { NavItems } from '../components/NavItems'
@@ -10,6 +10,7 @@ import { useSizeScreen } from '../hooks/useSizeScreen'
 
 export function Nav() {
   const [openHamburger, setOpenHamburger] = useState(false)
+
   const { widthSize, heightSize } = useSizeScreen()
   const handleOpen = () => {
     setOpenHamburger(!openHamburger)
@@ -42,6 +43,10 @@ export function Nav() {
           <div className="flex-end hamburger-container">
             <Hamburger handleOpen={handleOpen} openHamburger={openHamburger} />
           </div>
+          {/* Overlay de fond - s'affiche seulement quand le slider est ouvert */}
+          {openHamburger && (
+            <div className="slider-overlay" onClick={handleOpen} />
+          )}
           <Slider openHamburger={openHamburger} handleOpen={handleOpen} />
         </nav>
       )}

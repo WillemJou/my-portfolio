@@ -143,10 +143,6 @@
     padding: 0;
   }
 
-  .main-img {
-    width: 40vw;
-  }
-
   .wrapper {
     padding-inline: var(--measure-10);
   }
