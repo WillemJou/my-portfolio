@@ -265,9 +265,9 @@
   display: flex;
 }
 
-/* Navigation principale */
 .navbar-link {
   padding: var(--measure-2) var(--measure-4);
+  aspect-ratio: inherit;
   border-radius: 999rem;
   transition: color var(--theme-transition),
     background-color var(--theme-transition);

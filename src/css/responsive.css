@@ -421,14 +421,6 @@
     font-size: 2rem;
   }
 
-  .nav-items {
-    padding: 1rem var(--shape-xxs);
-  }
-
-  .navbar-link {
-    padding: 0.8rem var(--measure-4);
-  }
-
   .theme-icon,
   .menu-btn_closed,
   .menu-btn_opened,
@@ -445,12 +437,14 @@
 
   .theme-btn-dark::before,
   .theme-btn-light::before {
+    width: 46%;
+    height: 86%;
     left: 4px;
     top: 4px;
   }
 
   .theme-btn-dark::before {
-    transform: translateX(95%);
+    transform: translateX(102%);
   }
 
   .hero {
@@ -486,7 +480,6 @@
 @media (orientation: landscape) and (min-width: 2550px) {
   .navbar-link {
     font-size: var(--text-md);
-    padding: 1.3rem var(--measure-6);
   }
 
   .text,
@@ -501,10 +494,6 @@
   .description,
   .article {
     font-size: var(--text-lg);
-  }
-
-  .nav-items {
-    padding: 2rem var(--shape-xxs);
   }
 
   .language-btn {
@@ -549,7 +538,7 @@
   }
 
   .theme-btn-dark::before {
-    transform: translateX(113%);
+    transform: translateX(96%);
   }
 
   .techno-icon_closed,
@@ -583,32 +572,12 @@
     font-size: var(--text-md);
   }
 
-  .theme-btn-dark,
-  .theme-btn-light {
-    padding: 1.3rem;
-    gap: var(--measure-3);
-  }
-
-  .theme-btn-dark::before,
-  .theme-btn-light::before {
-    left: 8px;
-    top: 8px;
-  }
-
-  .theme-btn-dark::before {
-    transform: translateX(108%);
-  }
-
   .cta-title {
     max-width: fit-content;
   }
 
   .fade-stack {
     height: 700px;
-  }
-
-  .nav-items {
-    padding: var(--measure-3) 0.5rem;
   }
 
   .theme-icon,
