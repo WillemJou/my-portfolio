@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import { RevealOnScroll } from '../utils/RevealOn'
-import { LanguageContext } from '../globals/languages'
-import { selectedStacks } from '../utils/dataService'
+import { LanguageContext } from '../globals/Languages'
+import { selectedStacks } from '../utils/DataService'
 import { Stack } from '../components/Stack'
 import { AnchorLink } from '../components/AnchorLink'
 

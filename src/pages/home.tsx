@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { LanguageContext } from '../globals/languages'
+import { LanguageContext } from '../globals/Languages'
 import { BoxStack } from '../layouts/BoxStack'
 import { Header } from '../layouts/Header'
 import { SelectedWorksContainer } from '../layouts/SelectedWorks'

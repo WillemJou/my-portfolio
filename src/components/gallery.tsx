@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Project } from '../utils/dataService'
+import { Project } from '../utils/DataService'
 
 interface WorksProps {
   works: Project[]

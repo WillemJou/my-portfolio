@@ -1,6 +1,6 @@
 import { useRouteError, isRouteErrorResponse } from 'react-router-dom'
 import { useContext } from 'react'
-import { ThemeContext } from '../globals/theme'
+import { ThemeContext } from '../globals/Theme'
 
 export function ErrorPage() {
   const { theme } = useContext(ThemeContext)

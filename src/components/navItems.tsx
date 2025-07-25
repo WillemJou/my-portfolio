@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import { useContext } from 'react'
-import { LanguageContext } from '../globals/languages'
+import { LanguageContext } from '../globals/Languages'
 import { useScrollToTop } from '../hooks/useScrollToTop'
 
 export function NavItems() {

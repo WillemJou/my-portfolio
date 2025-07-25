@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { Gallery } from '../components/Gallery'
 import { RevealOnScroll } from '../utils/RevealOn'
 import { useScrollToTop } from '../hooks/useScrollToTop'
-import { LanguageContext } from '../globals/languages'
+import { LanguageContext } from '../globals/Languages'
 import data from '../data.json'
 import { Error } from '../components/Error'
 

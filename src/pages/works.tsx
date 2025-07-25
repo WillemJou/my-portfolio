@@ -1,6 +1,6 @@
 import { Gallery } from '../components/Gallery'
 import { useContext } from 'react'
-import { LanguageContext } from '../globals/languages'
+import { LanguageContext } from '../globals/Languages'
 import data from '../data.json'
 import { RevealOnScroll } from '../utils/RevealOn'
 

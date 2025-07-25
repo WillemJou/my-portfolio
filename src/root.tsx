@@ -1,6 +1,6 @@
 import { Outlet, ScrollRestoration } from 'react-router-dom'
 import { useContext } from 'react'
-import { ThemeContext } from './globals/theme'
+import { ThemeContext } from './globals/Theme'
 import { CallToAction } from './layouts/CalltoAction'
 import { Footer } from './layouts/Footer'
 import { Nav } from './layouts/Nav'

@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { LanguageContext } from '../globals/languages'
+import { LanguageContext } from '../globals/Languages'
 import { Link } from 'react-router-dom'
 import mainPortrait from '/mainPortrait.jpg'
 import { RevealOnScroll } from '../utils/RevealOn'

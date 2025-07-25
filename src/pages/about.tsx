@@ -1,6 +1,6 @@
 import { useContext, useEffect } from 'react'
 import face from '/face.jpg'
-import { LanguageContext } from '../globals/languages'
+import { LanguageContext } from '../globals/Languages'
 import { RevealOnScroll } from '../utils/RevealOn'
 import { useLocation } from 'react-router-dom'
 

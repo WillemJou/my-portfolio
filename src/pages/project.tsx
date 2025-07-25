@@ -1,8 +1,8 @@
 import { Link, useParams } from 'react-router-dom'
-import { otherProjects, selectedProjects } from '../utils/dataService'
+import { otherProjects, selectedProjects } from '../utils/DataService'
 import { Carousel } from '../components/Carrousel'
 import { useContext } from 'react'
-import { LanguageContext } from '../globals/languages'
+import { LanguageContext } from '../globals/Languages'
 
 export function Project() {
   const { id } = useParams()

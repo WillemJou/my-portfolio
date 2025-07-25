@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { ThemeContext } from '../globals/theme'
+import { ThemeContext } from '../globals/Theme'
 import daySound from '../daySound.mp3'
 import nightSound from '../nightSound.mp3'
 

@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { LanguageContext } from '../globals/languages'
+import { LanguageContext } from '../globals/Languages'
 
 export function LanguageBtn() {
   const language = useContext(LanguageContext)
