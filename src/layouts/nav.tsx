@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { LanguageBtn } from '../components/LanguageBtn'
 import { NameNavLink } from '../components/NameNavLink'
 import { NavItems } from '../components/NavItems'

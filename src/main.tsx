@@ -18,7 +18,7 @@ import { Error } from './components/Error'
 
 const router = createBrowserRouter([
   {
-    path: '/my-portfolio',
+    path: '/my-portfolio/',
     element: <Root />,
     errorElement: <ErrorPage />,
     children: [

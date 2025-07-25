@@ -394,23 +394,6 @@
   }
 }
 
-// Expanded Size
-@media (min-width: 1030px) {
-  .main-header {
-    flex-direction: column-reverse;
-    gap: 0;
-  }
-
-  .main-img {
-    min-width: 30vw;
-    min-height: 40vh;
-  }
-
-  .box {
-    width: 100%;
-  }
-}
-
 /* Desktop */
 @media (orientation: landscape) and (min-width: 1600px) {
   .footer-link,
