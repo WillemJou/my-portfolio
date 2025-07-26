@@ -16,30 +16,33 @@ import './css/responsive.css'
 import { ErrorPage } from './pages/ErrorPage'
 import { Error } from './components/Error'
 
-const router = createBrowserRouter([
-  {
-    path: '/my-portfolio/',
-    element: <Root />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        errorElement: <Error />,
-        children: [
-          { index: true, element: <Home /> },
-          {
-            path: '/my-portfolio/works',
-            element: <Works />,
-          },
-          { path: '/my-portfolio/about', element: <About /> },
-          {
-            path: '/my-portfolio/works/projet/:id',
-            element: <Project />,
-          },
-        ],
-      },
-    ],
-  },
-])
+const router = createBrowserRouter(
+  [
+    {
+      path: '/my-portfolio/',
+      element: <Root />,
+      errorElement: <ErrorPage />,
+      children: [
+        {
+          errorElement: <Error />,
+          children: [
+            { index: true, element: <Home /> },
+            {
+              path: '/my-portfolio/works',
+              element: <Works />,
+            },
+            { path: '/my-portfolio/about', element: <About /> },
+            {
+              path: '/my-portfolio/works/projet/:id',
+              element: <Project />,
+            },
+          ],
+        },
+      ],
+    },
+  ],
+  { basename: '/my-portfolio/' }
+)
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
