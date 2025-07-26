@@ -19,7 +19,7 @@ import { Error } from './components/Error'
 const router = createBrowserRouter(
   [
     {
-      path: '/my-portfolio/',
+      path: '/',
       element: <Root />,
       errorElement: <ErrorPage />,
       children: [
@@ -28,12 +28,12 @@ const router = createBrowserRouter(
           children: [
             { index: true, element: <Home /> },
             {
-              path: '/my-portfolio/works',
+              path: 'works',
               element: <Works />,
             },
-            { path: '/my-portfolio/about', element: <About /> },
+            { path: 'about', element: <About /> },
             {
-              path: '/my-portfolio/works/projet/:id',
+              path: 'works/projet/:id',
               element: <Project />,
             },
           ],
@@ -41,7 +41,7 @@ const router = createBrowserRouter(
       ],
     },
   ],
-  { basename: '/my-portfolio/' }
+  { basename: '/my-portfolio' }
 )
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
