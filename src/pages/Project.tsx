@@ -17,7 +17,7 @@ export function Project() {
       <header className="header stack gap-2">
         <div className="backlink-container">
           {' '}
-          <Link className="back-link" to="/my-portfolio/works">
+          <Link className="back-link" to="works">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="icon arrow-icon"

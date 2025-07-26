@@ -5,7 +5,7 @@ export function NameNavLink() {
   const urlLocation = useLocation()
   const dynamicRedirect = urlLocation.pathname.includes('about')
     ? '/my-portfolio/'
-    : '/my-portfolio/about'
+    : 'about'
 
   return (
     <>
