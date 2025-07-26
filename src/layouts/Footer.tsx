@@ -24,10 +24,7 @@ export function Footer() {
           {stateLanguage === 'en'
             ? 'Hand Made and Stylized by'
             : 'Fait Main et Designé par'}{' '}
-          <Link
-            to="/my-portfolio/about"
-            className="footer-link"
-            onClick={scrollToTop}>
+          <Link to="/about" className="footer-link" onClick={scrollToTop}>
             Willem Jouret,
           </Link>{' '}
           {'Paris'}
