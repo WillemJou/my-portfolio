@@ -19,7 +19,7 @@ export function Works() {
             <p className="tagline">
               {stateLanguage === 'en'
                 ? 'See some projects below !'
-                : 'Voici quelques projets qui  me tiennent à coeur !'}
+                : 'Voici quelques projets qui  me tiennent à coeurProut!'}
             </p>
           </div>
         </header>
