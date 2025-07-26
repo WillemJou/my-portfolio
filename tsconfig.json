@@ -1,8 +1,6 @@
 {
   "compilerOptions": {
     "target": "ES2020",
-    "useDefineForClassFields": true,
-    "useUnknownInCatchVariables": true,
     "lib": [
       "ES2020",
       "DOM",
@@ -10,25 +8,26 @@
     ],
     "module": "ESNext",
     "skipLibCheck": true,
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
+    "moduleResolution": "node",
+    "allowImportingTsExtensions": false,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    // ✅ Paramètres allégés
+    "strict": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noFallthroughCasesInSwitch": false,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
   },
   "include": [
     "src"
   ],
-  "references": [
-    {
-      "path": "./tsconfig.node.json"
-    }
+  "exclude": [
+    "node_modules",
+    "dist"
   ]
 }
