@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom'
 export function NameNavLink() {
   const urlLocation = useLocation()
   const dynamicRedirect = urlLocation.pathname.includes('about')
-    ? '/my-portfolio/'
+    ? '/'
     : '/about'
 
   return (
