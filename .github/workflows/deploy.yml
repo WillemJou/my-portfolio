@@ -5,14 +5,18 @@ on:
     branches: [master]
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pages: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        run: |
-          git clone https://github.com/${{ github.repository }}.git .
-          git checkout ${{ github.sha }}
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
         run: |
@@ -27,11 +31,40 @@ jobs:
 
       - name: Deploy to GitHub Pages
         run: |
+          echo "Configuring git..."
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git checkout --orphan gh-pages
-          git --work-tree dist add --all
-          git --work-tree dist commit -m "Deploy to GitHub Pages"
-          git push origin HEAD:gh-pages --force
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+          echo "Checking if gh-pages branch exists..."
+          if git show-ref --verify --quiet refs/remotes/origin/gh-pages; then
+            echo "gh-pages branch exists, checking out..."
+            git checkout gh-pages
+            git rm -rf . || true
+          else
+            echo "Creating new gh-pages branch..."
+            git checkout --orphan gh-pages
+            git rm -rf . || true
+          fi
+
+          echo "Copying dist files..."
+          cp -r dist/* . 2>/dev/null || true
+
+          echo "Adding index.html as fallback for 404..."
+          cp index.html 404.html 2>/dev/null || true
+
+          echo "Current files in gh-pages:"
+          ls -la
+
+          echo "Adding files to git..."
+          git add .
+
+          if git diff --staged --quiet; then
+            echo "No changes to deploy"
+            exit 0
+          fi
+
+          echo "Committing changes..."
+          git commit -m "Deploy to GitHub Pages - $(date)"
+
+          echo "Pushing to gh-pages..."
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git gh-pages --force
