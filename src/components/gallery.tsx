@@ -10,7 +10,9 @@ export function Gallery({ works }: WorksProps) {
     <>
       {works.map((project: Project) => (
         <li className="li-card" key={project.id}>
-          <Link className="relative card" to={`/works/projet/${project.id}`}>
+          <Link
+            className="relative card"
+            to={`/my-portfolio/works/projet/${project.id}`}>
             <span className="title title-card">{project.title}</span>
             <img
               className="img-card"

@@ -24,7 +24,7 @@ export function SelectedWorksContainer() {
             </h3>
             <Link
               className="view-all-link simple-flex"
-              to="/works"
+              to="/my-portfolio/works"
               onClick={scrollToTop}>
               {stateLanguage === 'en' ? 'View All' : 'Voir tout'}
             </Link>

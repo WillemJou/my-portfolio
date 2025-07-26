@@ -17,14 +17,14 @@ export function Header() {
               {stateLanguage === 'en' ? (
                 <>
                   Hello, I'm{' '}
-                  <Link className="main-name-link" to="/about">
+                  <Link className="main-name-link" to="/my-portfolio/about">
                     Willem
                   </Link>
                 </>
               ) : (
                 <>
                   Bienvenue, je suis{' '}
-                  <Link className="main-name-link" to="/about">
+                  <Link className="main-name-link" to="/my-portfolio/about">
                     Willem
                   </Link>
                 </>
@@ -36,7 +36,7 @@ export function Header() {
                 : 'Développeur front-end basé en Bretagne 🧑🏻‍💻'}
             </p>
           </div>
-          <Link className="main-img-link" to="/about">
+          <Link className="main-img-link" to="/my-portfolio/about">
             <img
               src={mainPortrait}
               alt="shoot de Willem dans une entreprise super sympa #LaBelleFolie ^^"
